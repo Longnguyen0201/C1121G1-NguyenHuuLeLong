@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao Form Don Gian</title>
+    <style>
+        .a{
+            background: aqua;
+            width: 600px; height: 300px;
+            padding:10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+        }
+        .b{
+            background: white;
+            margin-left: auto;
+            margin-right: auto;
+            color: blue;
+
+
+        }
+        .c{
+            background: orangered;
+            padding: 5px;
+            text-align: center;color: white;
+        }
+        .tableR{ text-align:right }
+        .tableL{ text-align: left}
+        .tableRL{ text-align:justify}
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <p class="c" ><strong>SỞ THÍCH CỦA BẠN </strong> </p>
+            <form action="TaoFormDonGian1.html" method="get">
+                <table style="width: 150%">
+                    <tr>
+                        <td class="tableR">Họ và Tên:</td>
+                        <td class="tableL"><input type="text" name="yourname" size="25"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tableR">Email:</td>
+                        <td><input type="text" name="email" size="15"/></p></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" class="tableR" >Sở thích</td>
+                        <td>
+                            <label style="color: orange"><input type="checkbox"/>Thể Thao</label>
+                            <label style="color: orange"><input type="checkbox"/>Âm nhạc</label>
+                            <label style="color: orange"><input type="checkbox"/>Đọc sách</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="color: orange"><input type="checkbox"/>lướt web</label>
+                            <label style="color: orange"><input type="checkbox"/>Chơi game </label>
+                            <label style="color: orange"><input type="checkbox"/>Điện ảnh</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="color: orange"><input type="checkbox"/>Du lịch</label></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Gửi thông tin" />
+                            <input type="reset" value="Nhập lại"/></td>
+                    </tr>
+
+                </table>
+
+
+
+            </form>
+
+        </div>
+    </div>
+
+    <div id="c">
+
+    </div>
+
+
+</body>
+</html>
