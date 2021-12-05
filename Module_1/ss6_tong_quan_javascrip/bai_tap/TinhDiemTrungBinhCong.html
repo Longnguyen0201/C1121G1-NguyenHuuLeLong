@@ -24,16 +24,16 @@
 <script >
 
     function nhapDiemSo() {
-        let m = document.getElementById('math').value;
-        m=parseFloat(m)
-        let p = document.getElementById('physics').value;
-        p=parseFloat(p)
-        let c = document.getElementById('chemistry').value;
-        c=parseFloat(c)
-        let a = (m + p + c) / 3
+        let diemtoan = document.getElementById('math').value;
+        diemtoan =parseFloat(diemtoan)
+        let diemly = document.getElementById('physics').value;
+        diemly=parseFloat(diemly)
+        let diemhoa = document.getElementById('chemistry').value;
+        diemhoa=parseFloat(diemhoa)
+        let diemtong = (diemtoan + diemly + diemhoa ) / 3
         //toFixed làm tròn số (2) số thập phân
-        a=parseFloat(a).toFixed(2)
-        document.getElementById('display').innerHTML=a
+        diemtong=parseFloat(diemtong).toFixed(2)
+        document.getElementById('display').innerHTML= diemtong
     }
 
 </script>

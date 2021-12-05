@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Module_1/.idea/Module_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/.idea/Module_1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss6_tong_quan_javascrip/bai_tap/TinhDiemTrungBinh Cong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss6_tong_quan_javascrip/bai_tap/TinhDiemTrungBinhCong2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss6_tong_quan_javascrip/bai_tap/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21qrFJ1w1vSC0lDYz4mKWnIGu2U" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="" />
+      <created>1638679353532</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638679353532</updated>
+      <workItem from="1638679355842" duration="696000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>
