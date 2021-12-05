@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>averageScore</title>
+</head>
+<body>
+<h1>Điểm trung bình và Điểm Tổng</h1>
+<button onclick="nhapDiemSo()">Click</button>
+<h2>Điểm trung bình cộng: </h2>
+<p id="diemTrungBinh"></p>
+<h2>Điểm tổng: </h2>
+<p id="diemTong"></p>
+</body>
+<script>
+
+    function nhapDiemSo() {
+        let math = prompt("Nhập điểm toán:");
+        math = parseFloat(math);
+        let biological = prompt("Nhập điểm sinh:");
+        biological = parseFloat(biological);
+        let chemistry = prompt("Nhập điểm hóa:");
+        chemistry = parseFloat(chemistry);
+        let average = (math + biological + chemistry) / 3;
+        let total= (math + biological + chemistry);
+        document.getElementById('diemTrungBinh').innerHTML = average;
+        document.getElementById('diemTong').innerHTML = total;
+
+    }
+
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>temperature</title>
+</head>
+<body>
+<p>Nhập độ C:
+    <input type="number" id="celsius"/>
+</p>
+<button onclick="chuyenDoi()">Change</button>
+<h2>Độ F: </h2>
+<p id="fahrenheit"></p>
+</body>
+<script>
+    function chuyenDoi() {
+        let doC=document.getElementById('celsius').value;
+        let doF=(1.8 * doC + 32);
+        document.getElementById('fahrenheit').innerHTML = doF;
+
+    }
+</script>
+
+</html>

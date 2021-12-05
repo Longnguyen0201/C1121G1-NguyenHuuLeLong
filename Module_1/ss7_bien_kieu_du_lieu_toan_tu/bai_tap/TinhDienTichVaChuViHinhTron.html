@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>circle</title>
+</head>
+<body>
+<p>Nhập bán kính:
+    <input type="text" id="radius"/>
+</p>
+<button onclick="tinhToan()">Click</button>
+<h2>Diện tích hình tròn: </h2>
+<p id="area"></p>
+<h2>Chu vi hình tròn:</h2>
+<p id="circuit"></p>
+
+</body>
+<script>
+    function tinhToan() {
+        let banKinh = document.getElementById('radius').value;
+        banKinh = parseInt(banKinh);
+        const PI = 3.14159;
+        let dienTich = banKinh * banKinh * PI;
+        dienTich = parseInt(dienTich);
+        document.getElementById('area').innerHTML = dienTich;
+        let chuVi = 2 * banKinh * PI;
+        chuVi = parseInt(chuVi);
+        document.getElementById('circuit').innerHTML = chuVi;
+
+    }
+</script>
+</html>

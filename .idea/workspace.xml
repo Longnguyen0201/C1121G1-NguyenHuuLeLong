@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/ChuyenDoCSangDoF.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/DiemTrungBinhCuaSinhVien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/TinhDienTichHinhTron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/thuc_hanh/KhaiBaoVaSuDungBien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/thuc_hanh/SuDungToanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/thuc_hanh/SuDungToanTu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,6 +50,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -34,10 +67,30 @@
       <updated>1638679353532</updated>
       <workItem from="1638679355842" duration="696000" />
       <workItem from="1638689267267" duration="153000" />
+      <workItem from="1638691117907" duration="1629000" />
+      <workItem from="1638705146965" duration="9791000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-940" y="185" key="FileChooserDialogImpl" timestamp="1638705751518">
+      <screen x="-1440" y="0" width="1440" height="860" />
+    </state>
+    <state x="-940" y="185" key="FileChooserDialogImpl/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1638705751518" />
   </component>
 </project>
