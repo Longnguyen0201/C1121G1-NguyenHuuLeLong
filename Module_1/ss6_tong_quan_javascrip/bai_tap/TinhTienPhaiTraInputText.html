@@ -12,7 +12,7 @@
 <label>Nhập số người</label>
 <input type="number" id="people"/>
 <br>
-<button onclick="hello()">Click</button>
+<button onclick="tinhTien()">Click</button>
 <p>
 <h1>Số tiền từng ngời phải trả:</h1>
 <h2 id="display"></h2>
@@ -28,7 +28,7 @@
     // Tính tiền dựa vào số người. Nhập số tiền và nhập số người.
     // Kết quả hiển thị là số tiền từng người phải trả
 
-    function hello() {
+    function tinhTien() {
         let bill = document.getElementById('money').value;
         bill = parseInt(bill)
         let amount = document.getElementById('people').value;

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Module_1/.idea/Module_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/.idea/Module_1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss6_tong_quan_javascrip/bai_tap/TinhDiemTrungBinh Cong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss6_tong_quan_javascrip/bai_tap/TinhDiemTrungBinhCong2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss6_tong_quan_javascrip/bai_tap/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +33,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638679353532</updated>
       <workItem from="1638679355842" duration="696000" />
+      <workItem from="1638689267267" duration="153000" />
     </task>
     <servers />
   </component>
