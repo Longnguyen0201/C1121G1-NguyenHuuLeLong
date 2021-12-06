@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/ChuyenDoCSangDoF.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/DiemTrungBinhCuaSinhVien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/TinhDienTichHinhTron.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/thuc_hanh/KhaiBaoVaSuDungBien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/thuc_hanh/SuDungToanTu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/thuc_hanh/SuDungToanTu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/ChuyenDoiTienTe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/UngDungMayTinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/KiemTraNamNhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/LuyenTapCauTrucIfElse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/LuyenTapCauTrucIfElseIf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/LuyenTapCauTrucSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/LuyenTapToanTuNgoiBa.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +55,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -68,7 +71,10 @@
       <workItem from="1638679355842" duration="696000" />
       <workItem from="1638689267267" duration="153000" />
       <workItem from="1638691117907" duration="1629000" />
-      <workItem from="1638705146965" duration="9791000" />
+      <workItem from="1638705146965" duration="10398000" />
+      <workItem from="1638764622983" duration="5726000" />
+      <workItem from="1638772684185" duration="647000" />
+      <workItem from="1638773384817" duration="8872000" />
     </task>
     <servers />
   </component>
@@ -88,6 +94,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="24" y="108" key="#Inspections" timestamp="1638770237070">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="24" y="108" key="#Inspections/0.0.1440.860@0.0.1440.860" timestamp="1638770237070" />
     <state x="-940" y="185" key="FileChooserDialogImpl" timestamp="1638705751518">
       <screen x="-1440" y="0" width="1440" height="860" />
     </state>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th> Form Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td><label for="amount"></label><input type="text" id="amount"/></td>
+        <td>
+            <label for="toCurrency"></label><select id="toCurrency">
+                <option value="vn">VietNam</option>
+            </select>
+        </td>
+        <td>
+            <label for="fromCurrency"></label><select id="fromCurrency">
+                <option value="usd">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="convert()">Convert</button>
+        </td>
+    </tr>
+</table>
+<i style="color: blue"> Result: <p id="display"></p></i>
+</body>
+<script>
+    function convert() {
+         let money = document.getElementById('amount').value;
+        document.getElementById('display').innerHTML =money / 23000;
+
+    }
+</script>
+</html>

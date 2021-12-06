@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<label for="firstInput"></label><input type="text" id="firstInput"/>
+<label for="secondInput"></label><input type="text" id="secondInput"/><br><br>
+<button onclick="addition()">Addition(+)</button>
+<button onclick="subtraction()">Subtraction(-)</button>
+<button onclick="multiplication()">Multiplication(x)</button>
+<button onclick="division()">Division(/)</button>
+<h1 id="ketQua">  Kết quả: </h1>
+</body>
+<script>
+    function addition () {
+        let firstNumber = document.getElementById('firstInput').value;
+        firstNumber = parseInt(firstNumber);
+        let secondNumber = document.getElementById('secondInput').value;
+        secondNumber = parseInt(secondNumber);
+        document.getElementById('ketQua').innerHTML = firstNumber + secondNumber;
+    }
+    function subtraction () {
+        let firstNumber = document.getElementById('firstInput').value;
+        firstNumber = parseInt(firstNumber);
+        let secondNumber = document.getElementById('secondInput').value;
+        secondNumber = parseInt(secondNumber);
+        document.getElementById('ketQua').innerHTML = firstNumber - secondNumber;
+    }
+    function multiplication () {
+        let firstNumber = document.getElementById('firstInput').value;
+        firstNumber = parseInt(firstNumber);
+        let secondNumber = document.getElementById('secondInput').value;
+        secondNumber = parseInt(secondNumber);
+        document.getElementById('ketQua').innerHTML = firstNumber * secondNumber;
+    }
+    function division () {
+        let firstNumber = document.getElementById('firstInput').value;
+        firstNumber = parseInt(firstNumber);
+        let secondNumber = document.getElementById('secondInput').value;
+        secondNumber = parseInt(secondNumber);
+        document.getElementById('ketQua').innerHTML = firstNumber / secondNumber;
+    }
+</script>
+
+</html>
