@@ -20,14 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/ChuyenDoiTienTe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss7_bien_kieu_du_lieu_toan_tu/bai_tap/UngDungMayTinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/KiemTraNamNhuan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/LuyenTapCauTrucIfElse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/LuyenTapCauTrucIfElseIf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/LuyenTapCauTrucSwitchCase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss8_cau_truc_dieu_kien_1/thuc_hanh/LuyenTapToanTuNgoiBa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/CauLenhSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai1ACoChiaHetChoB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai2TuoiHocSinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai4GiaTriLonNhatCua3So.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai4SoNguyenLonHayNhoHon0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai5XepHocLuc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/MayTinhDonGian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/TinhChiSoCanNang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/SuKienBanPhim.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/SuKienChuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +78,8 @@
       <workItem from="1638764622983" duration="5726000" />
       <workItem from="1638772684185" duration="647000" />
       <workItem from="1638773384817" duration="8872000" />
+      <workItem from="1638849287826" duration="5211000" />
+      <workItem from="1638859283675" duration="14300000" />
     </task>
     <servers />
   </component>
@@ -98,9 +103,36 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="24" y="108" key="#Inspections/0.0.1440.860@0.0.1440.860" timestamp="1638770237070" />
-    <state x="-940" y="185" key="FileChooserDialogImpl" timestamp="1638705751518">
-      <screen x="-1440" y="0" width="1440" height="860" />
+    <state x="0" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638865862423">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
+    <state x="0" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1638865862423" />
+    <state x="500" y="185" key="FileChooserDialogImpl" timestamp="1638867507370">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1638867507370" />
     <state x="-940" y="185" key="FileChooserDialogImpl/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1638705751518" />
+    <state x="27" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1638869972450">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="27" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1638869972450" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/test.html</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/test.html</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

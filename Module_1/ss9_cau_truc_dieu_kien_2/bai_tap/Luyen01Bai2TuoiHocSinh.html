@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuổi học sinh</title>
+</head>
+<body>
+<p>Nhập tuổi của học sinh:
+    <label for="tuoi"></label><input id="tuoi"/>
+    <input type="button" onclick="kiemTra()" value="Kiểm tra"/>
+<h2 id="ketQua"></h2>
+</p>
+</body>
+<script>
+    function kiemTra() {
+        let age = document.getElementById('tuoi').value;
+        if (age => 16) {
+            document.getElementById('ketQua').innerText = "Học sinh đủ điều kiện vào học lớp 10";
+        } else {
+            document.getElementById('ketQua').innerText = "Học sinh không đủ điều kiện vào học lớp 10";
+        }
+    }
+
+
+</script>
+</html>

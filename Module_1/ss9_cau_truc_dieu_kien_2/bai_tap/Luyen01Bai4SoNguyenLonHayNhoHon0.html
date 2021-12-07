@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<p>Nhập số a:
+    <label for="number"></label><input type="text" id="number"/>
+    <input type="button" onclick="kiemTra()" value="Kiểm tra"/>
+<h2 id="ketQua"></h2>
+</body>
+<script>
+    function kiemTra() {
+        let a =  document.getElementById('number').value;
+        a=parseInt(a)
+        if (a > 0) {
+            document.getElementById('ketQua').innerText = "Số nguyên a lớn hơn 0";
+        } else {
+            document.getElementById('ketQua').innerText = "Sô nguyên a nhỏ hơn 0";
+        }
+    }
+</script>
+</html>
