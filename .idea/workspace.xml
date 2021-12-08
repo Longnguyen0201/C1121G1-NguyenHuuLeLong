@@ -20,18 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/CauLenhSwitchCase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai1ACoChiaHetChoB.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai2TuoiHocSinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai4GiaTriLonNhatCua3So.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai4SoNguyenLonHayNhoHon0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai5XepHocLuc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/MayTinhDonGian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/TinhChiSoCanNang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/SuKienBanPhim.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/SuKienChuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/GamePuzzle.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai1ACoChiaHetChoB.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai2TuoiHocSinh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai4GiaTriLonNhatCua3So.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai4SoNguyenLonHayNhoHon0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai5XepHocLuc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/MayTinhDonGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/MayTinhDonGian.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +58,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RunManager">
+    <configuration name="Luyen02Bai4TinhDienTichHinhChuNhat.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module/module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen02Bai4TinhDienTichHinhChuNhat.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Luyen02Bai4TinhDienTichHinhChuNhat.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -80,6 +87,10 @@
       <workItem from="1638773384817" duration="8872000" />
       <workItem from="1638849287826" duration="5211000" />
       <workItem from="1638859283675" duration="14300000" />
+      <workItem from="1638882438132" duration="4688000" />
+      <workItem from="1638887233989" duration="5297000" />
+      <workItem from="1638926468873" duration="7938000" />
+      <workItem from="1638946919322" duration="6191000" />
     </task>
     <servers />
   </component>
@@ -107,32 +118,94 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="0" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1638865862423" />
-    <state x="500" y="185" key="FileChooserDialogImpl" timestamp="1638867507370">
+    <state x="500" y="185" key="FileChooserDialogImpl" timestamp="1638882636390">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1638867507370" />
+    <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1638882636390" />
     <state x="-940" y="185" key="FileChooserDialogImpl/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1638705751518" />
+    <state width="877" height="272" key="GridCell.Tab.0.bottom" timestamp="1638938243737">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1638926987861" />
+    <state width="877" height="272" key="GridCell.Tab.0.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
+    <state width="877" height="272" key="GridCell.Tab.0.center" timestamp="1638938243737">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1638926987861" />
+    <state width="877" height="272" key="GridCell.Tab.0.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
+    <state width="877" height="272" key="GridCell.Tab.0.left" timestamp="1638938243736">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1638926987861" />
+    <state width="877" height="272" key="GridCell.Tab.0.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243736" />
+    <state width="877" height="272" key="GridCell.Tab.0.right" timestamp="1638938243737">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1638926987861" />
+    <state width="877" height="272" key="GridCell.Tab.0.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
+    <state width="877" height="272" key="GridCell.Tab.1.bottom" timestamp="1638938243737">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1638926987862" />
+    <state width="877" height="272" key="GridCell.Tab.1.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
+    <state width="877" height="272" key="GridCell.Tab.1.center" timestamp="1638938243737">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1638926987861" />
+    <state width="877" height="272" key="GridCell.Tab.1.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
+    <state width="877" height="272" key="GridCell.Tab.1.left" timestamp="1638938243737">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1638926987861" />
+    <state width="877" height="272" key="GridCell.Tab.1.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
+    <state width="877" height="272" key="GridCell.Tab.1.right" timestamp="1638938243737">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1638926987861" />
+    <state width="877" height="272" key="GridCell.Tab.1.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
+    <state width="877" height="272" key="GridCell.Tab.2.bottom" timestamp="1638938243738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.2.bottom/0.0.1440.860@0.0.1440.860" timestamp="1638926987862" />
+    <state width="877" height="272" key="GridCell.Tab.2.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
+    <state width="877" height="272" key="GridCell.Tab.2.center" timestamp="1638938243738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.2.center/0.0.1440.860@0.0.1440.860" timestamp="1638926987862" />
+    <state width="877" height="272" key="GridCell.Tab.2.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
+    <state width="877" height="272" key="GridCell.Tab.2.left" timestamp="1638938243738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.2.left/0.0.1440.860@0.0.1440.860" timestamp="1638926987862" />
+    <state width="877" height="272" key="GridCell.Tab.2.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
+    <state width="877" height="272" key="GridCell.Tab.2.right" timestamp="1638938243738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.2.right/0.0.1440.860@0.0.1440.860" timestamp="1638926987862" />
+    <state width="877" height="272" key="GridCell.Tab.2.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
+    <state width="877" height="272" key="GridCell.Tab.3.bottom" timestamp="1638938243738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.3.bottom/0.0.1440.860@0.0.1440.860" timestamp="1638926987863" />
+    <state width="877" height="272" key="GridCell.Tab.3.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
+    <state width="877" height="272" key="GridCell.Tab.3.center" timestamp="1638938243738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.3.center/0.0.1440.860@0.0.1440.860" timestamp="1638926987862" />
+    <state width="877" height="272" key="GridCell.Tab.3.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
+    <state width="877" height="272" key="GridCell.Tab.3.left" timestamp="1638938243738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.3.left/0.0.1440.860@0.0.1440.860" timestamp="1638926987862" />
+    <state width="877" height="272" key="GridCell.Tab.3.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
+    <state width="877" height="272" key="GridCell.Tab.3.right" timestamp="1638938243738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="877" height="272" key="GridCell.Tab.3.right/0.0.1440.860@0.0.1440.860" timestamp="1638926987862" />
+    <state width="877" height="272" key="GridCell.Tab.3.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
     <state x="27" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1638869972450">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="27" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1638869972450" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/test.html</url>
-          <line>15</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/test.html</url>
-          <line>16</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

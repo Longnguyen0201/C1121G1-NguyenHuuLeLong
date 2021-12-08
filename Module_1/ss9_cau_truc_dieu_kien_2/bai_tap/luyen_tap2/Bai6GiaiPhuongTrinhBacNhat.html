@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert("Tính phướng trình bậc 1: ax+b=0 ");
+    let a =parseInt(prompt("nhập a:  "));
+    let b =parseInt(prompt("Nhập b: "));
+    if (a===0 && b===0){
+        alert("Phương trình vô nghiệm");
+    }else if (a !==0 && b===0){
+        alert('phương trình có nghiệm x=0');
+    }else  if (a===0 && b!==0){
+        alert("Phương trình vô nghiệm");
+    }else {
+        alert("Phương trình có nghiệm x="+ (-b/a));
+    }
+
+</script>
+</body>
+</html>

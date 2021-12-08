@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let baiKT = parseInt(prompt("Nhập điểm bài kiểm tra: "));
+    let thiGiuaKy = parseInt(prompt("Nhập điểm bài thi giữa kỳ: "));
+    let thiCuoiKy = parseInt(prompt("Nhập điểm bài thi cuối kỳ: "));
+    let xepHang = (baiKT + thiGiuaKy*2 + thiCuoiKy*3) / 6;
+    xepHang=parseInt(xepHang);
+    if (xepHang >= 8) {
+        alert("Xếp loại giỏi");
+    } else if (xepHang >= 6) {
+        alert("Xếp loại khá");
+    } else if (xepHang >= 4) {
+        alert("Xếp loại trung bình");
+    } else {
+        alert("Xếp loại yếu");
+    }
+</script>
+</body>
+</html>

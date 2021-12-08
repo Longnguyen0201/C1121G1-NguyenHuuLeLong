@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong=prompt('nhập số lương của bạn là: ');
+    if (luong <= 4000000 ){
+        alert("bạn không phải nộp thuế thu nhập cá nhân");
+    }else if (luong <= 7000000){
+        alert("bạn phải nộp thuế thu nhập cá nhân: " + luong * 0.05);
+    } else if (luong <= 10000000){
+        alert("bạn phải nộp thuế thu nhập cá nhân: " + luong * 0.1);
+    }else if (luong <= 15000000) {
+        alert("bạn phải nộp thuế thu nhập cá nhân: " + luong * 0.15);
+    }else {
+        alert("bạn phải nộp thuế thu nhập cá nhân: " + luong * 0.20);
+    }
+</script>
+</body>
+</html>

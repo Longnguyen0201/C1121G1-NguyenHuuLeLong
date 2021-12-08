@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert("Tính phướng trình bậc 2: a*x^2+b*x+c=0 ");
+    let a = parseInt(prompt("nhập a:  "));
+    let b = parseInt(prompt("Nhập b: "));
+    let c = parseInt(prompt("Nhập c: "));
+    let delta = b * b - 4 * a * c;
+    //alert(delta);
+    //d là căn bậc 2 của delta
+    let d= Math.sqrt(delta);
+    //alert(d);
+    let x1 = parseInt((-b+d)/(2*a));
+    let x2 = parseInt((-b-d)/(2*a));
+    if (delta < 0) {
+        alert("Phương trình vô nghiệm");
+    } else if (delta === 0) {
+        alert("phương trình có nghiệm kép x1=x2:" +  -b / 2 * a);
+    } else {
+        alert("Phương trình có nghiệm: x1= " + x1 + ", x2= "+ x2)
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<p>Nhập số phút sử dụng:
+    <label for="soPhut"></label><input type="text" id="soPhut"/>
+</p>
+<input type="button" value="Tính" onclick="fee()"/><br>
+<h2> Phí phải trả: </h2>
+<p id="ketQua"></p>
+
+
+</body>
+<script>
+    // Phí cố định 25000định
+    // 1000 đồng cho mỗi phút gọi (dưới 50 phút)
+    // 600 đồng cho mõi phút gọi  (trên 50 phút)
+    // 400 đồng cho mỗi phút gọi (trên 150 phút)
+    // 200 đồng cho mỗi phút gọi (trên 200 phút)
+    function fee() {
+        let soPhut = document.getElementById('soPhut').value;
+        // soPhut=parseInt(soPhut);
+        let feeFixed = 25000;
+        if (soPhut > 200) {
+            document.getElementById('ketQua').innerHTML = feeFixed + soPhut * 200;
+
+        } else if (soPhut > 150) {
+            document.getElementById('ketQua').innerHTML = feeFixed + soPhut * 400;
+        } else if (soPhut > 50) {
+            document.getElementById('ketQua').innerHTML = feeFixed + soPhut * 600;
+        }else {
+            document.getElementById('ketQua').innerHTML = feeFixed + soPhut * 1000;
+        }
+    }
+
+
+</script>
+</html>

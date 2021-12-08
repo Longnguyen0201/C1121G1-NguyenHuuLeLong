@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    Nhập doanh số bán hàng:
+    <input type="text" id="doanhSo"/>
+</p>
+<input type="button" value="Kết quả" onclick="ketQua()"/>
+
+</body>
+<script>
+    function ketQua () {
+        let money=document.getElementById('doanhSo').value;
+        if (money > 30000000){
+            alert(" số tiền bạn nhận đc là: "+ money*0.2);
+        }else if (money > 10000000){
+            alert(" số tiền bạn nhận đc là: "+ money*0.1);
+        }else {
+            alert(" số tiền bạn nhận đc là: "+ money*0.05);
+        }
+    }
+</script>
+</html>

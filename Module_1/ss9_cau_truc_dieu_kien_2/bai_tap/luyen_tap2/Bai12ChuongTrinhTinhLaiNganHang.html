@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = parseInt(prompt("nhập số tiền gửi: "));
+    let rate = parseInt(prompt("tỷ lệ lãi xuất: "));
+
+    let year = 10
+    for (let i = 1; i <= year; i++) {
+        total = money * Math.pow((1 + rate/100), i);
+        document.write("Số tiền nhận đươc sau " + i + " năm là: " + total+"<br>");
+    }
+</script>
+</body>
+</html>
