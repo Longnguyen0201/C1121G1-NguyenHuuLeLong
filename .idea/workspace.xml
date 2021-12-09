@@ -20,15 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/GamePuzzle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/thuc_hanh/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss11_cau_truc_lap_2/bai_tap/BangCuuChuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss11_cau_truc_lap_2/bai_tap/HienThiCacSoNguyenTo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss11_cau_truc_lap_2/bai_tap/luyen_tap_lap_1/Bai1Dem1Den100.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss11_cau_truc_lap_2/bai_tap/luyen_tap_lap_1/bai2YeuCauNhietDo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss11_cau_truc_lap_2/bai_tap/nhan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai1ACoChiaHetChoB.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai2TuoiHocSinh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai4GiaTriLonNhatCua3So.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai4SoNguyenLonHayNhoHon0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/Luyen01Bai5XepHocLuc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/MayTinhDonGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/ss9_cau_truc_dieu_kien_2/bai_tap/MayTinhDonGian.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +88,9 @@
       <workItem from="1638887233989" duration="5297000" />
       <workItem from="1638926468873" duration="7938000" />
       <workItem from="1638946919322" duration="6191000" />
+      <workItem from="1638971164008" duration="9426000" />
+      <workItem from="1639022529244" duration="4576000" />
+      <workItem from="1639031247194" duration="8449000" />
     </task>
     <servers />
   </component>
@@ -203,9 +203,9 @@
     </state>
     <state width="877" height="272" key="GridCell.Tab.3.right/0.0.1440.860@0.0.1440.860" timestamp="1638926987862" />
     <state width="877" height="272" key="GridCell.Tab.3.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state x="27" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1638869972450">
+    <state x="27" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1638977629869">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="27" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1638869972450" />
+    <state x="27" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1638977629869" />
   </component>
 </project>
