@@ -6,15 +6,28 @@
 </head>
 <body>
 <script>
-
-    let number = parseInt(prompt("Nhập số :"));
-
-        for(N=2;N<number;N++) {
-            if ((number - 1) % N === 1) {
-                number += 1;
-            }document.write(number);
-        }
-
+    let numbers = prompt("nhập vào số lượng số nguyên tố cần in ra: ")
+    let count = 0;
+    let n = 2;
+    while (count < numbers) {
+        let flag = true;
+        // if (n < 2) {
+        //     flag = false;
+        // } else {
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i === 0) {
+                    flag = false;
+                    break;
+                }
+            }
+        // }
+        if (flag) {
+            count++;
+            document.write(n + "," ); // in ra từng số NTT
+         }
+        n++
+    }
+    document.write(n)
 
 </script>
 </body>

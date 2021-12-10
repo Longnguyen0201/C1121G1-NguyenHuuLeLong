@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    let soTien=parseInt(prompt("Nhập số tiền ban đầu: "));
+    let laiXuat=parseInt(prompt("Nhập lãi xuât 1 năm(12 tháng): "));
+    let soThang=parseInt(prompt("Nhập sô tháng gởi: "));
+    let tienLai=0;
+    let tongLai=tienLai;
+    for (let i=0;i<soThang;i++) {
+        tienLai = ((soTien * laiXuat) / 100) / 12;
+        tongLai += tienLai;
+        soTien += tienLai;
+        document.write("Tiền lãi tháng " + (i + 1) + " là " + tienLai + "<br>");
+    }document.write("Tổng số tiền lãi của bạn trong " + soThang+" tháng là"+tongLai);
+
+
+
+
+
+
+</script>
+</body>
+</html>

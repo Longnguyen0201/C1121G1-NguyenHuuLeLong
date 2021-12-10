@@ -6,10 +6,17 @@
 </head>
 <body>
 <script>
-    let nhietDo = prompt("Nhập nhiệt đô: ");
-    while (nhietDo>-100||nhietDo<=20);
-    document.write("nhiệt độ hiện tại: "+ nhietDo);
-    nhietDo = prompt( 'tăng giảm nhiệt độ: ');
+    let nhietDo = parseInt(prompt("Nhập nhiệt đô: "));
+    while (nhietDo <= 20 || nhietDo > 100) {
+        if (nhietDo <= 20) {
+            alert("nhiệt độ quá thấp");
+            nhietDo =parseInt(prompt("Nhập nhiệt đô: "));
+        } else if (nhietDo >= 100) {
+            alert("nhiệt độ quá cao");
+            nhietDo = parseInt(prompt("Nhập nhiệt đô: "));
+        }
+            alert("nhiệt độ bình thường");
+    }
 </script>
 </body>
 </html>
