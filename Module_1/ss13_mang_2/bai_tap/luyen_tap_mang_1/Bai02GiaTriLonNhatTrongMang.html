@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+    let size = parseInt(prompt("nhập số phần tử trong mảng: "));
+    let check;
+    let max=0;
+    let position=0;
+    let array = new Array(size);
+    do {
+        check = parseInt(size) == size && size > 0 && size <= 10;
+        break;
+
+    } while (!check);
+
+    for (let i = 0; i<array.length ; i++) {
+        array[i] = parseInt(prompt("Nhập giá trị phần tử " + i));
+        if (max<array[i]){
+            max=array[i];
+            position = i;
+        }
+    }
+    document.write("Phần tử của mãng: "+array+ "<br>");
+    document.write("Giá trị lớn nhât trong mảng là: "+ max);
+    document.write("<br>"+ "tại vị trí phần tử thứ  "+ position);
+</script>
+</body>
+</html>

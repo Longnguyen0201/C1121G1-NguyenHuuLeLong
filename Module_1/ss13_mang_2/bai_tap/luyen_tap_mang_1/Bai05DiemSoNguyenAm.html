@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+    let size = parseInt(prompt("nhập số phần tử: "));
+    let check;
+    do {
+        check = parseInt(size) == size && size > 0 && size <= 10;
+        break;
+    } while (!check);
+    let array = new Array(size);
+    let array2= [];
+    for (let i = 0; i < array.length; i++) {
+        array[i] = parseInt(prompt('nhập vào phần tử thứ ' + i));
+        if (array[i]<0){
+            array2.push(array[i]);
+        }
+    }document.write("mãng số nguyên: "+ array +"<br>");
+    document.write("mãng số nguyên âm có trong mảng: "+ array2 +"<br>");
+</script>
+</body>
+</html>

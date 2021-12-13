@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Từ điển Anh-Việt</h2>
+<input type="text" placeholder="Nhập từ vựng" id="vocabulary"/>
+<input type="button" value="Translate" onclick="dich()"/>
+<p id="tiengViet"/>
+</body>
+<script>
+    let vocabulary = document.getElementById("vocabulary");
+    //let vocabulary=prompt("");
+    let english = ['one', 'two', 'three', 'fourd', 'five', 'six'];
+    let vietNamese = ['một', 'hai', 'ba', 'bốn', 'năm', 'sáu'];
+    dem = 0
+    function dich() {
+        for (let i = 0; i < english.length; i++) {
+            if (english[i] == vocabulary.value) {
+                dem = 0
+                document.getElementById('tiengViet').innerHTML = vietNamese[i];
+                break;
+            } else {
+                dem++
+            }
+        }if (dem != 0) {
+            alert("Không có dữ liệu")
+        }
+    }
+</script>
+</html>

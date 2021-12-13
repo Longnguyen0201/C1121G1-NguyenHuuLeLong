@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+    let size = parseInt(prompt("Nhập số phần tử: "));
+    let check;
+    do {
+        check = parseInt(size) === size && size > 0;
+
+    } while (!check);
+    let array=new Array(size);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = parseInt(prompt("Nhập giá trị phần tử thứ " + i));
+    }
+    document.write("mãng số nguyên: "+ array +"<br>");
+    document.write("mảng số nguyên đảo ngược các phần tử: "+ array.reverse());
+
+
+</script>
+</body>
+</html>

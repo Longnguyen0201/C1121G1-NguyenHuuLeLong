@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+    // let size = parseInt(prompt("nhập số phần tử: "));
+    // let check;
+    // do {
+    //     check = parseInt(size) === size && size > 0 && size <= 10;
+    //     break;
+    // } while (!check);
+    // let array = new Array(size);
+    // for (let i = 0; i < array.length; i++) {
+    //     array[i] = parseInt(prompt('nhập vào phần tử thứ ' + i));
+    // }
+    // let soV = prompt("nhập giá trị V vần tìm: ");
+    // for (let i = 0; i < array.length; i++) {
+    //     if (soV === array[i]) {
+    //         alert("V is in the array");
+    //         break;
+    //     } else {
+    //         alert("V is not in the array");
+    //         break;
+    //     }
+    // }
+    let boolean=false;
+    let soV = parseInt(prompt(" Nhập giá trị V:"));
+    let array = new Array(10);
+    for (let i = 0; i < 10; i++) {
+        array[i] = parseInt(prompt("Nhập giá trị thứ " + i));
+        if (array[i] === soV) {
+            boolean=true;
+        }
+    }
+    document.write("mãng số nguyên: "+ array +"<br>");
+    if (boolean==true){
+        alert("V is in the array");
+    }else {
+        alert("V is not in the array");
+    }
+
+</script>
+</body>
+</html>

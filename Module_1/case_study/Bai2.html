@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = parseInt(prompt("nhập chiều cao h: "))
+    for (let i = 1; i <= h; i++) {
+        for (let j = 1; j <= i; j++) {
+            if (j == 1 || j == i||i==h ) {
+                document.write("*");
+            } else {
+                document.write("<a style='color: white'>*<a>")
+            }
+
+        }document.write("<br>");
+    }
+</script>
+
+</body>
+</html>
