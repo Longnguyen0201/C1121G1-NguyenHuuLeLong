@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mang</title>
+</head>
+<body>
+<script>
+    let array= new Array(10);
+    for (let i=0;i<10;i++){
+        array[i]=parseInt(prompt("nhập giá trị thứ "+i ));
+    }document.write("Mảng ban đầu: "+ array+"<br>");
+    array.sort(function (x,y) {return y-x});
+    document.write("Mảng đã sắp xếp: "+array);
+</script>
+</body>
+</html>

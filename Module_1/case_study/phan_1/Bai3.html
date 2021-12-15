@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vẽ tam giác</title>
+</head>
+<body>
+
+<script>
+let h=prompt("nhập chiều cao h");
+for (let i=0; i<h;i++){
+    for (let j=h;j>i;j--) {
+        document.write("&nbsp;&nbsp;")
+    }
+    for (let k =0; k< (i*2-1);k++){
+        document.write("*");
+    }
+document.write("<br>");
+}
+
+</script>
+
+</body>
+</html>

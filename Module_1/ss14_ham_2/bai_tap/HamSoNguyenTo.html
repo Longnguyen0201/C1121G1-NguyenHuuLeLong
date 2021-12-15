@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm</title>
+</head>
+<body>
+<input type="text" id="soNhap"/>
+<input type="button" value="Kiểm tra" onclick="soNguyenTo()">
+
+</body>
+
+<script>
+    function isPrime(number) {
+        if (number < 2) {
+            return false
+        } else {
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    return false;
+                }
+            }
+        }
+        return true
+
+    }
+    function soNguyenTo() {
+        let soNumber=document.getElementById("soNhap");
+        let ketQua = isPrime(soNumber.value)
+        if (ketQua){
+            alert(soNumber.value +" là số nguyen tố");
+        }else {
+            alert(soNumber.value +"  không là số nguyen tố");
+        }
+
+    }
+
+</script>
+</html>

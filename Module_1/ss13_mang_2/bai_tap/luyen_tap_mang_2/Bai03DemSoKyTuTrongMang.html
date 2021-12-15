@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size = parseInt(prompt("nhập số phần tử: "));
+    let check;
+    let dem = 0;
+    do {
+        check = parseInt(size) == size && size > 0;
+        break;
+    } while (!check);
+    let array = new Array(size);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = parseInt(prompt('nhập vào phần tử thứ ' + i));
+    }
+    document.write("Mảng gồm:" + array);
+    for (let j = 0; j < array / length; j++) {
+        if (array[i] % 2 === 0 || array[i] % 2 === 1) {
+            dem++
+
+        }
+    } document.write("SỐ ký tự trong mảng là " + dem+" số.");
+</script>
+</body>
+</html>

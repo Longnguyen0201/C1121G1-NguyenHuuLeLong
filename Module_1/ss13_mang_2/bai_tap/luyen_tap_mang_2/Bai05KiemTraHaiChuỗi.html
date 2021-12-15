@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi1=prompt("nhập chuỗi 1: ");
+    let chuoi2=prompt("nhập chuỗi 2: ");
+    let soSanh=true;
+
+    if (chuoi1.length!==chuoi2.length){
+        document.write("2 chuỗi không giống nhau"+ "<br>");
+    } else {
+        for (let i=0;i<chuoi1.length;i++){
+            for (let j=0;j<chuoi2.length;j++){
+                if (chuoi1[i]===chuoi2[j]){
+                    soSanh=true
+                }else {
+                    soSanh=false
+                }
+            }
+        }
+        if ( soSanh===false){
+            document.write("2 chuỗi không giống nhau<br>");
+        }else{
+            document.write("2 chuỗi giống nhau<br>");
+        }
+
+    }
+
+
+
+</script>
+</body>
+</html>

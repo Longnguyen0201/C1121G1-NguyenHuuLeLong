@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = new Array(prompt("Nhập vào một chuỗi"))
+    let array2 = []
+
+    document.write("Mảng gồm "+array+"<br>")
+    for (let i=0; i<array.length ; i++){
+        for (let j=0; j<array[i].length; j++){
+            if(array[i][j] === "-"){
+                array[i][j] = "_"
+                array2.push("_")
+            }else{
+                array2.push(array[i][j])
+            }
+
+        }
+    }
+    document.write("Mảng sửa gồm "+array2.join("")+"<br>");
+
+</script>
+</body>
+</html>

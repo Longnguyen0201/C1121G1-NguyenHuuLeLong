@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+    let soV = parseInt(prompt(" Nhập giá trị V:"));
+    let array2=[];
+    let boolean=false;
+    let array = new Array(10);
+    for (let i = 0; i < 10; i++) {
+        array[i] = parseInt(prompt("Nhập giá trị thứ " + i));
+        if(array[i]===soV){
+            boolean=true;
+        }
+        if (array[i]!==soV){
+            array2.push(array[i]);
+        }
+    }document.write("Mảng đã cho: "+array);
+    if (boolean= true ){
+        array2.push(0);
+        document.write("Mảng đã xóa: "+array2);
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+    let array1=new Array(10);
+    let array2=new Array(10);
+    for (let i=0;i<10;i++){
+        array1[i]=parseInt(prompt("nhập giá trị thứ "+i +"của mảng 1" ));
+    } document.write("Mảng thứ nhất: "+ array1+"<br>");
+    for (let i=0;i<10;i++){
+        array2[i]=parseInt(prompt("nhập giá trị thứ "+i +"của mảng 2"));
+    }document.write("Mảng thứ hai: "+ array2+"<br>");
+    array3= array1.concat(array2);
+    document.write("Mảng gộp từ 2 mảng trên: "+ array3+"<br>");
+</script>
+</body>
+</html>
