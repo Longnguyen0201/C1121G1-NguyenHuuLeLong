@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm</title>
+
+</head>
+<body>
+<input type="button" value="kết quả" onclick="display()">
+<script>
+    function sumNumber(a,b) {
+        if (a>b){
+          return "tham số a > b"
+        }
+        return a+b
+
+    }
+    function display() {
+        let a = parseInt(prompt(" nhập số a: "));
+        let b = parseInt(prompt(" nhập số b: "));
+        document.write( sumNumber(a,b) );
+
+    }
+
+</script>
+
+</body>
+</html>
