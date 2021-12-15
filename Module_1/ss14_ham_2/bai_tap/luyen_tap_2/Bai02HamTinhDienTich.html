@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ham</title>
+</head>
+<body>
+<script>
+    const PI=3.14;
+    function tinhDienTich(r) {
+        return  r*r*PI;
+    }
+    function tinhChuVi(r) {
+        return 2*r*PI;
+    }
+
+    let banKinh= parseInt(prompt("Nhập bán kính hình tròn: "));
+    dienTich=tinhDienTich(banKinh);
+    chuVi=tinhChuVi(banKinh);
+    chuVi=parseFloat(chuVi).toFixed(2);
+    document.write("Diện tích hình tròn là: "+dienTich+"<br>");
+    document.write("Chu vi hình tròn là: "+chuVi);
+
+</script>
+
+</body>
+</html>

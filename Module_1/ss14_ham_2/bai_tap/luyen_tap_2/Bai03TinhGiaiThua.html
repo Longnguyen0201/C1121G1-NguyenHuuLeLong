@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm tính giai thừa</title>
+</head>
+<body>
+<script>
+    function giaiThua(n) {
+        if (n == 1 || n == 0) {
+            return 1
+        }
+        return giaiThua(n - 1) * n;
+    }
+
+    let nhapSo=parseInt(prompt("Nhập số: "));
+    ketQua = giaiThua(nhapSo);
+    document.write("Giai thừ của "+nhapSo+" là "+ ketQua );
+</script>
+</body>
+</html>

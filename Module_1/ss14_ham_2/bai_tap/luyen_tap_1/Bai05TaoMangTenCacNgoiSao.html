@@ -6,13 +6,25 @@
 </head>
 <body>
 <script>
+    function star(sao) {
+        let ngoiSao = ["Polaris","Aldebaran","Deneb","Vega","Altair,Dubhe","Regulus"];
+        let chomSao = ["Ursa","Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa","Major","Leo"];
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (sao ==ngoiSao[i]) {
+                return chomSao[i];
+            }
 
-    let star =[Polaris,Aldebaran,Deneb,Vega,Altair,Dubhe,Regulus];
-    let chomSao=[Ursa,Minor,Tarurus,Cygnus,Lyra,Aquila,Ursa,Major,Leo]
-    for (let i=0; i< star.length;i++ ){
-        
+        }return "";
     }
 
+
+    let nhapSao= prompt("Nhập tên ngôi sao ");
+    let sao=star(nhapSao);
+    if (sao==""){
+        document.write("không tìm thấy sao nào ");
+    }else {
+        document.write("Chòm sao tương ứng "+nhapSao+ " là: " + sao);
+    }
 </script>
 </body>
 </html>

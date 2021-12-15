@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ham</title>
+</head>
+<body>
+<script>
+    function reverseArray(array) {
+        mang=array.reverse()
+        return mang;
+    }
+
+    let array = new Array(5);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = parseInt(prompt("Nhập giá trị " + i));
+    }
+    document.write("Mảng ban đầu: "+array );
+    let daoMang=reverseArray(array);
+    document.write("<br>"+"Mảng đã đảo: " + daoMang);
+
+</script>
+</body>
+</html>

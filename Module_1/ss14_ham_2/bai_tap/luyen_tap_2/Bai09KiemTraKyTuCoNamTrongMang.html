@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm</title>
+</head>
+<body>
+<script>
+    let so = parseInt(prompt("Nhập số a: "));
+    let array = new Array(5);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = parseInt(prompt("Nhập giá trị " + i));
+    }
+    let count = 0;
+    let ketQua=kiemTra(so);
+    if (ketQua>0){
+        document.write("Có "+ketQua+" ký tự "+so+" trong mảng")
+    }else {
+        document.write("Không có giá trị trong mảng")
+    }
+
+    function kiemTra(n) {
+        for (let j = 0; j < array.length; j++) {
+            if (array[j] == n) {
+                count++
+            }
+        }
+        if (count > 0) {
+            return count
+        }
+        return -1
+    }
+</script>
+
+</body>
+</html>

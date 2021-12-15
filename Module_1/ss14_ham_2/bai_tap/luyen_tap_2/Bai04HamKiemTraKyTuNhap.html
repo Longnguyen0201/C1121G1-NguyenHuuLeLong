@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm</title>
+</head>
+<body>
+<script>
+    function kiemTraSo(i) {
+        if (i%2==0||i%2==1){
+            return true;
+        }
+        return false;
+    }
+    let n=parseInt(prompt("nhập ký tự: "));
+    let check=kiemTraSo(n);
+     if (check){
+         alert("ký tự là số");
+     }else {
+         alert("ký tự là chuỗi");
+     }
+</script>
+</body>
+</html>

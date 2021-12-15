@@ -15,18 +15,17 @@
     //let vocabulary=prompt("");
     let english = ['one', 'two', 'three', 'fourd', 'five', 'six'];
     let vietNamese = ['một', 'hai', 'ba', 'bốn', 'năm', 'sáu'];
-    dem = 0
+    let flag=false;
     function dich() {
         for (let i = 0; i < english.length; i++) {
-            if (english[i] == vocabulary.value) {
-                dem = 0
+            if (english[i] !== vocabulary.value) {
+                flag = false
+            } else {
                 document.getElementById('tiengViet').innerHTML = vietNamese[i];
                 break;
-            } else {
-                dem++
             }
-        }if (dem != 0) {
-            alert("Không có dữ liệu")
+        }if (flag){
+            alert(" không có giá trị: ")
         }
     }
 </script>
