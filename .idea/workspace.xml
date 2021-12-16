@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/UngDungQuanLySanPhamSuDungHam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_1/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/KiemTraTuDoiXung.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/sad.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss13_mang_2/bai_tap/luyen_tap_mang_1/Bai07XoaVKhoiMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/ss13_mang_2/bai_tap/luyen_tap_mang_1/Bai07XoaVKhoiMang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_1/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/KiemTraTuDoiXung.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +137,7 @@
       <workItem from="1639585747483" duration="3000" />
       <workItem from="1639585853404" duration="2552000" />
       <workItem from="1639617902899" duration="22505000" />
+      <workItem from="1639649475404" duration="429000" />
     </task>
     <servers />
   </component>
