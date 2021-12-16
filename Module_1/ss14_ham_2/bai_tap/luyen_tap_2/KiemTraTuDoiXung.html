@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ham</title>
+</head>
+<body>
+<script>
+    isPalindrome()
+    function isPalindrome(chuoi) {
+        let check = true;
+        chuoi = prompt("Nhập chuỗi");
+        let cuoiChuoi = chuoi.length - 1;
+        for (let i = 0; i < chuoi.length; i++) {
+            if (chuoi[i] === chuoi[cuoiChuoi]) {
+                cuoiChuoi--
+                check = true
+            } else {
+                check = false
+                break;
+            }
+
+        }
+        if (check === true) {
+            alert(" chuối đói xứng");
+        } else {
+            alert(" chuổi không đối xứng");
+        }
+        return isPalindrome(chuoi);
+    }
+</script>
+</body>
+</html>
