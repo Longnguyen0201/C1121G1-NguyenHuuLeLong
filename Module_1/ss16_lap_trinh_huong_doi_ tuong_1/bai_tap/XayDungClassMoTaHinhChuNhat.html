@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+        }
+
+        setChieuDai(chieuDai) {
+            this.chieuDai = chieuDai;
+        }
+
+        setChieuRong(chieuRong) {
+            this.chieuRong = chieuRong;
+        }
+
+        // setDienTich(dienTich) {
+        //     this.dienTich = dienTich;
+        // }
+
+        // setChuVi(chuVi) {
+        //     this.chuVi = chuVi;
+        // }
+
+        getChieuDai() {
+            return this.chieuDai;
+        }
+
+        getChieuRong() {
+            return this.chieuRong;
+        }
+
+        getDienTich() {
+            return this.chieuDai * this.chieuRong;
+        }
+
+        getChuVi() {
+            return (this.chieuDai + this.chieuRong) * 2;
+        }
+
+    }
+
+    let rectangle = new Rectangle();
+    let width = parseInt(prompt("nhập chiều dài:"));
+    let height = parseInt(prompt("nhập chiều rộng:"));
+    let chieuDai = rectangle.setChieuDai(width);
+    let chieuRong = rectangle.setChieuRong(height)
+    chieuDai = rectangle.getChieuDai();
+    chieuRong = rectangle.getChieuRong();
+    dienTich = rectangle.getDienTich();
+    chuVi = rectangle.getChuVi();
+    document.write(" Chiều dài hình chữ nhật là: " + chieuDai + "<br>" + "   Chiều rộng hình chữ nhật là: " + chieuRong + "<br>");
+    document.write(" Diện tích hình chữ nhật là: " + dienTich + "<br>" + "   Chu vi hình chữ nhật là: " + chuVi + "<br><br>");
+
+    document.write('<canvas id=\"myCanvas\" width=\"' + chieuDai + '\" height=\"' + chieuRong + '\" style=\"border:3px solid #d3d3d3;\">\n</canvas>')
+</script>
+</body>
+</html>

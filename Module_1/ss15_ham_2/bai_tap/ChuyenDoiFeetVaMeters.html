@@ -5,23 +5,23 @@
     <title>Ham</title>
 </head>
 <body>
-<label for="nhapso"></label><input type="text" id="nhapso">
+<label for="nhapSo"></label><input type="text" id="nhapSo">
 <label for="choose"></label><select id="choose">
     <option value="feet">Feet</option>
     <option value="meters">Meters</option>
 </select>
-<input type="button" value="Chuyển đổi" onclick="chuyendoi()"/>
+<input type="button" value="Chuyển đổi" onclick="chuyenDoi()"/>
 
 <p id="ketQua"></p>
 </body>
 <script>
 
 
-    function chuyendoi() {
+    function chuyenDoi() {
         let result = 0
         let chonHeQuyDoi=document.getElementById("choose");
-        let number=document.getElementById("nhapso");
-        if(chonHeQuyDoi.value =="feet"){
+        let number=document.getElementById("nhapSo");
+        if(chonHeQuyDoi.value ==="feet"){
             result = feetToMeter(number);
             document.getElementById("ketQua").innerHTML= "Kết quả = "+result+"meter";
         }else {

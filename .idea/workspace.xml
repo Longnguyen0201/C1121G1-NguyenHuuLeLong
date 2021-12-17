@@ -20,44 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/ChuyenDoiFeetVaMeters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/HamSoNguyenTo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/KiemTraTuDoiXung.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/UngDungQuanLySanPhamSuDungHam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_1/Bai01TaoHamAlertMessage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_1/Bai02TaoHamNhanVaoDoiSoDangSo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_1/Bai03SoSanhHaiThamSo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_1/Bai04ThemHamAlert().html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_1/Bai05TaoMangTenCacNgoiSao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai01HamTinhBinhPhuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai02HamTinhDienTich.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai03TinhGiaiThua.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai04HamKiemTraKyTuNhap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai05HamSoNguyenNhoNhatTrong3So.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai06HamKiemTraCoPhaiNguyenDuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai07DoiCho2SoNguyen.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai09KiemTraKyTuCoNamTrongMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/luyen_tap_2/bai08DaoNguocMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_1/ss16_lap_trinh_huong_doi_ tuong_1/thuc_hanh/ThucHanhXayDungLopDate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss16_lap_trinh_huong_doi_ tuong_1/bai_tap/XayDungClassMoTaHinhChuNhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_1/ss16_lap_trinh_huong_doi_ tuong_1/bai_tap/XayDungLopMoTaTemperature.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/ChuyenDoiFeetVaMeters.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/HamSoNguyenTo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/KiemTraTuDoiXung.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/UngDungQuanLySanPhamSuDungHam.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_1/Bai01TaoHamAlertMessage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_1/Bai02TaoHamNhanVaoDoiSoDangSo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_1/Bai03SoSanhHaiThamSo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_1/Bai04ThemHamAlert().html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_1/Bai05TaoMangTenCacNgoiSao.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/Bai01HamTinhBinhPhuong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/Bai02HamTinhDienTich.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/Bai03TinhGiaiThua.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/Bai04HamKiemTraKyTuNhap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/Bai05HamSoNguyenNhoNhatTrong3So.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/Bai06HamKiemTraCoPhaiNguyenDuong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/Bai07DoiCho2SoNguyen.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/Bai09KiemTraKyTuCoNamTrongMang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss14_ham_2/bai_tap/luyen_tap_2/bai08DaoNguocMang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/ChuyenDoiFeetVaMeters.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/ss15_ham_2/bai_tap/ChuyenDoiFeetVaMeters.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss16_lap_trinh_huong_doi_ tuong_1/thuc_hanh/ThucHanhXayDungLopDate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/ss16_lap_trinh_huong_doi_ tuong_1/thuc_hanh/ThucHanhXayDungLopDate.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +143,9 @@
       <workItem from="1639617902899" duration="22505000" />
       <workItem from="1639649475404" duration="529000" />
       <workItem from="1639663208889" duration="255000" />
-      <workItem from="1639663481285" duration="3909000" />
+      <workItem from="1639663481285" duration="4018000" />
+      <workItem from="1639714284267" duration="2102000" />
+      <workItem from="1639722604403" duration="13040000" />
     </task>
     <servers />
   </component>
@@ -339,6 +308,12 @@
           <url>file://$PROJECT_DIR$/module_1/ss12_mang_1/thuc_hanh/DaoNguocCacPhanTuTrongMang.html</url>
           <line>8</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/module_1/ss16_lap_trinh_huong_doi_ tuong_1/thuc_hanh/ThucHanhXayDungLopDate.html</url>
+          <line>36</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
