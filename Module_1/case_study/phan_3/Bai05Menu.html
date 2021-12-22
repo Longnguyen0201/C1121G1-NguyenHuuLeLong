@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Menu</h2>
+<ol type="1">
+    <li>Cafe</li>
+    <li>Cam vắt</li>
+    <li>Nước ép Cà rốt</li>
+    <li>Nước ép cà chua</li>
+    <li>Nước lọc</li>
+    <li>Nước Dừa</li>
+</ol>
+<p>Nhập 7 để dừng order</p>
+<!--<input type="text" placeholder=" Mời bạn chọn sô thứ tự nước uống" id="soNuoc"/>-->
+<input type="button" value="Gọi món" onclick="goiMon()"/>
+<script>
+    let total = 0;
+
+     function goiMon() {
+
+         do {
+
+             so = parseInt(prompt("Mời bạn gọi nước:"));
+             console.log(typeof so);
+             switch (so) {
+                 case 1:
+                     let soLuong1 = parseInt(prompt("nhập số lượng"));
+                     let gia1 = 12000
+                     let total1 = soLuong1 * gia1;
+                     document.write("Bạn đã gọi " + soLuong1 + " Cafe với giá 12000VND <br> số tiền " + total1 + " <br>");
+                     break;
+                 case 2:
+                     let soLuong2 = parseInt(prompt("nhập số lượng"));
+                     let gia2 = 18000
+                     let total2 = soLuong2 * gia2;
+                     document.write("Bạn đã gọi " + soLuong2 + " cam vắt với giá 18000VND <br> số tiền " + total2 + " <br>");
+                     break;
+                 case 3:
+                     let soLuong3 = parseInt(prompt("nhập số lượng"));
+                     let gia3 = 20000
+                     let total3 = soLuong3 * gia3;
+                     document.write("Bạn đã gọi " + soLuong3 + " nước ép cà rốt với giá 20000VND <br> số tiền " + total3 + " <br>");
+                     break;
+                 case 4:
+                     let soLuong4 = parseInt(prompt("nhập số lượng"));
+                     let gia4 = 20000
+                     let total4 = soLuong4 * gia4;
+                     document.write("Bạn đã gọi " + soLuong4 + " nước ép cà chua với giá 20000VND <br> số tiền " + total4 + " <br>");
+                     break;
+                 case 5:
+                     let soLuong5 = parseInt(prompt("nhập số lượng"));
+                     let gia5 = 8000
+                     let total5 = soLuong5 * gia5;
+                     document.write("Bạn đã gọi " + soLuong5 + " nước lọc với giá 8000VND <br> số tiền " + total5 + " <br>");
+                     break;
+
+                 case 6:
+                     let soLuong6 = parseInt(prompt("nhập số lượng"));
+                     let gia6 = 25000
+                     let total6 = soLuong6 * gia6;
+                     document.write("Bạn đã gọi " + soLuong6 + " nước dừa với giá 5000VND <br> sô tiền " + total6 + " <br>");
+                     break;
+                 case 7:
+                     document.write("Cảm ơn bạn đã đặt món<br>");
+                     break;
+                 default:
+                     document.write("Vui lòng nhấn số từ 1-7 <br>");
+             }
+         } while (so !== 7);
+     }
+
+
+
+</script>
+</body>
+</html>

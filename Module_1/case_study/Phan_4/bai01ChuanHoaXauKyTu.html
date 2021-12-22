@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str=prompt("nhập chuỗi kí tự:");
+    document.write(str+ "<br>");
+    let newStr= str.toLowerCase().split(" ");
+    document.write(newStr+"<br>");
+    let size= newStr.length
+
+for (let i=0;i<size;i++){
+    newStr[i]= newStr[i][0].toUpperCase()+newStr[i].slice(1);
+}
+document.write(newStr.join(" ")+"<br>");
+console.log(newStr)
+let longest;
+let max=0
+    for (let i = 0; i <size; i++ ){
+        if (newStr[i].length > max){
+        max =newStr[i].length;
+        longest = newStr[i];
+        }
+    }
+    document.write("từ dài nhất trong chuỗi: "+ longest);
+
+</script>
+
+</body>
+</html>nguyen

@@ -6,6 +6,30 @@
 </head>
 <body>
 <script>
+    let size = parseInt(prompt("nhập số phần tử "));
+    let check;
+    let numerators = new Array(size);
+    let denominators = new Array(size);
+    do {
+        check = parseInt(size) === size && size > 0;
+        break;
+    } while (!check)
+
+    for (let i = 0; i < size; i++) {
+        numerators[i] = prompt("nhập phần tử thứ: " + i);
+        denominators[i] = prompt("Nhập mẫu số phần tử thứ " + i);
+    }
+    document.write("numerators: " + numerators + "<br>");
+    document.write("denominators: " + denominators + "<br>");
+
+    let so = 0;
+    for (let i = 1; i < size; i++) {
+        if (numerators[so] * denominators[i] < numerators[i] * denominators[so]) {
+            so = i;
+        }
+    }
+    document.write( "maxFraction(numerators, denominators) = " + so);
+
 
 
 </script>
