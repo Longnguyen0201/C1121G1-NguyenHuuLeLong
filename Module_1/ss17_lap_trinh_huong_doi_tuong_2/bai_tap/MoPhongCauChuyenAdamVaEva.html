@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam và Eva</title>
+</head>
+<body>
+
+
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = 10;
+        }
+
+        getWeightApple() {
+            return this.weight;
+        }
+
+        decrease() {
+            this.weight--;
+        }
+
+        isEmty() {
+            if (this.weight == 0) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        isMale() {
+            if (this.gender == "male") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setGender(gender) {
+            this.gender = gender;
+        }
+
+        getGender() {
+            return this.gender;
+        }
+
+        say(text) {
+            console.log(this.name + " nói " + text);
+        }
+
+        checkApple(apple) {
+            if (apple.isEmty()) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        eatApple(apple) {
+            if (this.checkApple(apple)) {
+                apple.decrease();
+                this.weight++;
+            } else {
+                console.log(this.name + " nói: táo đã ăn hết");
+            }
+        }
+    }
+
+    let tao = new Apple();
+    let tao2 = new Apple();
+    let adam = new Human("Adam","male",50);
+    let eva = new Human("Eva","female",40);
+    adam.say("em ăn trước đi");
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+
+    eva.say("em ăn hết rồi rồi , anh ăn quả khác đi");
+    adam.eatApple(tao2);
+    console.log("Trọng lượng Adam: "+ adam.getWeight())
+    console.log("Trọng lượng eva: "+ eva.getWeight())
+    console.log("Trọng lượng táo1: "+ tao.getWeight())
+    console.log("Trọng lượng táo2: "+ tao2.getWeight())
+
+</script>
+</body>
+</html>

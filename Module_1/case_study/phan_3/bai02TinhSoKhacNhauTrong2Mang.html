@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mảng</title>
+</head>
+<body>
+<script>
+    let sizeA = parseInt(prompt("nhập số giá trị mảng A"));
+    let arrayA = new Array(sizeA);
+    for (let i = 0; i < sizeA; i++) {
+        arrayA[i] = parseInt(prompt("nhập giá trị thứ " + i));
+    }
+    document.write("Mảng A: " + arrayA + "<br>");
+    let sizeB = parseInt(prompt("nhập số giá trị mảng B"));
+    let arrayB = new Array(sizeB);
+    for (let i = 0; i < sizeB; i++) {
+        arrayB[i] = parseInt(prompt("nhập giá trị thứ " + i));
+    }
+    document.write("Mảng B: " + arrayB + "<br>");
+    let missValue = [];
+    if (sizeB > sizeA) {
+        for (let i = 0; i < sizeB; i++) {
+            let miss = arrayA.indexOf(arrayB[i]);
+            if (miss === -1) {
+                missValue.push(arrayB[i]);
+            }
+        }
+    } else {
+        for (let i = 0; i < sizeA; i++) {
+            let miss = arrayB.indexOf(arrayA[i]);
+            if (miss === -1) {
+                missValue.push(arrayA[i]);
+            }
+        }
+    }
+    document.write("Mảng miss value: " + missValue);
+
+</script>
+
+</body>
+</html>

@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<canvas id="canvas" height="500" width="500"></canvas>
 <script>
     class Rectangle {
         constructor(chieuDai, chieuRong) {
@@ -43,6 +44,11 @@
         getChuVi() {
             return (this.chieuDai + this.chieuRong) * 2;
         }
+        display(){
+            let cv =document.getElementById("canvas");
+            let ctx=cv.getContext('2d');
+            ctx.fillRect(0,0,this.chieuDai,chieuRong );
+        }
 
     }
 
@@ -58,7 +64,7 @@
     document.write(" Chiều dài hình chữ nhật là: " + chieuDai + "<br>" + "   Chiều rộng hình chữ nhật là: " + chieuRong + "<br>");
     document.write(" Diện tích hình chữ nhật là: " + dienTich + "<br>" + "   Chu vi hình chữ nhật là: " + chuVi + "<br><br>");
 
-    document.write('<canvas id=\"myCanvas\" width=\"' + chieuDai + '\" height=\"' + chieuRong + '\" style=\"border:3px solid #d3d3d3;\">\n</canvas>')
+    rectangle.display();
 </script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt(" nhập độ dài của mảng a"));
+    let check;
+    do {
+        check = parseInt(n) === n && n > 0;
+    } while (!check);
+    let a = new Array(n);
+    let b = new Array(n);
+    for (let j = 0; j < n; j++) {
+        a[j] = parseInt(prompt("nhập giá trị thứ" + j));
+    }document.write("Giá trị mảng a:"+ a+"<br>");
+    for (let i = 0; i < n; i++) {
+        if (i == 0) {
+            b[i] = a[i]
+        } else {
+            b[i] = b[i-1] + a[i];
+        }
+    }
+    document.write(" mảng prefix sums của a là:" + b)
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile</title>
+</head>
+<body>
+
+<h1>Nokia</h1>
+
+<input type="button" value="Soạn tin nhắn" onclick="nokia.soanTinNhan(nokia)"/>
+<input type="button" value="Gưi" onclick="nokia.guiTinNhan(nokia)"/>
+
+<h1>Iphone</h1>
+<input type="button" value="Tin nhắn đến" onclick="tinNhanDen()">
+
+<script>
+    class Mobile {
+        constructor() {
+            this.status = true;
+            this.pin = 100;
+            this.boNhoSoanThao = "";
+            this.boNhoTinDaGui = [];
+            this.boNhoTinDen;
+        }
+
+        getStatus() {
+            return this.status;
+        }
+
+        onOff() {
+            this.status = !this.status;
+        }
+        sacPin() {
+            this.pin = 100;
+
+        }
+
+        soanTinNhan(tinNhan) {
+            tinNhan = prompt(" nhập tin nhắn:")
+            this.luuTinNhanSoan.push(tinNhan);
+        }
+
+        nhanTinNhan(tinNhan) {
+            this.luuTinNhanDen.push(tinNhan);
+
+        }
+
+        guiTinNhan(mobile) {
+
+            mobile.luuTinNhanDaGui.push()
+        }
+
+        xemTinDen() {
+            alert(this.luuTinNhanDen);
+
+        }
+
+        xemTinGui() {
+            alert(this.luuTinNhanSoan);
+        }
+    }
+
+
+    let arrTinNhanSoanNokia = [];
+    let arrTinNhanGuiNokia = [];
+    let arrTinNhanDenNokia = [];
+    let arrTinNhanSoanIphone = [];
+    let arrTinNhanGuiPhone = [];
+    let arrTinNhanDenIphone = [];
+    let nokia = new Mobile(100, arrTinNhanSoanNokia, arrTinNhanGuiNokia, arrTinNhanDenNokia);
+    let iphone = new Mobile(100, arrTinNhanSoanIphone, arrTinNhanGuiPhone, arrTinNhanDenIphone);
+    console.log(nokia)
+    console.log(iphone)
+
+
+    function tinNhanDen(iphone) {
+        alert(arrTinNhanDenIphone);
+    }
+
+</script>
+</body>
+</html>

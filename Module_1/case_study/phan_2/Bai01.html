@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>baitap</title>
+    <title>Tính thuế thu nhập cá nhân</title>
 </head>
 <body>
+<h2> Tính thu nhập lương nhân viên</h2>
+<br>
+<input type="text" placeholder="Nhập lương nhân viên (VND)" id="nhapLuong"/>
+<input type="button" value="Nhập" onclick="tinhThue()"/>
+<p> Số lương nhận thực lãnh của nhân viên là: <span id="ketQua"></span> VND </p>
+
 
 </body>
+<script>
+    function tinhThue() {
+        let luongRong = 0;
+        let luong = document.getElementById("nhapLuong").value;
+        if (luong >= 15000000) {
+            luongRong = luong-(luong * 0.2);
+        } else if (luong >= 70000) {
+            luongRong = luong-(luong * 0.1);
+        } else {
+            luongRong = luong-(luong * 0.05);
+        }
+        // document
+        // document. write("số lương thực lãnh của nhân viên là: "+ luongRong);
+        document.getElementById("ketQua").innerHTML= luongRong;
+    }
+
+
+</script>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra một ký tự trong bản tiếng anh</title>
+</head>
+<body>
+<input type="text" id="nhapKyTu" placeholder="Nhập ký tự cần kiểm tra">
+<input type="button" value="Kiểm tra" onclick="kiemTra()">
+</body>
+<script>
+    function kiemTra() {
+        let kyTu = document.getElementById("nhapKyTu").value;
+        kyTu=kyTu.toLowerCase();
+        switch (kyTu) {
+            case "o" :
+            case "u":
+            case "i":
+            case "a":
+            case "e":
+                alert("ký tự nhập vào là nguyên âm");
+                break;
+            default:
+                alert("ký tự nhập vào là phụ âm");
+
+        }
+
+
+    }
+</script>
+</html>
