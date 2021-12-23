@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s = "cabca"
+    let arrS= s.split("");
+    console.log(arrS);
+    let sizeArr=arrS.length
+    for (let i=0;i< sizeArr;i++){
+        for (let j=i+1;j<sizeArr;j++){
+            if (arrS[i]===arrS[j]){
+                arrS.splice(j,1);
+            }
+        }
+    }
+    document.write(arrS);
+</script>
+</body>
+</html>

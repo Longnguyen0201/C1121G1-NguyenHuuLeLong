@@ -13,7 +13,7 @@
     let size= newStr.length
 
 for (let i=0;i<size;i++){
-    newStr[i]= newStr[i][0].toUpperCase()+newStr[i].slice(1);
+    newStr[i]= (newStr[i].charAt(0)).toUpperCase()+newStr[i].slice(1);
 }
 document.write(newStr.join(" ")+"<br>");
 console.log(newStr)

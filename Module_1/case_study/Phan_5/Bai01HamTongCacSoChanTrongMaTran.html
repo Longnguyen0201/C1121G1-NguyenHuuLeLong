@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt("nhập số m"));
+    let n = parseInt(prompt("nhập số n"));
+    let array=new Array(m);
+    let data=[];
+    let check;
+    do {
+        check = parseInt(m) === m && parseInt(n) === n && n > 0 && m > 0;
+    } while (!check);
+    for (let i=0;i<m;i++){
+        array[i]=new Array(n);
+        for (let j=0;j<n;j++){
+            array[i][j]= parseInt(prompt("nhập phần tử thứ"+ j));
+            if (array[i][j]%2===0){
+                data.push(array[i][j]);
+            }
+        }
+    }
+    let total = 0;
+    for (let i=0; i< data.length;i++){
+        total= total + data[i];
+    }
+    console.log(array);
+    console.log(data);
+    console.log(total);
+</script>
+</body>
+</html>
