@@ -6,11 +6,36 @@
 </head>
 <body>
 <script>
+    // let m = parseInt(prompt("nhập số m"));
+    // let n = parseInt(prompt("nhập số n"));
+    // let array=new Array(m);
+    // let data=[];
+    // let check;
+    // do {
+    //     check = parseInt(m) === m && parseInt(n) === n && n > 0 && m > 0;
+    // } while (!check);
+    // for (let i=0;i<m;i++){
+    //     array[i]=new Array(n);
+    //     for (let j=0;j<n;j++){
+    //         array[i][j]= parseInt(prompt("nhập phần tử thứ"+ j));
+    //         if (array[i][j]%2===0){
+    //             data.push(array[i][j]);
+    //         }
+    //     }
+    // }
+    // let total = 0;
+    // for (let i=0; i< data.length;i++){
+    //     total= total + data[i];
+    // }
+    // console.log(array);
+    // console.log(data);
+    // console.log(total);
+
     let m = parseInt(prompt("nhập số m"));
     let n = parseInt(prompt("nhập số n"));
     let array=new Array(m);
-    let data=[];
     let check;
+    let total=0
     do {
         check = parseInt(m) === m && parseInt(n) === n && n > 0 && m > 0;
     } while (!check);
@@ -18,15 +43,21 @@
         array[i]=new Array(n);
         for (let j=0;j<n;j++){
             array[i][j]= parseInt(prompt("nhập phần tử thứ"+ j));
-            if (array[i][j]%2===0){
-                data.push(array[i][j]);
-            }
         }
     }
-    let total = 0;
-    for (let i=0; i< data.length;i++){
-        total= total + data[i];
+    tinhTong();
+    function tinhTong() {
+        for (let i=0; i< m;i++){
+            for (let j=0;j<n;j++){
+                if (array[i][j]%2===0){
+                    total+= array[i][j];
+                }
+            }
+        }
+        document.write("Tổng các số chẵn là trong mảng là: "+total) ;
     }
+
+
     console.log(array);
     console.log(data);
     console.log(total);

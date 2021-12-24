@@ -9,7 +9,6 @@
     let size = parseInt(prompt("nhập số m"));
     let size2 = parseInt(prompt("nhập số n"));
     let array = new Array(size);
-    let max = 0;
     let check;
     do {
         check = parseInt(size) === size && parseInt(size2) === size2 && size > 0 && size2 > 0;
@@ -28,19 +27,28 @@
             // // }
         }
     }
-    console.log(array);
+    document.write(array+"<br>");
+    timMinMax()
 
-    let min = array[0][0];
-    for (let i = 0; i < size; i++) {
-        for (let j = 0; j < size2; j++) {
-            if (array[i][j]>max){
-                max=array[i][j];
-            }
-            if (array[i][j] < min) {
-                min = array[i][j];
+
+    function timMinMax(){
+        let max =0;
+        let min = array[0][0];
+        for (let i = 0; i < size; i++) {
+            for (let j = 0; j < size2; j++) {
+                if (array[i][j]>max){
+                    max=array[i][j];
+                }
+                if (array[i][j] < min) {
+                    min = array[i][j];
+                }
             }
         }
+        document.write("Số lớn nhât trong mảng 2 chiều là: "+ max+"<br>");
+        document.write("Số nhỏ nhât trong mảng 2 chiều là: "+ min);
     }
+
+
     console.log(max);
     console.log(min);
 
