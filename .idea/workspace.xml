@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="" />
+    <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/tạp code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -154,7 +156,10 @@
       <workItem from="1640222447026" duration="12973000" />
       <workItem from="1640242109679" duration="10374000" />
       <workItem from="1640310155119" duration="599000" />
-      <workItem from="1640321252896" duration="8304000" />
+      <workItem from="1640321252896" duration="8903000" />
+      <workItem from="1640417383415" duration="24000" />
+      <workItem from="1640417522048" duration="4302000" />
+      <workItem from="1640423536077" duration="5708000" />
     </task>
     <servers />
   </component>
@@ -189,11 +194,12 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="81" y="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.860@0.0.1440.860" timestamp="1639445243024" />
-    <state x="500" y="185" key="FileChooserDialogImpl" timestamp="1639666804949">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="556" y="185" key="FileChooserDialogImpl" timestamp="1640417395410">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1639666804949" />
     <state x="-940" y="185" key="FileChooserDialogImpl/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1638705751518" />
+    <state x="556" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1640417395410" />
     <state width="776" height="178" key="GridCell.Tab.0.bottom" timestamp="1640252496525">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -339,6 +345,12 @@
           <url>file://$PROJECT_DIR$/module_1/ss16_lap_trinh_huong_doi_ tuong_1/thuc_hanh/ThucHanhXayDungLopDate.html</url>
           <line>36</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai09KiemTraKyTuCoNamTrongMang.html</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
