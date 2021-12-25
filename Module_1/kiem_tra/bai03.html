@@ -2,9 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bai 3</title>
 </head>
 <body>
+<script>
+    let size = parseInt(prompt("Nhập số phần tử trong mảng"));
+    let result = [];
+    let check;
+    do {
+        check = parseInt(size) === size && size > 0;
+        break;
+    } while (!check);
+    let array = new Array(size)
+    for (let i = 0; i < size; i++) {
+        array[i] = parseInt(prompt("Nhập giá trị " + i));
+    }
+    document.write("Mảng đã nhập:" + array + "<br>");
 
+    for (let i = 0; i < size; i++) {
+        if (checkFibonaci(array[i]) === true) {
+            result.push(array[i]);
+        }
+    }
+    document.write("Mảng các số fibonaci: " + result + "<br>");
+
+    let sortResult = result.sort(function (x, y) {
+        return x - y;
+    });
+    document.write("mảng các số fibonaci (đã được sắp xếp tăng dần ):" + sortResult);
+
+    function checkFibonaci(number) {
+        let f = 0, f0 = 0, f1 = 0
+        let arrFibonacci = [];
+        for (let i = 0; i < 20; i++) {
+            if (i === 0) {
+                f = 1;
+                f1 = 1;
+                arrFibonacci.push(f);
+            } else {
+                f = f0 + f1;
+                f0 = f1;
+                f1 = f;
+                arrFibonacci.push(f);
+            }
+        }
+        console.log(arrFibonacci);
+        if (arrFibonacci.indexOf(number) !== -1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
 </body>
 </html>

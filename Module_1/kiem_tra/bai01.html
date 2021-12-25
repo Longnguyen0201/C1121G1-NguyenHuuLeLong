@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bai 1</title>
 </head>
 <body>
+<script>
+    let n = parseInt(prompt("Nhập số phần tử trong mảng"));
+    let sum = 0;
+    let count = 0;
+    let check;
+    do {
+        check = parseInt(n) === n && n > 0;
+        break;
+    } while (!check);
+    let array = new Array(n)
+    for (let i = 0; i < n; i++) {
+        array[i] = parseInt(prompt("Nhập giá trị " + i));
+    }
+    document.write("Mảng vừa nhập: " + array + "<br>");
+
+
+    for (let i = 0; i < n; i += 3) {
+        if (array[i] % 5 === 0) {
+            sum += array[i];
+            count++;
+        }
+    }
+    document.write("kết quả trung bình của các phần tử chia hết cho 5" +
+        " ở vị trí chia hết cho 3 là:  " + sum / count);
+</script>
 
 </body>
 </html>

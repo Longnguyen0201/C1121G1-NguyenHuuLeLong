@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bai 2</title>
 </head>
 <body>
+<script>
+    let string = prompt(" Nhập chuỗi cần chuyển đồi");
+    document.write("Chuỗi nhập: " + string + "<br>");
+    chuyenDoi(string);
+
+    function chuyenDoi(str) {
+        newStr = str.split(" ");
+        if (newStr.length === 1) {
+            alert("Chuỗi chỉ có 1 từ nên không cần viết tắc");
+        } else {
+            for (let i = 0; i < newStr.length; i++) {
+                newStr[i] = (newStr[i].charAt(0)).toUpperCase();
+            }
+            document.write("Chuổi viết tắc: " + newStr.join(""));
+        }
+
+    }
+</script>
 
 </body>
 </html>
