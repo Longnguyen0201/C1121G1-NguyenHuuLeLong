@@ -17,8 +17,10 @@ public class AddElementInArray {
         if (index <= -1 || index >= array.length - 1) {
             System.out.println("Do not add element in array");
         }
-        for (int i = index; i < array.length-1; i++) {
-            array[i+1] = array[i];
+        for (int i = array.length-1 ; i > index; i--) {
+
+            array[i]= array[i-1];
+
 
         }
         array[index] = elementValue;
