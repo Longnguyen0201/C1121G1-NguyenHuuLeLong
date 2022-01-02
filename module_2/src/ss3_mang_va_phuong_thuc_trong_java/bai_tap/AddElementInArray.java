@@ -1,6 +1,5 @@
 package ss3_mang_va_phuong_thuc_trong_java.bai_tap;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
