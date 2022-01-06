@@ -38,4 +38,6 @@ public class StudentManager {
             }
         }
     }
+    public  void deleteStudent(){
+    }
 }
