@@ -5,19 +5,19 @@ import java.util.Stack;
 
 public class BracketQueue {
     public static void main(String[] args) {
-        Scanner input =new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print(" Enter string : ");
         String string = input.nextLine();
-        System.out.println( string);
+        System.out.println(string);
 
-        if (checkBracket(string)){
+        if (checkBracket(string)) {
             System.out.println(" Well");
-        }else {
+        } else {
             System.out.println(" Not well");
         }
     }
 
-    public static boolean checkBracket(String string){
+    public static boolean checkBracket(String string) {
         Stack<Character> stack = new Stack<>();
         char symbol;
         boolean flag = false;
@@ -36,10 +36,9 @@ public class BracketQueue {
                 }
             }
         }
-        if (!stack.empty()){
+        if (!stack.empty()) {
             flag = false;
         }
         return flag;
     }
-
 }
