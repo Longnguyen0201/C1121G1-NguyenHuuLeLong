@@ -97,10 +97,13 @@ public class ProductService implements IProductService {
         int choose = Integer.parseInt(input.nextLine());
         switch (choose) {
             case 1:
-                SortPrice sortPrice = new SortPrice();
-                Collections.sort(product,sortPrice);
+                SortPriceIncrease sortPriceIncrease = new SortPriceIncrease();
+                Collections.sort(product,sortPriceIncrease);
                 break;
             case 2:
+                SortPriceReduce sortPriceIncreaseReduce = new SortPriceReduce();
+                Collections.sort(product, sortPriceIncreaseReduce);
+                break;
         }
 
 
