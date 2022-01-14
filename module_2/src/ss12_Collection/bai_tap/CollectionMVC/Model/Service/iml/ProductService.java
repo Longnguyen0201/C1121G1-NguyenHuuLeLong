@@ -108,6 +108,19 @@ public class ProductService implements IProductService {
 
 
     }
+
+    @Override
+    public void searchProduct() {
+        System.out.print(" Enter name's product you want search: ");
+        String name = input.nextLine();
+        for (int i = 0; i < product.size(); i++) {
+            if (product.get(i).getName().equals(name)){
+                System.out.println(product.get(i));
+            }else {
+                System.out.println(name+" not available ");
+            }
+        }
+    }
 }
 
 

@@ -11,4 +11,6 @@ public interface IProductService {
   void editProduct();
 
   void sortPriceProduct();
+
+  void searchProduct();
 }

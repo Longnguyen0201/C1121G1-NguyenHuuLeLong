@@ -18,8 +18,9 @@ public class ProductController {
                     "2. Edit Product \n" +
                     "3. Remove Product\n" +
                     "4. Display Product \n" +
-                    "5. Sort Product \n" +
-                    "6. Exit \n");
+                    "5. Search Product\n"+
+                    "6. Sort Product \n" +
+                    "7. Exit \n");
             System.out.print("Enter your choose: ");
             choose = Integer.parseInt(input.nextLine());
             switch (choose) {
@@ -36,8 +37,11 @@ public class ProductController {
                     productService.displayProduct();
                     break;
                 case 5:
-                    productService.sortPriceProduct();
+                    productService.searchProduct();
+                    break;
                 case 6:
+                    productService.sortPriceProduct();
+                case 7:
                     break;
                 default:
                     System.out.println("This option is not available");
