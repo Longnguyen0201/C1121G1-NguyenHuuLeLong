@@ -1,6 +1,6 @@
-package ss12_Collection.bai_tap.CollectionMVC.Model.Service.iml;
+package ss12_Collection.bai_tap.collectionMVC.model.Service.iml;
 
-import ss12_Collection.bai_tap.CollectionMVC.Model.Model.ProductModel;
+import ss12_Collection.bai_tap.collectionMVC.model.model.ProductModel;
 
 import java.util.Comparator;
 

@@ -1,6 +1,9 @@
-package ss12_Collection.bai_tap.CollectionMVC.Model.Service.iml;
+package ss12_Collection.bai_tap.collectionMVC.model.Service.iml;
 
-import ss12_Collection.bai_tap.CollectionMVC.Model.Model.ProductModel;
+import ss12_Collection.bai_tap.collectionMVC.model.Service.IProductService;
+import ss12_Collection.bai_tap.collectionMVC.model.Service.iml.SortPriceIncrease;
+import ss12_Collection.bai_tap.collectionMVC.model.Service.iml.SortPriceReduce;
+import ss12_Collection.bai_tap.collectionMVC.model.model.ProductModel;
 
 import java.util.*;
 
@@ -57,29 +60,23 @@ public class ProductService implements IProductService {
         for (int i = 0; i < product.size(); i++) {
             if (product.get(i).getId() == id) {
                 System.out.println(" Enter the content you want to edit\n" +
-                        "1. ID\n" +
-                        "2. Name\n" +
-                        "3. Price\n" +
-                        "4. Exit\n");
+                        "1. Name\n" +
+                        "2. Price\n" +
+                        "3. Exit\n");
                 System.out.print("Your choose: ");
                 int choose = Integer.parseInt(input.nextLine());
                 switch (choose) {
                     case 1:
                         System.out.print("Enter new Id: ");
-                        int newId = Integer.parseInt(input.nextLine());
-                        product.get(i).setId(newId);
-                        break;
-                    case 2:
-                        System.out.print("Enter new Id: ");
                         String newName = input.nextLine();
                         product.get(i).setName(newName);
                         break;
-                    case 3:
+                    case 2:
                         System.out.print("Enter new Id: ");
                         double newPrice = Double.parseDouble(input.nextLine());
                         product.get(i).setPrice(newPrice);
                         break;
-                    case 4:
+                    case 3:
                         break;
                 }
             }
@@ -111,14 +108,14 @@ public class ProductService implements IProductService {
 
     @Override
     public void searchProduct() {
-        System.out.print(" Enter name's product you want search: ");
+        System.out.print("Enter name's product you want search: ");
         String name = input.nextLine();
         for (int i = 0; i < product.size(); i++) {
-            if (product.get(i).getName().equals(name)){
-                System.out.println(product.get(i));
-            }else {
-                System.out.println(name+" not available ");
+            if (product.get(i).getName().equals(name)) {
+                System.out.println(product.get(i).toString());
+                break;
             }
+            System.out.println(name +" not available ");
         }
     }
 }

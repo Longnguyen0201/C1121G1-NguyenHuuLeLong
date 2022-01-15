@@ -1,4 +1,4 @@
-package ss12_Collection.bai_tap.CollectionMVC.Model.Service.iml;
+package ss12_Collection.bai_tap.collectionMVC.model.Service;
 
 public interface IProductService {
   void addProduct();

@@ -1,7 +1,6 @@
-package ss12_Collection.bai_tap.CollectionMVC.Controller;
+package ss12_Collection.bai_tap.collectionMVC.controller;
 
-import ss12_Collection.bai_tap.CollectionMVC.Model.Service.iml.IProductService;
-import ss12_Collection.bai_tap.CollectionMVC.Model.Service.iml.ProductService;
+import ss12_Collection.bai_tap.collectionMVC.model.Service.iml.ProductService;
 
 import java.util.Scanner;
 

@@ -1,6 +1,4 @@
-package ss12_Collection.bai_tap.CollectionMVC.Model.Model;
-
-import java.util.Comparator;
+package ss12_Collection.bai_tap.collectionMVC.model.model;
 
 public class ProductModel implements Comparable <ProductModel> {
     private int id;
