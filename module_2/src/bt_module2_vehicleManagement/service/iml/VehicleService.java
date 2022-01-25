@@ -13,9 +13,9 @@ import java.util.Scanner;
 
 public class VehicleService implements IVehicleService {
     Scanner input = new Scanner(System.in);
-    private static BrandService brandService = new BrandService();
-    private static List<Vehicle> carArrayList = new ArrayList<>();
-    private static List<Vehicle> deletedList = new ArrayList<>();
+    private static vehicleManagement.service.iml.BrandService brandService = new vehicleManagement.service.iml.BrandService();
+    private static List<Car> carArrayList = new ArrayList<>();
+    private static List<Truck> deletedList = new ArrayList<>();
 
     static {
         Car car1 = new Car("43A-212.56", "Toyota", 2019, "Dulich", "Nguyễn Văn A", 5);
@@ -26,7 +26,7 @@ public class VehicleService implements IVehicleService {
         carArrayList.add(car3);
     }
 
-    private static List<Vehicle> truckArrayList = new ArrayList<>();
+    private static List<Truck> truckArrayList = new ArrayList<>();
 
     static {
         Truck truck1 = new Truck("43C-012.34", "Huyndai", 2019, "Nguyễn Văn A", 3);
@@ -37,7 +37,7 @@ public class VehicleService implements IVehicleService {
         truckArrayList.add(truck3);
     }
 
-    private static List<Vehicle> motorcycleArrayList = new ArrayList<>();
+    private static List<Motorcycle> motorcycleArrayList = new ArrayList<>();
 
     static {
         Motorcycle motorcycle1 = new Motorcycle("43-K1-678.56", "Yamaha", 2019, "Nguyễn Văn A", 100);
