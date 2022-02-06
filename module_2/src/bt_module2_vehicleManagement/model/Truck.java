@@ -1,6 +1,6 @@
 package vehicleManagement.model;
 
-public class Truck extends Vehicle {
+public class Truck extends vehicleManagement.model.Vehicle {
     private  int tonnage;
 
     public Truck(String numberPlate, String nameBrand, int yearManufacture, String owner,int tonnage) {

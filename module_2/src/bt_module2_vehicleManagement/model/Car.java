@@ -1,6 +1,6 @@
 package vehicleManagement.model;
 
-public class Car extends Vehicle {
+public class Car extends vehicleManagement.model.Vehicle {
     private int seats;
     private String carType;
 

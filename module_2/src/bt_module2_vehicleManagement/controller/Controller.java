@@ -2,7 +2,7 @@ package vehicleManagement.controller;
 
 
 
-import vehicleManagement.service.iml.VehicleService;
+import bt_module2_vehicleManagement.service.iml.VehicleService;
 
 import java.util.Scanner;
 
