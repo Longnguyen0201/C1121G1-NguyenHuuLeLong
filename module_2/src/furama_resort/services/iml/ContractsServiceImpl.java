@@ -2,6 +2,7 @@ package furama_resort.services.iml;
 
 import furama_resort.models.Booking;
 import furama_resort.models.Contracts;
+import furama_resort.models.Facility;
 import furama_resort.services.IContractsService;
 
 import java.io.*;
@@ -11,6 +12,7 @@ public class ContractsServiceImpl implements IContractsService {
     Scanner scanner = new Scanner(System.in);
     private final String CONTRACTS_LIST = "src/furama_resort/data/contracts.csv";
     Queue<Contracts> contractList = readFile(CONTRACTS_LIST);
+    BookingServiceImpl bookingService = new BookingServiceImpl();
 
     public Queue<Contracts> readFile(String filePath) {
         Queue<Contracts> list = new ArrayDeque<>();
@@ -47,11 +49,13 @@ public class ContractsServiceImpl implements IContractsService {
 
     @Override
     public void createContracts() {
-        Set<Booking> bookingList = new BookingServiceImpl().bookingsList;
+        Set<Booking> bookingList = bookingService.bookingsList;
+        List<Booking> bookingContract = new ArrayList<>();
         Queue<Booking> newBookingList = new ArrayDeque<>();
         newBookingList.addAll(bookingList);
         while (newBookingList.size() > 0) {
             if (newBookingList.peek().getTypeService().equals("Room")) {
+                bookingContract.add(newBookingList.peek());
                 newBookingList.poll();
             } else {
                 Booking booking = newBookingList.peek();
@@ -68,12 +72,39 @@ public class ContractsServiceImpl implements IContractsService {
                 contracts.setCustomerCode(booking.getCustomerCode());
 
                 contractList.add(contracts);
+
                 writeFile(contracts, CONTRACTS_LIST);
+//               bookingService.writeFile();
                 newBookingList.poll();
             }
+        }
+        writeFileBooking(convertListToString(bookingContract),BookingServiceImpl.BOOKING_FILE,false);
+    }
 
+    private List<String> convertListToString(List<Booking> bookingList){
+        List<String> stringList = new ArrayList<>();
+        System.out.println("đã tới");
+        for (Booking booking: bookingList){
+            stringList.add(booking.writeToFile());
+        }
+        return stringList;
+    }
+    private void writeFileBooking (List<String> stringList, String filePath, boolean append){
+        try {
+            File file =new File(filePath);
+            file.delete();
+            FileWriter fileWriter = new FileWriter(file,append);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            for (String booking : stringList) {
+                bufferedWriter.write(booking);
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
+
 
     @Override
     public void displayContracts() {

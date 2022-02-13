@@ -34,31 +34,36 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     @Override
     public void addEmployee() {
-        System.out.println("Enter code of new Employee: ");
-        int codeEmployee = Integer.parseInt(scanner.nextLine());
-        System.out.println("Enter name of new Employee:");
-        String name = scanner.nextLine();
-        System.out.println("Enter birthday of new Employee:");
-        String birthday = scanner.nextLine();
-        System.out.println("Enter gender of new Employee:");
-        String gender = scanner.nextLine();
-        System.out.println("Enter ID of new Employee: ");
-        String id = scanner.nextLine();
-        System.out.println("Enter Phone number of new Employee: ");
-        String phoneNumber = scanner.nextLine();
-        System.out.println("Enter email of new Employee:");
-        String email = scanner.nextLine();
-        System.out.println("Enter academic level of new Employee:");
-        String level = scanner.nextLine();
-        System.out.println("Enter position of new Employee:");
-        String position = scanner.nextLine();
-        System.out.println("Enter salary number of new Employee: ");
-        int salary = Integer.parseInt(scanner.nextLine());
 
-        Employee newEmployee = new Employee(codeEmployee, name, birthday, gender, id, phoneNumber, email, level, position, salary);
-//        employeeList.add(newEmployee);
-        this.writeFile(newEmployee,EMPLOYEE_FILE);
-        System.out.println("Add new employee successfully.");
+        try {
+            System.out.println("Enter code of new Employee (Ex: 123,231,..): ");
+            int codeEmployee = Integer.parseInt(scanner.nextLine());
+            System.out.println("Enter name of new Employee:");
+            String name = scanner.nextLine();
+            System.out.println("Enter birthday of new Employee:");
+            String birthday = scanner.nextLine();
+            System.out.println("Enter gender of new Employee:");
+            String gender = scanner.nextLine();
+            System.out.println("Enter ID of new Employee: ");
+            String id = scanner.nextLine();
+            System.out.println("Enter Phone number of new Employee: ");
+            String phoneNumber = scanner.nextLine();
+            System.out.println("Enter email of new Employee:");
+            String email = scanner.nextLine();
+            System.out.println("Enter academic level of new Employee:");
+            String level = scanner.nextLine();
+            System.out.println("Enter position of new Employee:");
+            String position = scanner.nextLine();
+            System.out.println("Enter salary number of new Employee (Ex: 10000000): ");
+            int salary = Integer.parseInt(scanner.nextLine());
+            Employee newEmployee = new Employee(codeEmployee, name, birthday, gender, id, phoneNumber, email, level, position, salary);
+            employeeList.add(newEmployee);
+            this.writeFile(newEmployee,EMPLOYEE_FILE);
+            System.out.println("Add new employee successfully.");
+        }catch (Exception e){
+            System.out.println("wrong format input ");
+        }
+
     }
 
     @Override
@@ -69,59 +74,59 @@ public class EmployeeServiceImpl implements IEmployeeService {
             if (employee.getCode() == codeEdit) {
                 int choose;
                do  {
-                    System.out.println("1.Employee code\n" +
-                            "2.Name\n" +
-                            "3.Birthday\n" +
-                            "4.Gender\n" +
-                            "5.ID number\n" +
-                            "6.Phone number\n" +
-                            "7.Email\n" +
-                            "8.Level\n" +
-                            "9.Position\n" +
-                            "10.Salary\n" +
+                    System.out.println(
+                            "1.Name\n" +
+                            "2.Birthday\n" +
+                            "3.Gender\n" +
+                            "4.ID number\n" +
+                            "5.Phone number\n" +
+                            "6.Email\n" +
+                            "7.Level\n" +
+                            "8.Position\n" +
+                            "9.Salary\n" +
                             "0.Exit\n" +
                             "Choose section you want to edit:");
                     choose = Integer.parseInt(scanner.nextLine());
                     switch (choose){
                         case 1:
-                            System.out.println("Enter new code of Employee:");
-                            employee.setCode(Integer.parseInt(scanner.nextLine()));
-                            break;
-                        case 2:
                             System.out.println("Enter new name of Employee:");
                             employee.setName(scanner.nextLine());
                             break;
-                        case 3:
+                        case 2:
                             System.out.println("Enter new birthday of Employee:");
                             employee.setBirthday(scanner.nextLine());
                             break;
-                        case 4:
+                        case 3:
                             System.out.println("Enter new gender of Employee:");
                             employee.setGender(scanner.nextLine());
                             break;
-                        case 5:
+                        case 4:
                             System.out.println("Enter new ID of Employee:");
                             employee.setIdNumber(scanner.nextLine());
                             break;
-                        case 6:
+                        case 5:
                             System.out.println("Enter new phone number of Employee:");
                             employee.setPhoneNumber(scanner.nextLine());
                             break;
-                        case 7:
+                        case 6:
                             System.out.println("Enter new email of Employee:");
                             employee.setEmail(scanner.nextLine());
                             break;
-                        case 8:
+                        case 7:
                             System.out.println("Enter new level of Employee:");
                             employee.setLevel(scanner.nextLine());
                             break;
-                        case 9:
+                        case 8:
                             System.out.println("Enter new position of Employee:");
                             employee.setPosition(scanner.nextLine());
                             break;
-                        case 10:
-                            System.out.println("Enter new salary of Employee:");
-                            employee.setSalary(Integer.parseInt(scanner.nextLine()));
+                        case 9:
+                            try {
+                                System.out.println("Enter new salary of Employee:");
+                                employee.setSalary(Integer.parseInt(scanner.nextLine()));
+                            }catch (Exception e){
+                                System.out.println("Wrong format input");
+                            }
                             break;
                         case 0:
                             break;

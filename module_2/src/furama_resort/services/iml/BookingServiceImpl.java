@@ -8,14 +8,15 @@ import furama_resort.services.IFacilityService;
 
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.TreeSet;
 
 public class BookingServiceImpl implements IBookingService {
     Scanner scanner = new Scanner(System.in);
 
-     static final String BOOKING_FILE = "src/furama_resort/data/booking.csv";
-     TreeSet<Booking> bookingsList = readFile(BOOKING_FILE);
+    static final String BOOKING_FILE = "src/furama_resort/data/booking.csv";
+    TreeSet<Booking> bookingsList = readFile(BOOKING_FILE);
 
 
     //    protected static TreeSet<Booking> bookingTreeSet =new TreeSet<>(new BookingComparator());
@@ -44,9 +45,9 @@ public class BookingServiceImpl implements IBookingService {
         return bookingList;
     }
 
-    private void writeFile(Booking booking, String filePath){
+    public void writeFile(Booking booking, String filePath) {
         try {
-            FileWriter fileWriter = new FileWriter(filePath,true);
+            FileWriter fileWriter = new FileWriter(filePath, true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(booking.writeToFile());
             bufferedWriter.newLine();
@@ -80,50 +81,53 @@ public class BookingServiceImpl implements IBookingService {
         Booking booking = new Booking(bookingCode, startDate, endDate, customerCode, nameService, typeService);
         bookingsList.add(booking);
 
-        writeFile(booking,BOOKING_FILE);
+        writeFile(booking, BOOKING_FILE);
         IFacilityService facilityService = new FacilityServiceImpl();
         facilityService.useFacility(nameService);
     }
 
     @Override
     public void displayBookingList() {
+        bookingsList = readFile(BOOKING_FILE);
         for (Booking book : bookingsList) {
             System.out.println(book);
         }
     }
 
-    public int choiceCustomerCode(){
+    public int choiceCustomerCode() {
         CustomerServiceImpl customerService = new CustomerServiceImpl();
         customerService.displayCustomer();
         System.out.println("Choice customer code: ");
         int customerCode = Integer.parseInt(scanner.nextLine());
-        for (Customer customer: customerService.customerList){
-            if (customerCode == customer.getCode()){
+        for (Customer customer : customerService.customerList) {
+            if (customerCode == customer.getCode()) {
                 return customerCode;
             }
         }
         return 0;
     }
-    public Facility choiceService(){
+
+    public Facility choiceService() {
         FacilityServiceImpl facilityService = new FacilityServiceImpl();
         facilityService.displayFacility();
         System.out.println("Choice facility(by ID)");
         String choiceFacility = scanner.nextLine();
-        for (Facility facility: facilityService.villaList.keySet()){
-            if (choiceFacility.equals(facility.getIdFacility())){
+        for (Facility facility : facilityService.villaList.keySet()) {
+            if (choiceFacility.equals(facility.getIdFacility())) {
                 return facility;
             }
         }
-        for (Facility facility: facilityService.houseList.keySet()){
-            if (choiceFacility.equals(facility.getIdFacility())){
+        for (Facility facility : facilityService.houseList.keySet()) {
+            if (choiceFacility.equals(facility.getIdFacility())) {
                 return facility;
             }
         }
-        for (Facility facility: facilityService.roomList.keySet()){
-            if (choiceFacility.equals(facility.getIdFacility())){
+        for (Facility facility : facilityService.roomList.keySet()) {
+            if (choiceFacility.equals(facility.getIdFacility())) {
                 return facility;
             }
         }
         return null;
     }
 }
+

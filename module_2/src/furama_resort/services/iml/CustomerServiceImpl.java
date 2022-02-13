@@ -38,7 +38,7 @@ public class CustomerServiceImpl implements ICustomerService {
 
     public void writeFile(Customer customer, String filePath) {
         try {
-            FileWriter fileWriter = new FileWriter(filePath,true);
+            FileWriter fileWriter = new FileWriter(filePath, true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(customer.writeToFile());
             bufferedWriter.newLine();
@@ -75,9 +75,12 @@ public class CustomerServiceImpl implements ICustomerService {
     @Override
     public void addCustomer() {
         Customer customer = new Customer();
-        System.out.println("Enter code of new Customer:");
-        customer.setCode(Integer.parseInt(scanner.nextLine()));
-
+        try {
+            System.out.println("Enter code of new Customer:");
+            customer.setCode(Integer.parseInt(scanner.nextLine()));
+        } catch (Exception e) {
+            System.err.println("Wrong format input");
+        }
         System.out.println("Enter name of new customer: ");
         customer.setName(scanner.nextLine());
 

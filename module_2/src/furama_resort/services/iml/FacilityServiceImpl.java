@@ -37,10 +37,10 @@ public class FacilityServiceImpl implements IFacilityService {
                 if (filePath.equals(VILLA_FILE)) {
                     Villa newVilla = new Villa(facility[0], facility[1], Double.parseDouble(facility[2]), Double.parseDouble(facility[3]), Integer.parseInt(facility[4]), facility[5], facility[6], Integer.parseInt(facility[7]), Integer.parseInt(facility[8]));
                     list.put(newVilla, newVilla.getValue());
-                } else if (filePath.equals(HOUSE_FILE)){
+                } else if (filePath.equals(HOUSE_FILE)) {
                     House newHouse = new House(facility[0], facility[1], Double.parseDouble(facility[2]), Double.parseDouble(facility[3]), Integer.parseInt(facility[4]), facility[5], facility[6], Integer.parseInt(facility[7]));
                     list.put(newHouse, newHouse.getValue());
-                }else {
+                } else {
                     Room newRoom = new Room(facility[0], facility[1], Double.parseDouble(facility[2]), Double.parseDouble(facility[3]), Integer.parseInt(facility[4]), facility[5], facility[6]);
                     list.put(newRoom, newRoom.getValue());
                 }
@@ -86,28 +86,31 @@ public class FacilityServiceImpl implements IFacilityService {
     @Override
     public void addFacility() {
         int choice = -1;
-        while (choice != 0) {
-            System.out.println("menu service:");
-            System.out.println("1.\tVilla\n" +
-                    "2.\tHouse\n" +
-                    "3.\tRoom\n" +
-                    "0.\tExit\n");
-            System.out.print("Your choice: ");
-            choice = Integer.parseInt(scanner.nextLine());
-            switch (choice) {
-                case 1:
-                    choiceNewFacility(1);
-                    break;
-                case 2:
-                    choiceNewFacility(2);
-                    break;
-                case 3:
-                    choiceNewFacility(3);
-                    break;
-                case 0:
-                    break;
-
+        try {
+            while (choice != 0) {
+                System.out.println("menu service:");
+                System.out.println("1.\tVilla\n" +
+                        "2.\tHouse\n" +
+                        "3.\tRoom\n" +
+                        "0.\tExit\n");
+                System.out.print("Your choice: ");
+                choice = Integer.parseInt(scanner.nextLine());
+                switch (choice) {
+                    case 1:
+                        choiceNewFacility(1);
+                        break;
+                    case 2:
+                        choiceNewFacility(2);
+                        break;
+                    case 3:
+                        choiceNewFacility(3);
+                        break;
+                    case 0:
+                        throw new ArithmeticException("Don't found option");
+                }
             }
+        } catch (Exception e) {
+            System.err.println("Wrong format input");
         }
     }
 
@@ -115,23 +118,29 @@ public class FacilityServiceImpl implements IFacilityService {
         System.out.println("Enter ID service of facility (ex: VIL-002,HOU-001,ROO-002,...). ");
         String idService = scanner.nextLine();
 
-        System.out.println("Enter name service of facility (ex: Villa service,...");
+        System.out.println("Enter name service of facility (ex: Villa Two Bedroom Pool, House Service (One Bedroom), Room Ocean,...)");
         String nameService = scanner.nextLine();
+        double useArea = 0;
+        double prince = 0;
+        int maxPeople = 0;
+        try {
+            System.out.println("Enter usable area of facility (More than 30)");
+            useArea = Double.parseDouble(scanner.nextLine());
 
-        System.out.println("Enter usable area of facility (More than 30)");
-        double useArea = Double.parseDouble(scanner.nextLine());
+            System.out.println("Enter price of facility: ");
+            prince = Double.parseDouble(scanner.nextLine());
 
-        System.out.println("Enter price of facility: ");
-        double prince = Double.parseDouble(scanner.nextLine());
-
-        System.out.println("Enter maximum number of people using( 1 facility)");
-        int maxPeople = Integer.parseInt(scanner.nextLine());
-
+            System.out.println("Enter maximum number of people using( 1 facility)");
+            maxPeople = Integer.parseInt(scanner.nextLine());
+        } catch (Exception e) {
+            System.out.println("Wrong format input");
+        }
         System.out.println("Enter rental type of facility (ex: hour, day, month, year");
         String rentalType = scanner.nextLine();
         if (choice == 1) {
             System.out.println("Enter type villa (Ex:Superior, Standard,...) ");
             String type = scanner.nextLine();
+
             System.out.println("Enter pool area of villa:  ");
             int poolArea = Integer.parseInt(scanner.nextLine());
             System.out.println("Enter floor number of villa: ");
@@ -183,7 +192,7 @@ public class FacilityServiceImpl implements IFacilityService {
             Set<Facility> keyVilla = villaList.keySet();
             for (Facility key : keyVilla) {
                 if (key.getNameService().contains(serviceName)) {
-                    villaList.computeIfPresent(key,(k,v)->v+1);
+                    villaList.computeIfPresent(key, (k, v) -> v + 1);
 //                    key.setValue(key.getValue()+1);
 //                    writeFile(key,VILLA_FILE);
                     break;

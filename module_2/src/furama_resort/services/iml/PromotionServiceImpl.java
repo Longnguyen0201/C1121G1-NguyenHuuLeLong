@@ -13,7 +13,7 @@ public class PromotionServiceImpl implements IPromotionService {
         System.out.println(" Enter a number year ");
         String yearBooking = scanner.nextLine();
         for (Booking booking : bookingList) {
-            if (booking.getStartDate().contains(yearBooking) || booking.getEndDate().contains(yearBooking)) {
+            if (booking.getStartDate().indexOf(yearBooking)> 0 || booking.getEndDate().indexOf(yearBooking) > 0) {
                 System.out.println(booking);
             }
         }
