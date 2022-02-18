@@ -1,12 +1,14 @@
 package furama_resort.services.iml;
 import furama_resort.models.Booking;
 import furama_resort.services.IPromotionService;
+import furama_resort.utils.WriteAndReadToCsv;
+
 import java.time.LocalDate;
 import java.util.*;
 
 public class PromotionServiceImpl implements IPromotionService {
     Scanner scanner = new Scanner(System.in);
-    TreeSet<Booking> bookingList = BookingServiceImpl.readFile(BookingServiceImpl.BOOKING_FILE);
+    TreeSet<Booking> bookingList = WriteAndReadToCsv.readFileBookingToCsv(BookingServiceImpl.BOOKING_FILE);
 
     @Override
     public void displayCustomerUseService() {

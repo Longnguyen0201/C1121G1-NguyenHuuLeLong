@@ -1,7 +1,9 @@
 package furama_resort.services.iml;
 
 import furama_resort.models.Customer;
+import furama_resort.models.Person;
 import furama_resort.services.ICustomerService;
+import furama_resort.utils.WriteAndReadToCsv;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -10,59 +12,9 @@ import java.util.Scanner;
 
 public class CustomerServiceImpl implements ICustomerService {
     Scanner scanner = new Scanner(System.in);
-    private static String CUSTOMER_FILE = "src/furama_resort/data/customer.csv";
-    List<Customer> customerList = readFile(CUSTOMER_FILE);
-//    Customer customer1 = new Customer(90, "Hien", "04/09/1996", "female", "209183749", "902816381", "hine@gmail.com", "gold", "DaNang");
-//    Customer customer2 = new Customer(91, "Huong", "04/12/1997", "female", "209134549", "943816381", "huong@gmail.com", "Menber", "DaNang");
+    private static final String CUSTOMER_FILE = "src/furama_resort/data/customer.csv";
+    List<Customer> customerList = WriteAndReadToCsv.readFileCustomerToCsv(CUSTOMER_FILE);
 
-
-    public List<Customer> readFile(String filePath) {
-        List<Customer> customerList = new ArrayList<>();
-        try {
-            File file = new File(filePath);
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            String line = "";
-            String[] customer;
-            while ((line = bufferedReader.readLine()) != null) {
-                customer = line.split(",");
-                customerList.add(new Customer(Integer.parseInt(customer[0]), customer[1], customer[2], customer[3], customer[4], customer[5], customer[6], customer[7], customer[8]));
-            }
-            bufferedReader.close();
-        } catch (Exception e) {
-            System.err.println("File not found or failure document!");
-            e.printStackTrace();
-        }
-        return customerList;
-    }
-
-    public void writeFile(Customer customer, String filePath) {
-        try {
-            FileWriter fileWriter = new FileWriter(filePath, true);
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write(customer.writeToFile());
-            bufferedWriter.newLine();
-            bufferedWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void writeListCustomer() {
-        try {
-            File file = new File(CUSTOMER_FILE);
-            file.delete();
-            FileWriter fileWriter = new FileWriter(file);
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            for (Customer customer : customerList) {
-                bufferedWriter.write(customer.writeToFile());
-                bufferedWriter.newLine();
-            }
-            bufferedWriter.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     @Override
     public void displayCustomer() {
@@ -75,11 +27,14 @@ public class CustomerServiceImpl implements ICustomerService {
     @Override
     public void addCustomer() {
         Customer customer = new Customer();
-        try {
-            System.out.println("Enter code of new Customer:");
-            customer.setCode(Integer.parseInt(scanner.nextLine()));
-        } catch (Exception e) {
-            System.err.println("Wrong format input");
+        while (true) {
+            try {
+                System.out.println("Enter code of new Customer:");
+                customer.setCode(Integer.parseInt(scanner.nextLine()));
+                break;
+            } catch (Exception e) {
+                System.err.println("Wrong format input");
+            }
         }
         System.out.println("Enter name of new customer: ");
         customer.setName(scanner.nextLine());
@@ -106,15 +61,23 @@ public class CustomerServiceImpl implements ICustomerService {
         customer.setAddress(scanner.nextLine());
 
 //            customerList.add(customer);
-        writeFile(customer, CUSTOMER_FILE);
+        WriteAndReadToCsv.writeFileCustomerToCsv(customer, CUSTOMER_FILE);
         System.out.println("Add new customer successfully.");
 
     }
 
     @Override
     public void editCustomer() {
-        System.out.println("Enter code of customer you want edit:");
-        int codeEdit = Integer.parseInt(scanner.nextLine());
+        int codeEdit =0 ;
+        while (true) {
+            try {
+                System.out.println("Enter code of customer you want edit:");
+                 codeEdit = Integer.parseInt(scanner.nextLine());
+                 break;
+            }catch (NumberFormatException e){
+                System.err.println("Wrong format number, please re-enter");
+            }
+        }
         for (Customer customer : customerList) {
             if (codeEdit == customer.getCode()) {
                 int choose;
@@ -127,9 +90,17 @@ public class CustomerServiceImpl implements ICustomerService {
                             "6.Email of customer\n" +
                             "7.Type of customer\n" +
                             "8.Address of customer\n" +
-                            "0.Exit\n" +
-                            "Choose section you want to edit:");
-                    choose = Integer.parseInt(scanner.nextLine());
+                            "0.Exit\n");
+                    while (true){
+                        try{
+                            System.out.println("Choose section you want to edit:");
+                            choose = Integer.parseInt(scanner.nextLine());
+                            break;
+                        }catch (NumberFormatException e){
+                            System.out.println();
+                        }
+                    }
+
                     switch (choose) {
                         case 1:
                             System.out.println("Enter new name of customer: ");
@@ -168,8 +139,23 @@ public class CustomerServiceImpl implements ICustomerService {
 
                 } while (choose != 0);
                 System.out.println("Edit custom successfully");
-                writeListCustomer();
             }
+            writeListCustomer();
+        }
+    }
+    private void writeListCustomer() {
+        try {
+            File file = new File(CUSTOMER_FILE);
+            file.delete();
+            FileWriter fileWriter = new FileWriter(file);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            for (Customer customer : customerList) {
+                bufferedWriter.write(customer.writeToFile());
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.close();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

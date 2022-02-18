@@ -1,70 +1,31 @@
 package furama_resort.services.iml;
 
+import com.sun.org.apache.xpath.internal.objects.XString;
 import furama_resort.models.Facility;
 import furama_resort.models.House;
 import furama_resort.models.Room;
 import furama_resort.models.Villa;
 import furama_resort.services.IFacilityService;
+import furama_resort.utils.RegexData;
+import furama_resort.utils.WriteAndReadToCsv;
 
 import java.io.*;
 import java.util.*;
 
 public class FacilityServiceImpl implements IFacilityService {
     Scanner scanner = new Scanner(System.in);
-    private final String VILLA_FILE = "src/furama_resort/data/villa.csv";
-    private final String HOUSE_FILE = "src/furama_resort/data/house.csv";
-    private final String ROOM_FILE = "src/furama_resort/data/room.csv";
-    //    private static final String VILLA_ID_SERVICE = "^VIL-\\d{4}$";
-//    private static final String HOUSE_ID_SERVICE = "^HOU-\\d{4}$";
-//    private static final String ROOM_ID_SERVICE = "^ROO-\\d{4}$";
-//
 
-    LinkedHashMap<Facility, Integer> villaList = readFile(VILLA_FILE);
-    LinkedHashMap<Facility, Integer> roomList = readFile(ROOM_FILE);
-    LinkedHashMap<Facility, Integer> houseList = readFile(HOUSE_FILE);
+    public static final String REGEX_ID_SERVICE = "^(SV)(VL|HO|RO)-\\d{4}$";
+    public static final String REGEX_STRING_NAME = "^( ?[A-Z][a-z]+)*$";
+    public static final String REGEX_AREA = "^([3-9]\\d|[1-9]\\d{2,})(.?[0-9]+)?$";
+    public static final String REGEX_INTEGER = "^[1-9]\\d+$";
+    public static final String REGEX_PEOPLE_USE = " ^([1-9]|[1][0-9]|20)$";
+
+    LinkedHashMap<Facility, Integer> villaList = WriteAndReadToCsv.readFileFacilityToCsv(WriteAndReadToCsv.VILLA_FILE);
+    LinkedHashMap<Facility, Integer> roomList = WriteAndReadToCsv.readFileFacilityToCsv(WriteAndReadToCsv.ROOM_FILE);
+    LinkedHashMap<Facility, Integer> houseList = WriteAndReadToCsv.readFileFacilityToCsv(WriteAndReadToCsv.HOUSE_FILE);
 
 
-    private LinkedHashMap<Facility, Integer> readFile(String filePath) {
-        LinkedHashMap<Facility, Integer> list = new LinkedHashMap<>();
-        try {
-            File file = new File(filePath);
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            String line;
-            String[] facility;
-            while ((line = bufferedReader.readLine()) != null) {
-                facility = line.split(",");
-                if (filePath.equals(VILLA_FILE)) {
-                    Villa newVilla = new Villa(facility[0], facility[1], Double.parseDouble(facility[2]), Double.parseDouble(facility[3]), Integer.parseInt(facility[4]), facility[5], facility[6], Integer.parseInt(facility[7]), Integer.parseInt(facility[8]));
-                    list.put(newVilla, newVilla.getValue());
-                } else if (filePath.equals(HOUSE_FILE)) {
-                    House newHouse = new House(facility[0], facility[1], Double.parseDouble(facility[2]), Double.parseDouble(facility[3]), Integer.parseInt(facility[4]), facility[5], facility[6], Integer.parseInt(facility[7]));
-                    list.put(newHouse, newHouse.getValue());
-                } else {
-                    Room newRoom = new Room(facility[0], facility[1], Double.parseDouble(facility[2]), Double.parseDouble(facility[3]), Integer.parseInt(facility[4]), facility[5], facility[6]);
-                    list.put(newRoom, newRoom.getValue());
-                }
-            }
-            bufferedReader.close();
-        } catch (Exception e) {
-            System.err.println("File not found or failure");
-            e.printStackTrace();
-        }
-        return list;
-    }
-
-    private void writeFile(Facility facility, String filePath) {
-        try {
-            FileWriter fileWriter = new FileWriter(filePath, true);
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write(facility.writeToFile());
-            bufferedWriter.newLine();
-            bufferedWriter.close();
-        } catch (Exception e) {
-            System.err.println("File not found or failure");
-            e.printStackTrace();
-        }
-    }
 
     @Override
 
@@ -86,101 +47,124 @@ public class FacilityServiceImpl implements IFacilityService {
     @Override
     public void addFacility() {
         int choice = -1;
-        try {
-            while (choice != 0) {
-                System.out.println("menu service:");
-                System.out.println("1.\tVilla\n" +
-                        "2.\tHouse\n" +
-                        "3.\tRoom\n" +
-                        "0.\tExit\n");
-                System.out.print("Your choice: ");
-                choice = Integer.parseInt(scanner.nextLine());
-                switch (choice) {
-                    case 1:
-                        choiceNewFacility(1);
-                        break;
-                    case 2:
-                        choiceNewFacility(2);
-                        break;
-                    case 3:
-                        choiceNewFacility(3);
-                        break;
-                    case 0:
-                        throw new ArithmeticException("Don't found option");
+        while (choice != 0) {
+            System.out.println("menu service:");
+            System.out.println("1.\tVilla\n" +
+                    "2.\tHouse\n" +
+                    "3.\tRoom\n" +
+                    "0.\tExit\n");
+            while (true) {
+                try {
+                    System.out.print("Your choice: ");
+                    choice = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.err.println("Wrong format input, Please re-enter");
                 }
             }
-        } catch (Exception e) {
-            System.err.println("Wrong format input");
+            switch (choice) {
+                case 1:
+                    choiceNewFacility(1);
+                    break;
+                case 2:
+                    choiceNewFacility(2);
+                    break;
+                case 3:
+                    choiceNewFacility(3);
+                    break;
+                case 0:
+                    throw new ArithmeticException("Don't found option");
+            }
         }
     }
 
     private void choiceNewFacility(int choice) {
-        System.out.println("Enter ID service of facility (ex: VIL-002,HOU-001,ROO-002,...). ");
-        String idService = scanner.nextLine();
+        System.out.println("Enter ID service of facility (ex: SVVL-0002): ");
+        String idService = RegexData.regex(scanner.nextLine(), REGEX_ID_SERVICE, " ex: SVVL-0002,SVHO-0001,SVRO-0002,...)");
+        System.out.println("Enter name service of facility (ex: Villa Two Bedroom Pool, House Service One Bedroom, Room Ocean,...)");
+        String nameService = RegexData.regex(scanner.nextLine(), REGEX_STRING_NAME, "ex: Villa Two Bedroom Pool");
 
-        System.out.println("Enter name service of facility (ex: Villa Two Bedroom Pool, House Service (One Bedroom), Room Ocean,...)");
-        String nameService = scanner.nextLine();
-        double useArea = 0;
-        double prince = 0;
-        int maxPeople = 0;
+        System.out.println("Enter usable area of facility ");
+        Double useArea;
+        while (true)
         try {
-            System.out.println("Enter usable area of facility (More than 30)");
             useArea = Double.parseDouble(scanner.nextLine());
-
-            System.out.println("Enter price of facility: ");
-            prince = Double.parseDouble(scanner.nextLine());
-
-            System.out.println("Enter maximum number of people using( 1 facility)");
-            maxPeople = Integer.parseInt(scanner.nextLine());
-        } catch (Exception e) {
-            System.out.println("Wrong format input");
+            if (useArea <= 30 ){
+                System.out.println("Area more than 30, Please re-enter:");
+                useArea =Double.parseDouble(scanner.nextLine());
+            }else{
+                break;
+            }
+        }catch (NumberFormatException e){
+            System.out.println("Wrong format input, Please re-enter: ");
         }
-        System.out.println("Enter rental type of facility (ex: hour, day, month, year");
-        String rentalType = scanner.nextLine();
+
+        System.out.println("Enter price of facility: ");
+        Double prince = Double.parseDouble(RegexData.regex(scanner.nextLine(), REGEX_INTEGER, "Integer > 0"));
+
+        System.out.println("Enter maximum number of people using( 1 facility)");
+        int maxPeople = Integer.parseInt(RegexData.regex(scanner.nextLine(), REGEX_PEOPLE_USE, "0 < people < 20"));
+
+        System.out.println("Enter rental type of facility (ex: Hour, Day, Month, Year)");
+        String rentalType = RegexData.regex(scanner.nextLine(), REGEX_STRING_NAME, "ex: Hour, Day, Month, Year");
+
         if (choice == 1) {
             System.out.println("Enter type villa (Ex:Superior, Standard,...) ");
-            String type = scanner.nextLine();
-
+            String type = RegexData.regex(scanner.nextLine(), REGEX_STRING_NAME, "Ex:Superior, Standard,...");
+            int poolArea;
             System.out.println("Enter pool area of villa:  ");
-            int poolArea = Integer.parseInt(scanner.nextLine());
+            while (true)
+                try {
+                    poolArea = Integer.parseInt(scanner.nextLine());
+                    if (poolArea <= 30 ){
+                        System.out.println("Area more than 30, Please re-enter:");
+                        poolArea = Integer.parseInt(scanner.nextLine());
+                    }else{
+                        break;
+                    }
+                }catch (NumberFormatException e){
+                    System.out.println("Wrong format input, Please re-enter: ");
+                }
+
             System.out.println("Enter floor number of villa: ");
-            int floorNumber = Integer.parseInt(scanner.nextLine());
-            Villa newVilla = new Villa(idService, nameService, useArea, prince, maxPeople, rentalType, type, poolArea, floorNumber);
+            int floorNumber = Integer.parseInt(RegexData.regex(scanner.nextLine(), REGEX_INTEGER, "Integer > 0"));
+
+            Facility newVilla = new Villa(idService, nameService, useArea, prince, maxPeople, rentalType, type, poolArea, floorNumber);
             villaList.put(newVilla, newVilla.getValue());
-            writeFile(newVilla, VILLA_FILE);
+            WriteAndReadToCsv.writeFileFacilityToCsv(newVilla,WriteAndReadToCsv.VILLA_FILE);
         } else if (choice == 2) {
             System.out.println("Enter type villa (Ex:Superior, Standard,...) ");
-            String type = scanner.nextLine();
+            String type = RegexData.regex(scanner.nextLine(), REGEX_STRING_NAME, "Ex:Superior, Standard,...");
+
             System.out.println("Enter floor number of villa: ");
-            int floorNumber = Integer.parseInt(scanner.nextLine());
+            int floorNumber = Integer.parseInt(RegexData.regex(scanner.nextLine(), REGEX_INTEGER, "Integer > 0"));
             House newHouse = new House(idService, nameService, useArea, prince, maxPeople, rentalType, type, floorNumber);
             houseList.put(newHouse, newHouse.getValue());
-            writeFile(newHouse, HOUSE_FILE);
+            WriteAndReadToCsv.writeFileFacilityToCsv(newHouse,WriteAndReadToCsv.HOUSE_FILE);
         } else if (choice == 3) {
             System.out.println("Enter free service: ");
-            String freeService = scanner.nextLine();
+            String freeService = RegexData.regex(scanner.nextLine(),REGEX_STRING_NAME,"Abbc");
             Room newRoom = new Room(idService, nameService, useArea, prince, maxPeople, rentalType, freeService);
             roomList.put(newRoom, newRoom.getValue());
-            writeFile(newRoom, ROOM_FILE);
+            WriteAndReadToCsv.writeFileFacilityToCsv(newRoom,WriteAndReadToCsv.ROOM_FILE);
         }
-
     }
 
     @Override
     public void displayFacilityMaintenance() {
         System.out.println("Facility Maintenance's List: ");
         for (Facility key : villaList.keySet()) {
-            if (villaList.get(key) > 2) {
+            if (villaList.get(key) > 5) {
                 System.out.println(key + " " + villaList.get(key));
             }
         }
         for (Facility key : houseList.keySet()) {
-            if (houseList.get(key) > 2) {
+            if (houseList.get(key) > 5) {
                 System.out.println(key + " " + houseList.get(key));
             }
         }
         for (Facility key : roomList.keySet()) {
-            if (roomList.get(key) > 2) {
+            if (roomList.get(key) > 5) {
                 System.out.println(key + " " + roomList.get(key));
             }
         }

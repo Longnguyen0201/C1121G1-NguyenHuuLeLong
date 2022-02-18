@@ -10,6 +10,7 @@ public abstract class Person {
     private String email;
 
     public Person() {
+
     }
 
     public Person(int code, String name, String birthday, String gender, String idNumber, String phoneNumber, String email) {
@@ -89,5 +90,15 @@ public abstract class Person {
                 ", idNumber='" + idNumber + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'';
+    }
+    public String writeToFile() {
+        return  getCode()+
+                ", " +getName() +
+                "," + getBirthday() +
+                "," + getGender() +
+                "," + getIdNumber() +
+                "," + getPhoneNumber() +
+                "," + getEmail();
+
     }
 }

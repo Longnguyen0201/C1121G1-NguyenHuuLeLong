@@ -15,8 +15,9 @@ public class FuramaController {
     static PromotionServiceImpl promotionService = new PromotionServiceImpl();
 
     public static void main(String[] args) {
-        int choose;
-        do {
+        int choose = 0;
+        boolean check = true;
+        while (check) {
             System.out.println("FURAMA RESORT MANAGER:\n" +
                     "1.\tEmployee Management\n" +
                     "2.\tCustomer Management \n" +
@@ -24,8 +25,15 @@ public class FuramaController {
                     "4.\tBooking Management \n" +
                     "5.\tPromotion Management\n" +
                     "0.\tExit \n");
-            System.out.print("Enter your choose: ");
-            choose = Integer.parseInt(scanner.nextLine());
+            while (true) {
+                try {
+                    System.out.println("Enter your choose: ");
+                    choose = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.err.println("Wrong format input, Please re-enter");
+                }
+            }
             switch (choose) {
                 case 1:
                     managementEmployee();
@@ -43,39 +51,49 @@ public class FuramaController {
                     managerPromotion();
                     break;
                 case 0:
+                    check = false;
                     break;
                 default:
                     System.out.println("This option is not available");
             }
-        } while (choose != 0);
+        }
     }
 
     private static void managerPromotion() {
-        int choose;
-        do {
-            System.out.println("Facility Management \n " +
-                    "1.\tDisplay list customers use service\n" +
-                    "2.\tDisplay list customers get voucher\n" +
-                    "0.\tReturn main menu\n");
-            System.out.print("Enter your choose: ");
-            choose = Integer.parseInt(scanner.nextLine());
-            switch (choose) {
-                case 1:
-                    promotionService.displayCustomerUseService();
-                    break;
-                case 2:
-                    promotionService.displayCustomerGetVoucher();
-                    break;
-                case 0:
-                    break;
-            }
+        int choose = 0;
+        boolean check = true;
+        System.out.println("Facility Management \n " +
+                "1.\tDisplay list customers use service\n" +
+                "2.\tDisplay list customers get voucher\n" +
+                "0.\tReturn main menu\n");
 
-        } while (choose != 0);
+        while (true) {
+            try {
+                System.out.println("Enter your choose: ");
+                choose = Integer.parseInt(scanner.nextLine());
+                break;
+            } catch (NumberFormatException e) {
+                System.err.println("Wrong format input, Please re-enter");
+            }
+        }
+        switch (choose) {
+            case 1:
+                promotionService.displayCustomerUseService();
+                break;
+            case 2:
+                promotionService.displayCustomerGetVoucher();
+                break;
+            case 0:
+                check = false;
+                break;
+            default:
+                System.out.println("This option is not available");
+        }
 
     }
 
     private static void managementBooking() {
-        int choose;
+        int choose = 0;
         do {
             System.out.println("Booking Management \n" +
                     "1.\tAdd new booking\n" +
@@ -84,8 +102,16 @@ public class FuramaController {
                     "4.\tDisplay list contracts\n" +
                     "5.\tEdit contracts\n" +
                     "0.\tReturn main menu\n");
-            System.out.print("Enter your choose: ");
-            choose = Integer.parseInt(scanner.nextLine());
+
+            while (true) {
+                try {
+                    System.out.print("Enter your choose: ");
+                    choose = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.err.println("Wrong format input, Please re-enter");
+                }
+            }
             switch (choose) {
                 case 1:
                     bookingService.addBooking();
@@ -101,28 +127,44 @@ public class FuramaController {
                     break;
                 case 5:
                     contractsService.displayContracts();
-                    System.out.println("Enter contract's number you want edit: ");
-                    int number = Integer.parseInt(scanner.nextLine());
-                    contractsService.editContracts(number);
+                    while (true) {
+                        try {
+                            System.out.println("Enter contract's number you want edit: ");
+                            int number = Integer.parseInt(scanner.nextLine());
+                            contractsService.editContracts(number);
+                            break;
+                        } catch (NumberFormatException e) {
+                            System.out.println("Wrong format input, Please re-enter");
+                        }
+                    }
                     break;
                 case 0:
                     break;
+                default:
+                    System.out.println("This option is not available");
             }
+        }while (choose != 0);
 
-        } while (choose != 0);
 
     }
 
     private static void managementFacility() {
-        int choose;
+        int choose = 0;
         do {
             System.out.println("Facility Management \n" +
                     "1\tDisplay list facility\n" +
                     "2\tAdd new facility\n" +
                     "3\tDisplay list facility maintenance\n" +
                     "0\tReturn main menu\n");
-            System.out.print("Enter your choose: ");
-            choose = Integer.parseInt(scanner.nextLine());
+            while (true) {
+                try {
+                    System.out.print("Enter your choose: ");
+                    choose = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.err.println("Wrong format input, Please re-enter");
+                }
+            }
             switch (choose) {
                 case 1:
                     facilityService.displayFacility();
@@ -135,22 +177,29 @@ public class FuramaController {
                     break;
                 case 0:
                     break;
+                default:
+                    System.out.println("This option is not available");
             }
-
         } while (choose != 0);
-
     }
 
     private static void managementCustomer() {
-        int choose;
+        int choose = 0;
         do {
             System.out.println("Customer Management\n" +
                     "1\tDisplay list customer\n" +
                     "2\tAdd new customer\n" +
                     "3\tEdit customer\n" +
                     "0\tReturn main menu\n");
-            System.out.print("Enter your choose: ");
-            choose = Integer.parseInt(scanner.nextLine());
+            while (true) {
+                try {
+                    System.out.print("Enter your choose: ");
+                    choose = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.err.println("Wrong format input, Please re-enter");
+                }
+            }
             switch (choose) {
                 case 1:
                     customerService.displayCustomer();
@@ -163,6 +212,8 @@ public class FuramaController {
                     break;
                 case 0:
                     break;
+                default:
+                    System.out.println("This option is not available");
             }
 
         } while (choose != 0);
@@ -171,15 +222,22 @@ public class FuramaController {
     }
 
     private static void managementEmployee() {
-        int choose;
+        int choose = 0;
         do {
             System.out.println("Employee Management\n" +
                     "1\tDisplay list employees\n" +
                     "2\tAdd new employee\n" +
                     "3\tEdit employee\n" +
                     "0\tReturn main menu\n");
-            System.out.print("Enter your choose: ");
-            choose = Integer.parseInt(scanner.nextLine());
+            while (true) {
+                try {
+                    System.out.print("Enter your choose: ");
+                    choose = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.err.println("Wrong format input, Please re-enter");
+                }
+            }
             switch (choose) {
                 case 1:
                     employeeService.displayEmployee();
@@ -192,6 +250,8 @@ public class FuramaController {
                     break;
                 case 0:
                     break;
+                default:
+                    System.out.println("This option is not available");
             }
         } while (choose != 0);
     }
