@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài</title>
 </head>
 <body>
+<script>
+    let soPhanTu
+    let sum = 0;
+    let count = 0;
+    let check;
+    let array = new Array(soPhanTu);
+    do {
+        soPhanTu= prompt("Nhập số phần tử trong mảng");
+        check = parseInt(soPhanTu) == soPhanTu && soPhanTu > 0 && soPhanTu<=50;
+    } while (!check);
 
+
+    for (let i = 0; i < soPhanTu; i++) {
+        array[i] = parseInt(prompt("Nhập giá trị " + i));
+    }
+
+    document.write("Mảng vừa nhập: " + array + "<br>");
+
+
+    for (let j = 0; j < soPhanTu; j ++) {
+        if (array[j] % 3 === 0) {
+            sum += array[j];
+            count++;
+        }
+    }
+    let avg =(sum/count);
+    console.log(sum);
+    console.log(count)
+    document.write("kết quả trung bình của các phần tử chia hết cho 3 là " + avg);
+</script>
 </body>
 </html>

@@ -6,12 +6,13 @@
 </head>
 <body>
 <script>
-    let size = parseInt(prompt("nhập số phần tử trong mảng: "));
+    let size;
     let check;
     let max=0;
     let position=0;
     let array = new Array(size);
     do {
+        size = parseInt(prompt("nhập số phần tử trong mảng: "));
         check = parseInt(size) == size && size > 0 && size <= 10;
         break;
 

@@ -2,9 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bai04</title>
 </head>
 <body>
-$END$
+
+<h2>Quản lý công nhân</h2>
+
+<p id="hienThi"></p>
+<script>
+    class CongNhan {
+        constructor(hoTen, ngaySinh, diaChi, soLuong, chucVu) {
+            this.hoTen = hoTen;
+            this.ngaySinh = ngaySinh;
+            this.diaChi = diaChi;
+            this.soLuong = soLuong;
+            this.chucVu = chucVu;
+        }
+
+        sethoTen(hoTen) {
+            this.chucVu = hoTen;
+        }
+
+        gethoTen() {
+            return this.hoTen;
+        }
+
+        setngaySinh(ngaySinh) {
+            this.number2 = ngaySinh;
+        }
+
+        getngaySinh() {
+            return this.ngaySinh;
+        }
+
+        setdiaChi(diaChi) {
+            this.number3 = diaChi;
+        }
+
+        getdiaChi() {
+            return this.diaChi;
+        }
+
+        setsoLuong(soLuong) {
+            this.number4 = soLuong;
+        }
+
+        getsoLuong() {
+            return this.soLuong;
+        }
+
+        setchucVu(chucVu) {
+            this.chucVu = chucVu;
+        }
+
+        getchucVu() {
+            return this.chucVu;
+        }
+    }
+
+    let congNhan1 = new CongNhan("Trương tấn A", "11-11-1997", "Quảng Nam", 2000, "ABC");
+    let congNhan2 = new CongNhan("Trương tấn B", "11-11-1998", "Đà Nẵng", 2000, "ABC");
+    let congNhan3 = new CongNhan("Trương tấn C", "11-11-1999", "Huế", 2000, "ABC");
+    let danhSachCongNhan = [congNhan1, congNhan2, congNhan3];
+    hienThi(danhSachCongNhan)
+
+    function hienThi(danhSach) {
+        let bang = '<table border="1" style="border-collapse: collapse">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Họ và tên</th>\n' +
+            '        <th>Ngày sinh</th>\n' +
+            '        <th>Địa chỉ</th>\n' +
+            '        <th>Lương </th>\n' +
+            '        <th>Chức vụ</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < danhSach.length; i++) {
+            bang += '<tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + danhSach[i].gethoTen() + '</td>\n' +
+                '        <td>' + danhSach[i].getngaySinh() + '</td>\n' +
+                '        <td>' + danhSach[i].getdiaChi() + '</td>\n' +
+                '        <td>' + danhSach[i].getsoLuong() + '</td>\n' +
+                '        <td>' + danhSach[i].getchucVu() + '</td>\n' +
+                '    </tr>';
+        }
+        bang += '</table>'
+        document.getElementById("hienThi").innerHTML = bang;
+    }
+
+    function sapXep() {
+        let arrayHoTen=[];
+        for (let i=0 ;i< danhSachCongNhan.length;i++){
+
+
+        }
+
+    }
+</script>
 </body>
 </html>

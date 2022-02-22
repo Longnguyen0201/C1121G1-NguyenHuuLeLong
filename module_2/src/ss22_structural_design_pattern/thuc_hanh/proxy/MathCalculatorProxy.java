@@ -1,9 +1,9 @@
 package ss22_structural_design_pattern.thuc_hanh.proxy;
 
-public class MathCalculatorFroxy implements Calculator{
-    private MathCalculator mathCalculator;
+public class MathCalculatorProxy implements Calculator{
+    private final MathCalculator mathCalculator;
 
-    public MathCalculatorFroxy() {
+    public MathCalculatorProxy() {
         this.mathCalculator = new MathCalculator();
     }
 

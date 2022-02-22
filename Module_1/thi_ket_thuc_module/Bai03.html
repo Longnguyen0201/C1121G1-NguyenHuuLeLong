@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+
+    let thangNam = prompt("nhập tháng năm (MM/yyyy): ");
+    kiemTraThang(thangNam);
+
+
+    function kiemTraThang(thang) {
+        thang=thang.trim();
+        let month = thang.split("/");
+        // let check;
+        // do {
+        //     thang =prompt("nhập tháng năm (MM/yyyy): ");
+        //
+        //     check= parseInt(month)==month && month>0 && month<=12;
+        //     break;
+        // }while (!check)
+        if (month[0] > 0 && month[0] <= 12) {
+            alert(kiemTraSoNgay(month[0]));
+        } else {
+            alert("nhập lại tháng");
+        }
+    }
+
+    function kiemTraSoNgay(thang) {
+        switch (thang) {
+            case "01":
+            case "03":
+            case "05":
+            case "07":
+            case "08":
+            case "10":
+            case "12":
+                alert(" tháng " + thang + " có 31 ngày");
+                break
+            case "02":
+                alert(" tháng " + thang + " có 28 hoặc 29 ngày");
+                break;
+            case "04":
+            case "06":
+            case "09":
+            case "11":
+                alert(" tháng " + thang + " có 30 ngày");
+                break;
+        }
+
+
+    }
+
+
+</script>
+
 </body>
 </html>

@@ -20,8 +20,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/bai_tap/ConvertMoney.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/bai_tap/ReadNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/bai_tap/SayHello.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/BmiCalculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/DateOfMonth.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/DeclareVariables.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/LapYearCalculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/LinearEquationResolver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/RectangleProgram.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/SystemTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/bai_tap/DisplayGeometry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/bai_tap/PrimeNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/bai_tap/PrimeNumberLessThan100.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/thuc_hanh/DrawingMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/thuc_hanh/GreateCommonFactor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/thuc_hanh/InterestCalculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/thuc_hanh/IsPrimeNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/bai_tap/DisplayGeometry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/bai_tap/PrimeNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/bai_tap/PrimeNumberLessThan100.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/thuc_hanh/DrawingMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/thuc_hanh/GreateCommonFactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/thuc_hanh/InterestCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/thuc_hanh/IsPrimeNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_1/kiem_tra/bai04.html" beforeDir="false" afterPath="$PROJECT_DIR$/module_1/kiem_tra/bai04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/case_study/phan_6/MuaVeSo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/case_study/phan_6/MuaVeSo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/kiem_tra/bai03.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/kiem_tra/bai03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/kiem_tra/bai04.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/kiem_tra/bai04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/on_tap/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/on_tap/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/ss13_mang_2/bai_tap/luyen_tap_mang_1/Bai02GiaTriLonNhatTrongMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/ss13_mang_2/bai_tap/luyen_tap_mang_1/Bai02GiaTriLonNhatTrongMang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_modul.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai02.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai03.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai04.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/bai_tap/ConvertMoney.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/bai_tap/ReadNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/bai_tap/SayHello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/BmiCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/DateOfMonth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/KhaiBaoBien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/LapYearCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/LinearEquationResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/RectangleProgram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/bai_tap/ConvertMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/bai_tap/ConvertMoney.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/bai_tap/ReadNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/bai_tap/ReadNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/bai_tap/SayHello.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/bai_tap/SayHello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/BmiCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/BmiCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/DateOfMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/DateOfMonth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/KhaiBaoBien.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/DeclareVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/LapYearCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/LapYearCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/LinearEquationResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/LinearEquationResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/RectangleProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/RectangleProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/SystemTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +107,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/tạp code" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -64,11 +117,8 @@
       <recent name="D:\CodeGym\Module\module_1\ss11_cau_truc_lap_2\bai_tap\luyen_tap_lap_1" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Bai03XauKiTuTimSoLuongKiTuChung.html">
+  <component name="RunManager" selected="JavaScript Debug.test.html">
     <configuration name="Bai01MangSoNguyen.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module/module_1/case_study/phan_3/Bai01MangSoNguyen.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="Bai01.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module/module_1/case_study/phan_2/Bai01.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Bai03XauKiTuTimSoLuongKiTuChung.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module/module_1/case_study/Phan_4/Bai03XauKiTuTimSoLuongKiTuChung.html" useBuiltInWebServerPort="true">
@@ -80,13 +130,16 @@
     <configuration name="bai01ChuanHoaXauKyTu.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module/module_1/case_study/Phan_4/bai01ChuanHoaXauKyTu.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module/module_1/on_tap/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="JavaScript Debug.Bai03XauKiTuTimSoLuongKiTuChung.html" />
         <item itemvalue="JavaScript Debug.bai01ChuanHoaXauKyTu.html" />
         <item itemvalue="JavaScript Debug.XayDungLopMoTaDienThoai.html" />
         <item itemvalue="JavaScript Debug.Bai01MangSoNguyen.html" />
-        <item itemvalue="JavaScript Debug.Bai01.html" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +213,17 @@
       <workItem from="1640321252896" duration="8903000" />
       <workItem from="1640417383415" duration="24000" />
       <workItem from="1640417522048" duration="4302000" />
-      <workItem from="1640423536077" duration="13001000" />
+      <workItem from="1640423536077" duration="16477000" />
+      <workItem from="1640505602966" duration="2787000" />
+      <workItem from="1640570084445" duration="6944000" />
+      <workItem from="1640601263197" duration="5000" />
+      <workItem from="1640617189002" duration="36000" />
+      <workItem from="1640654457663" duration="430000" />
+      <workItem from="1640655583197" duration="614000" />
+      <workItem from="1640659188629" duration="8127000" />
+      <workItem from="1640675592252" duration="1614000" />
+      <workItem from="1640856676155" duration="2282000" />
+      <workItem from="1640882677519" duration="33000" />
     </task>
     <servers />
   </component>
@@ -195,124 +258,124 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="81" y="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.860@0.0.1440.860" timestamp="1639445243024" />
-    <state x="556" y="185" key="FileChooserDialogImpl" timestamp="1640417395410">
+    <state x="556" y="185" key="FileChooserDialogImpl" timestamp="1640882707417">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1639666804949" />
     <state x="-940" y="185" key="FileChooserDialogImpl/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1638705751518" />
-    <state x="556" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1640417395410" />
-    <state width="776" height="178" key="GridCell.Tab.0.bottom" timestamp="1640252496525">
+    <state x="556" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1640882707417" />
+    <state width="1017" height="178" key="GridCell.Tab.0.bottom" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.0.bottom/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688903" />
     <state width="877" height="272" key="GridCell.Tab.0.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="776" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640252496525" />
-    <state width="776" height="178" key="GridCell.Tab.0.center" timestamp="1640252496524">
+    <state width="1017" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.0.center" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.0.center/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688903" />
     <state width="877" height="272" key="GridCell.Tab.0.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="776" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1640252496524" />
-    <state width="776" height="178" key="GridCell.Tab.0.left" timestamp="1640252496524">
+    <state width="1017" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.0.left" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.0.left/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688903" />
     <state width="877" height="272" key="GridCell.Tab.0.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243736" />
-    <state width="776" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1640252496524" />
-    <state width="776" height="178" key="GridCell.Tab.0.right" timestamp="1640252496524">
+    <state width="1017" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.0.right" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.0.right/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688903" />
     <state width="877" height="272" key="GridCell.Tab.0.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="776" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1640252496524" />
-    <state width="776" height="178" key="GridCell.Tab.1.bottom" timestamp="1640252496525">
+    <state width="1017" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.1.bottom" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.1.bottom/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
     <state width="877" height="272" key="GridCell.Tab.1.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="776" height="178" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640252496525" />
-    <state width="776" height="178" key="GridCell.Tab.1.center" timestamp="1640252496525">
+    <state width="1017" height="178" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.1.center" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.1.center/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
     <state width="877" height="272" key="GridCell.Tab.1.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="776" height="178" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1640252496525" />
-    <state width="776" height="178" key="GridCell.Tab.1.left" timestamp="1640252496525">
+    <state width="1017" height="178" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.1.left" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.1.left/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
     <state width="877" height="272" key="GridCell.Tab.1.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="776" height="178" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1640252496525" />
-    <state width="776" height="178" key="GridCell.Tab.1.right" timestamp="1640252496525">
+    <state width="1017" height="178" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.1.right" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.1.right/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
     <state width="877" height="272" key="GridCell.Tab.1.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="776" height="178" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1640252496525" />
-    <state width="776" height="178" key="GridCell.Tab.2.bottom" timestamp="1640252496526">
+    <state width="1017" height="178" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.2.bottom" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.2.bottom/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.2.bottom/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
     <state width="877" height="272" key="GridCell.Tab.2.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="776" height="178" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640252496526" />
-    <state width="776" height="178" key="GridCell.Tab.2.center" timestamp="1640252496526">
+    <state width="1017" height="178" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.2.center" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.2.center/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.2.center/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
     <state width="877" height="272" key="GridCell.Tab.2.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="776" height="178" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1640252496526" />
-    <state width="776" height="178" key="GridCell.Tab.2.left" timestamp="1640252496526">
+    <state width="1017" height="178" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.2.left" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.2.left/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.2.left/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
     <state width="877" height="272" key="GridCell.Tab.2.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="776" height="178" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1640252496526" />
-    <state width="776" height="178" key="GridCell.Tab.2.right" timestamp="1640252496526">
+    <state width="1017" height="178" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.2.right" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.2.right/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
     <state width="696" height="340" key="GridCell.Tab.2.right/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
     <state width="877" height="272" key="GridCell.Tab.2.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="776" height="178" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1640252496526" />
-    <state width="776" height="178" key="GridCell.Tab.3.bottom" timestamp="1640252496527">
+    <state width="1017" height="178" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.3.bottom" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.3.bottom/0.0.1440.860@0.0.1440.860" timestamp="1639824515829" />
     <state width="696" height="340" key="GridCell.Tab.3.bottom/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
     <state width="877" height="272" key="GridCell.Tab.3.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="776" height="178" key="GridCell.Tab.3.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640252496527" />
-    <state width="776" height="178" key="GridCell.Tab.3.center" timestamp="1640252496527">
+    <state width="1017" height="178" key="GridCell.Tab.3.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.3.center" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.3.center/0.0.1440.860@0.0.1440.860" timestamp="1639824515829" />
     <state width="696" height="340" key="GridCell.Tab.3.center/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
     <state width="877" height="272" key="GridCell.Tab.3.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="776" height="178" key="GridCell.Tab.3.center/0.0.1600.860@0.0.1600.860" timestamp="1640252496527" />
-    <state width="776" height="178" key="GridCell.Tab.3.left" timestamp="1640252496527">
+    <state width="1017" height="178" key="GridCell.Tab.3.center/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.3.left" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.3.left/0.0.1440.860@0.0.1440.860" timestamp="1639824515829" />
     <state width="696" height="340" key="GridCell.Tab.3.left/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
     <state width="877" height="272" key="GridCell.Tab.3.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="776" height="178" key="GridCell.Tab.3.left/0.0.1600.860@0.0.1600.860" timestamp="1640252496527" />
-    <state width="776" height="178" key="GridCell.Tab.3.right" timestamp="1640252496527">
+    <state width="1017" height="178" key="GridCell.Tab.3.left/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
+    <state width="1017" height="178" key="GridCell.Tab.3.right" timestamp="1640677207677">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="696" height="343" key="GridCell.Tab.3.right/0.0.1440.860@0.0.1440.860" timestamp="1639824515829" />
     <state width="696" height="340" key="GridCell.Tab.3.right/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
     <state width="877" height="272" key="GridCell.Tab.3.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="776" height="178" key="GridCell.Tab.3.right/0.0.1600.860@0.0.1600.860" timestamp="1640252496527" />
+    <state width="1017" height="178" key="GridCell.Tab.3.right/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
     <state x="59" y="197" key="run.anything.popup" timestamp="1640438121571">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -354,8 +417,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/module_1/ss15_ham_2/bai_tap/luyen_tap_2/Bai09KiemTraKyTuCoNamTrongMang.html</url>
           <line>8</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/module_1/on_tap/test.html</url>
+          <line>8</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
