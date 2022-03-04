@@ -336,11 +336,27 @@ set sql_safe_updates =0;
 set sql_safe_updates =1;
 
 -- Câu 18
-select khach_hang.ma_khach_hang, khach_hang.ho_ten from hop_dong
-join khach_hang on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
-where year(hop_dong.ngay_lam_hop_dong) < 2021;
+-- select khach_hang.ma_khach_hang, khach_hang.ho_ten from hop_dong
+-- join khach_hang on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
+-- where year(hop_dong.ngay_lam_hop_dong) < 2021;
 
+set foreign_key_checks = 0;
+delete from khach_hang
+where khach_hang.ma_khach_hang in (select hop_dong.ma_khach_hang from hop_dong where year(hop_dong.ngay_lam_hop_dong) < 2021);
+set foreign_key_checks = 1;
 
+-- Câu 19
+create temporary table update_gia_dich_vu_di_kem
+select dich_vu_di_kem.ma_dich_vu_di_kem
+from hop_dong_chi_tiet
+join dich_vu_di_kem on hop_dong_chi_tiet.ma_dich_vu_di_kem = dich_vu_di_kem.ma_dich_vu_di_kem
+join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+where hop_dong_chi_tiet.so_luong > 10 and year(ngay_lam_hop_dong) = 2020
+group by ma_dich_vu_di_kem;
 
-
+ set sql_safe_updates = 0;
+ update dich_vu_di_kem
+ set dich_vu_di_kem.gia = gia * 2
+ where dich_vu_di_kem.ma_dich_vu_di_kem in(select*from update_gia_dich_vu_di_kem);
+set sql_safe_updates = 1;
 
