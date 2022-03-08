@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+ h2, h4{
+    text-align: center;
+}
+ p{
+     padding: 5px;
+     font-family: Arial;
+     font-size: small;
+ }
+.desc{
+    text-align: center;
+    padding: 5px;
+    font-size: 80%;
+}
+.thumbnail {
+    border: 1px solid #ccc;
+}
+.thumbnail:hover{
+    border: 1px solid #777;
+}

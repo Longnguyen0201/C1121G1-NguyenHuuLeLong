@@ -45,41 +45,44 @@
 .col-12 {
     width: 100%;
 }
+col-20 {
+    text-align: center;
+    width: 10%;
+}
 
 [class*="col-"] {
     float: left;
-    padding: 5px;
 }
 
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-.header {
-position: fixed;
-    right: 0;
-    top: 0;
-    left: 0;
-    display: block;
+
+body {
+    background: #EFEFEF;
+}
+
+nav {
     background-color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
-#search-box{
-    background: lightgrey;
-    width: 150px;
-    height: 20px;
-    border-radius: 20px;
-    align-items: center;
-    position: fixed;top: 15px;
+
+#search {
+    background: #EFEFEF;
     border: none;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
 }
-.fa-facebook{
-    color: #1877F2;
-    height: 40px;
-    width: 40px;
-    font-size: 40px;
-
-    margin-top: 5px;
-
-
+.nav-right{
+    float: right;
+    text-align: right;
 }
+.nav-center{
+    text-align: center;
+}
+

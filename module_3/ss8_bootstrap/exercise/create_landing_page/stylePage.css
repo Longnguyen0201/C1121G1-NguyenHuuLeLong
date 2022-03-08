@@ -1,0 +1,25 @@
+.banner{
+    margin: 0 auto;
+    background-color: #0b5ed7;
+    text-align: center;
+    display: block;
+    float: none;
+    clear: both;
+}
+.sec1{
+    margin: 0 auto;
+    width: 66.6666%;
+    position: relative;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    padding: 0 24px;
+    text-align: center;
+}
+.f-subheading, .f-heading{
+    margin-top: 20px;
+    text-align: center;
+}
+.card a {
+    text-decoration: none;
+}
