@@ -1,6 +1,7 @@
 package repository.iml;
 
 import model.User;
+import repository.BaseRepository;
 import repository.IUserRepository;
 
 import java.sql.*;
@@ -88,6 +89,7 @@ public class UserRepository implements IUserRepository {
         PreparedStatement preparedStatement = connection.prepareStatement(DELETE_USERS_SQL);
         preparedStatement.setInt(1, id);
         rowDelete = preparedStatement.executeUpdate() > 0;
+        connection.close();
         return rowDelete;
     }
 
@@ -101,6 +103,7 @@ public class UserRepository implements IUserRepository {
         preparedStatement.setString(3, user.getCountry());
         preparedStatement.setInt(4, user.getId());
         rowUpdate = preparedStatement.executeUpdate() > 0;
+        connection.close();
         return rowUpdate;
     }
 
@@ -161,19 +164,19 @@ public class UserRepository implements IUserRepository {
     }
 
 
-    private void printSQLException(SQLException ex) {
-        for (Throwable e : ex) {
-            if (e instanceof SQLException) {
-                e.printStackTrace(System.err);
-                System.err.println("SQLState: " + ((SQLException) e).getSQLState());
-                System.err.println("Error Code: " + ((SQLException) e).getErrorCode());
-                System.err.println("Message: " + e.getMessage());
-                Throwable t = ex.getCause();
-                while (t != null) {
-                    System.out.println("Cause: " + t);
-                    t = t.getCause();
-                }
-            }
-        }
-    }
+//    private void printSQLException(SQLException ex) {
+//        for (Throwable e : ex) {
+//            if (e instanceof SQLException) {
+//                e.printStackTrace(System.err);
+//                System.err.println("SQLState: " + ((SQLException) e).getSQLState());
+//                System.err.println("Error Code: " + ((SQLException) e).getErrorCode());
+//                System.err.println("Message: " + e.getMessage());
+//                Throwable t = ex.getCause();
+//                while (t != null) {
+//                    System.out.println("Cause: " + t);
+//                    t = t.getCause();
+//                }
+//            }
+//        }
+//    }
 }

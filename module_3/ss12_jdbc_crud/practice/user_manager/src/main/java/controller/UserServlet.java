@@ -2,6 +2,7 @@ package controller;
 
 import repository.iml.UserRepository;
 import model.User;
+import service.IUserService;
 import service.impl.UserService;
 
 import javax.servlet.*;
@@ -13,13 +14,10 @@ import java.util.List;
 
 @WebServlet(name = "UserServlet", value = "/users")
 public class UserServlet extends HttpServlet {
-    UserService userService = new UserService();
-    private static final long serialVersionUID = 1L;
-    private UserRepository userDAO;
 
-    public void init() {
-        userDAO = new UserRepository();
-    }
+    private IUserService userService = new UserService();
+
+
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -39,12 +37,18 @@ public class UserServlet extends HttpServlet {
                 break;
             case "search":
                 searchUser(request, response);
+                break;
+            case "sort":
+                sortByName(request,response);
+                break;
             default:
                 listUser(request, response);
                 break;
         }
 
     }
+
+
 
 
     @Override
@@ -66,7 +70,7 @@ public class UserServlet extends HttpServlet {
 
 
     private void listUser(HttpServletRequest request, HttpServletResponse response) {
-        List<User> listUser = userDAO.selectAllUser();
+        List<User> listUser = userService.selectAllUser();
         request.setAttribute("listUser", listUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
         try {
@@ -161,8 +165,27 @@ public class UserServlet extends HttpServlet {
     }
 
     private void searchUser(HttpServletRequest request, HttpServletResponse response) {
-        String country = request.getParameter("search");
-        userService.searchCountry(country);
+        String country = request.getParameter("searchCountry");
+        List<User> userList = userService.searchCountry(country);
+        request.setAttribute("searchList",userList);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("user/search.jsp");
+        try {
+            dispatcher.forward(request,response);
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
+        }
 
+    }
+    private void sortByName(HttpServletRequest request, HttpServletResponse response) {
+       List<User> userList = userService.sortByName();
+       request.setAttribute("listUser",userList);
+       RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
+        try {
+            dispatcher.forward(request,response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
