@@ -5,244 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2953d310-15c2-4944-9284-128a7b35ee95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/controller/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/controller/HomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/models/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/reppository/ICustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/reppository/impl/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/impl/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/users_database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/classes/java/main/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/classes/java/main/repository/IUserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/classes/java/main/repository/iml/BaseRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/classes/java/main/repository/iml/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/classes/java/main/service/IUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/classes/java/main/service/impl/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/libs/user_manager-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/java/controller/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/java/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/java/repository/iml/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/java/repository/iml/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/java/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/java/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_no_transaction/src/main/webapp/user/search.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/classes/java/main/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/classes/java/main/repository/IUserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/classes/java/main/repository/iml/BaseRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/classes/java/main/repository/iml/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/classes/java/main/service/IUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/classes/java/main/service/impl/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/libs/user_manager-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/java/controller/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/java/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/java/repository/iml/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/java/repository/iml/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/java/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/java/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_procedures/src/main/webapp/user/search.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/classes/java/main/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/classes/java/main/repository/IUserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/classes/java/main/repository/iml/BaseRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/classes/java/main/repository/iml/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/classes/java/main/service/IUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/classes/java/main/service/impl/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/libs/user_manager-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/java/controller/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/java/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/java/repository/iml/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/java/repository/iml/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/java/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/java/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss13_jdbc_quering_transaction/practice/user_manager_transaction/src/main/webapp/user/search.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_bootstrap/exercise/create_galley_use_bootstrap/.idea/create_galley_use_bootstrap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../testFurama/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../testFurama/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/DTO/CustomerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/controller/EmployeeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/models/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/models/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/repository/ICustomerTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/repository/IEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/repository/impl/CustomerTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/repository/impl/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/ICustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/impl/CustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/impl/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/webapp/customer/editCustomer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14/practice/packaging_java_libraries/.idea/libraries/packaging_java_libraries_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14/practice/packaging_java_libraries/src/main/java/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss14/practice/packaging_java_libraries/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/controller/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/models/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/models/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/repository/ICustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/repository/ICustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/repository/impl/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/repository/impl/CustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/service/ICustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/service/ICustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/service/impl/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/build/classes/java/main/service/impl/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/build/libs/furama-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/build/libs/furama-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/repository/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/repository/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/repository/impl/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/repository/impl/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/java/service/impl/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/src/main/webapp/customer/createCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/webapp/customer/createCustomer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study2/furama/src/main/webapp/customer/customerList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study2/furama/src/main/webapp/customer/customerList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/product_manager-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/product_manager-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pactice/customers_manager/.idea/customers_manager.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pactice/customers_manager/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pactice/customers_manager/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pactice/customers_manager/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/.idea/user_manager.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/build/classes/java/main/repository/iml/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/build/classes/java/main/repository/iml/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/build/libs/user_manager-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/build/libs/user_manager-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/src/main/java/repository/iml/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/src/main/java/repository/iml/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/repository/IUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/repository/IUserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/repository/iml/BaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/repository/iml/BaseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/repository/iml/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/repository/iml/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/classes/java/main/service/impl/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/libs/user_manager-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/libs/user_manager-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/controller/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/repository/IUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/repository/iml/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/repository/iml/BaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/repository/iml/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/repository/iml/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/java/service/impl/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/webapp/user/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_manager/src/main/webapp/user/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/src/main/java/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../testFurama/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../testFurama/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../testFurama/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../testFurama/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +101,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ss12_jdbc_crud/exercise/user_manager" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
@@ -409,6 +216,7 @@
       <workItem from="1647354423872" duration="855000" />
       <workItem from="1647438783866" duration="20000" />
       <workItem from="1647439498799" duration="728000" />
+      <workItem from="1647573877827" duration="4546000" />
     </task>
     <servers />
   </component>

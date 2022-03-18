@@ -148,6 +148,28 @@ INSERT INTO customer VALUES
 (8,'KH-0008','Nguyễn Thị Hào','1999-04-08',0,'965656433','0763212345','haohao99@gmail.com','55 Nguyễn Văn Linh, Kon Tum',3),
 (9,'KH-0009','Trần Đại Danh','1994-07-01',1,'432341235','0643343433','danhhai99@gmail.com','24 Lý Thường Kiệt, Quảng Ngãi',1),
 (10,'KH-0010','Nguyễn Tâm Đắc','1989-07-01',1,'344343432','0987654321','dactam@gmail.com','22 Ngô Quyền, Đà Nẵng',2);
+INSERT INTO employee VALUES 
+(1,'Nguyễn Văn An','1970-11-07','456231786',10000000,'0901234121','annguyen@gmail.com','295 Nguyễn Tất Thành, Đà Nẵng',1,3,1,'annguyen@gmail.com'),
+(2,'Lê Văn Bình','1997-04-09','654231234',7000000,'0934212314','binhlv@gmail.com','22 Yên Bái, Đà Nẵng',1,2,2,'binhlv@gmail.com'),
+(3,'Hồ Thị Yến','1995-12-12','999231723',14000000,'0412352315','thiyen@gmail.com','K234/11 Điện Biên Phủ, Gia Lai',1,3,2,'thiyen@gmail.com'),
+(4,'Võ Công Toản','1980-04-04','123231365',17000000,'0374443232', 'toan0404@gmail.com', '77 Hoàng Diệu, Quảng Trị',1,4,4, 'toan0404@gmail.com'),
+(5,'Nguyễn Bỉnh Phát','1999-12-09','454363232',6000000,'0902341231','phatphat@gmail.com','43 Yên Bái, Đà Nẵng', 2, 1, 1,'phatphat@gmail.com'),
+(6,'Khúc Nguyễn An Nghi','2000-11-08','964542311',7000000,'0978653213','annghi20@gmail.com','294 Nguyễn Tất Thành, Đà Nẵng',2,2,3,'annghi20@gmail.com'),
+(7,'Nguyễn Hữu Hà','1993-01-01','534323231',8000000,'0941234553','nhh0101@gmail.com','4 Nguyễn Chí Thanh, Huế',2,3,2,'nhh0101@gmail.com'),
+(8,'Nguyễn Hà Đông','1989-09-03','234414123',9000000,'0642123111','donghanguyen@gmail.com','111 Hùng Vương, Hà Nội',2,4,4,'donghanguyen@gmail.com'),
+(9,'Tòng Hoang','1982-09-03','256781231',6000000,'0245144444','hoangtong@gmail.com','213 Hàm Nghi, Đà Nẵng',2,4,4,'hoangtong@gmail.com'),
+(10,'Nguyễn Công Đạo','1994-01-08','755434343',8000000,'0988767111'	,'nguyencongdao12@gmail.com','6 Hoà Khánh, Đồng Nai',2,3,2,'nguyencongdao12@gmail.com');
+
+
+-- select employee_id,employee_name,employee_birthday,employee_id_card,employee_salary,employee_phone,employee_email,employee_address,position.position_name,education_degree.education_degree_name,division.division_name
+-- from employee
+-- join position on employee.position_id = position.position_id
+-- join education_degree on employee.education_degree_id = education_degree.education_degree_id
+-- join division on employee.division_id = division.division_id
+-- order by employee_id;
+
+-- select * from employee;
+-- select * from user;
 
 -- select customer_id,customer_code,customer_name,customer_birthday,customer_gender,customer_id_card, customer_phone,customer_email,
 -- customer_address,customer_type.customer_type_name from customer
@@ -156,5 +178,15 @@ INSERT INTO customer VALUES
 
 -- insert into customer (customer_code, customer_name, customer_birthday, customer_gender,customer_id_card, customer_phone,customer_email,customer_address,customer_type_id)
 -- value ("KH-0011",'Nguyễn Tâm Long','1989-07-12',1,'344343432','0987654321','dacLong@gmail.com','22 Lê Lợi, Đà Nẵng',2);
+
+-- select  customer_id,customer_code,customer_name,customer_birthday,customer_gender,customer_id_card, customer_phone,customer_email,
+-- customer_address,customer_type_id from customer
+-- where customer_id = 2;
+
+-- update customer set customer_code = "KH-0002", customer_name = "Phạm Xuân Diệu" ,customer_birthday = "1992-08-08",customer_gender = 0,customer_id_card ="865342123", customer_phone = "0954333333",
+-- customer_email= "xuandieu92@gmail.com",customer_address = "K77/22 Thái Phiên, Quảng Trị",customer_type_id = 5
+-- where customer_id = 2;
+-- delete from customer where customer_id = 2;
+
 
 

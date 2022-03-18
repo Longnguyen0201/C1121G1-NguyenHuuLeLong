@@ -81,12 +81,10 @@
                 <th>Loại khách hàng:</th>
                 <td>
 <%--                    <input type="text" name="customerType" id="customerType" size="45"/>--%>
-                    <select name="customerType" id="customerType">
-                        <option value="1">Diamond</option>
-                        <option value="2">Platinium</option>
-                        <option value="3">Gold</option>
-                        <option value="4">Silver</option>
-                        <option value="5">Member</option>
+                    <select name="customerType" >
+                        <c:forEach var="customerType" items="${customerTypeList}">
+                           <option value="${customerType.customerTypeId}">${customerType.customerTypeName}</option>
+                        </c:forEach>
                     </select>
                 </td>
             </tr>
