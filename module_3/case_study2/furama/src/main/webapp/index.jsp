@@ -18,18 +18,18 @@
     <!------ Include the above in your HEAD tag ---------->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/furama.css">
 </head>
 <body>
 <!--begin of menu-->
-<section class="jumbotron text-center background_img " style="margin-bottom: 0px">
+<section class="jumbotron text-center background_img ">
     <div class="container ">
         <h1 class="jumbotron-heading" style="color: white">KHU NGHỈ DƯỠNG ẨM THUẬT</h1>
         <p class="lead mb-0" style="color: white">TỌA LẠC TẠI BÃI BIỄN ĐÀ NẴNG <br>MỘT TRONG 6 BÃI BIỂN ĐẸP NHẤT THẾ
             GIỚI </p>
     </div>
 </section>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md  text-light ">
     <div class="container">
         <a class="navbar-brand" href="/home">Furama</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -37,8 +37,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
-            <ul class="navbar-nav m-auto">
+        <div class="collapse navbar-collapse justify-content-end " id="navbarsExampleDefault">
+            <ul class="navbar-nav m-auto" >
                 <li class="nav-item">
                     <a class="nav-link" href="/home">Home</a>
                 </li>
@@ -49,7 +49,7 @@
                     <a class="nav-link" href="/customers">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Service</a>
+                    <a class="nav-link" href="/services">Service</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contract</a>
@@ -89,63 +89,64 @@
 
         </div>
     </div>
+</div>
+<!-- Footer -->
+<div class="footer-background">
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3">
+                <h5>About</h5>
+                <hr class=" mb-2 mt-0  mx-auto w-25">
+                <p class="">
+                    Khu nghỉ dưỡng Furama là cơ sở hàng đầu để khám phá một trong những điểm đến hấp dẫn nhất Châu Á.
+                    Chỉ cách Đà Nẵng một quãng lái xe ngắn là bốn Di sản Văn hóa Thế giới được UNESCO công nhận
+                </p>
+            </div>
 
-    <!-- Footer -->
-    <footer class="text-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-lg-4 col-xl-3">
-                    <h5>About</h5>
-                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                    <p class="mb-0">
-                        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
-                        impression.
-                    </p>
-                </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h5>Informations</h5>
+                <hr class=" mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                </ul>
+            </div>
 
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
-                    <h5>Informations</h5>
-                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                    <ul class="list-unstyled">
-                        <li><a href="">Link 1</a></li>
-                        <li><a href="">Link 2</a></li>
-                        <li><a href="">Link 3</a></li>
-                        <li><a href="">Link 4</a></li>
-                    </ul>
-                </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                <h5>Others links</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <br>
+                <a href="https://www.facebook.com/furamaresort/">
+                    <i class="bi bi-facebook"></i>
+                </a>
 
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
-                    <h5>Others links</h5>
-                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                    <ul class="list-unstyled">
-                        <li><a href="">Link 1</a></li>
-                        <li><a href="">Link 2</a></li>
-                        <li><a href="">Link 3</a></li>
-                        <li><a href="">Link 4</a></li>
-                    </ul>
-                </div>
+            </div>
 
-                <div class="col-md-4 col-lg-3 col-xl-3">
-                    <h5>Contact</h5>
-                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-home mr-2"></i> My company</li>
-                        <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
-                        <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
-                        <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
-                    </ul>
-                </div>
-                <div class="col-12 copyright mt-3">
-                    <p class="float-left">
-                        <a href="#">Back to top</a>
-                    </p>
-                    <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a
-                            href="https://t-php.fr/43-theme-ecommerce-bootstrap-4.html"><i>t-php</i></a> |
-                        <span>v. 1.0</span></p>
-                </div>
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h5>Liên hệ</h5>
+                <hr class=" mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-home mr-2"></i> 103 - 105 Vo Nguyen Giap Street, Khue My Ward, Ngu Hanh Son
+                        District, Danang City, Vietnam
+                    </li>
+                    <li><i class="fa fa-envelope mr-2"></i> reservation@furamavietnam.com</li>
+                    <li><i class="fa fa-phone mr-2"></i> 84-236-3847 333/888</li>
+                    <li><i class="fa fa-print mr-2"></i> 84-236-3847 666</li>
+                </ul>
+            </div>
+            <div class="col-12 copyright mt-3">
+                <p class="float-left">
+                    <a href="#">Back to top</a>
+                </p>
+                <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a
+                        href="https://www.facebook.com/long.nguyen.7568"><i>Nguyen Huu Le Long</i></a> |
+                    <span>v. 1.0</span></p>
             </div>
         </div>
     </footer>
 </div>
+
 </body>
 </html>

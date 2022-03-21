@@ -1,7 +1,7 @@
 package service;
 
 import DTO.CustomerDTO;
-import models.Customer;
+import models.customer.Customer;
 
 import java.util.List;
 
@@ -15,4 +15,6 @@ public interface ICustomerService {
     boolean updateCustomer(Customer customer);
 
     boolean deleteCustomerById(Integer id);
+
+    List<CustomerDTO> searchCustomerByName(String search);
 }

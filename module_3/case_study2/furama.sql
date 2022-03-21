@@ -40,7 +40,7 @@ CREATE TABLE employee (
     education_degree_id INT NOT NULL,
     division_id INT NOT NULL,
     username varchar(255),
-    PRIMARY KEY (employee_id , position_id , education_degree_id , division_id),
+    PRIMARY KEY (employee_id),
     FOREIGN KEY (position_id)
         REFERENCES position (position_id),
     FOREIGN KEY (education_degree_id)
@@ -50,6 +50,13 @@ CREATE TABLE employee (
 	FOREIGN KEY (username)
         REFERENCES user (username)
 );
+DELIMITER //
+create trigger after_user before insert on employee
+for each row
+begin
+insert into user set username = new.employee_email,password ="123456";
+end//
+DELIMITER ;
 CREATE TABLE customer_type (
     customer_type_id INT PRIMARY KEY NOT NULL,
     customer_type_name VARCHAR(45)
@@ -66,21 +73,21 @@ CREATE TABLE customer (
     customer_email VARCHAR(45),
     customer_address VARCHAR(45),
     customer_type_id INT NOT NULL,
-    PRIMARY KEY (customer_id , customer_type_id),
+    PRIMARY KEY (customer_id ),
     FOREIGN KEY (customer_type_id)
         REFERENCES customer_type (customer_type_id)
 );
 CREATE TABLE rent_type (
     rent_type_id INT PRIMARY KEY NOT NULL,
-    rent_type_name VARCHAR(45),
-    rent_type_cost DOUBLE
+    rent_type_name VARCHAR(45)
+--     rent_type_cost DOUBLE
 );
 CREATE TABLE service_type (
     service_type_id INT PRIMARY KEY NOT NULL,
     service_type_name VARCHAR(45)
 );
 CREATE TABLE service (
-    service_id INT,
+    service_id INT auto_increment,
     service_code VARCHAR(10) NOT NULL,
     service_name VARCHAR(45) NOT NULL,
     service_area INT,
@@ -90,9 +97,9 @@ CREATE TABLE service (
     service_type_id INT,
     standard_room VARCHAR(45),
     description_other_convenience VARCHAR(45),
-    pool_eare DATE,
+    pool_area double,
     number_of_floors INT,
-    PRIMARY KEY (service_id , rent_type_id , service_type_id),
+    PRIMARY KEY (service_id),
     FOREIGN KEY (rent_type_id)
         REFERENCES rent_type (rent_type_id),
     FOREIGN KEY (service_type_id)
@@ -107,7 +114,7 @@ CREATE TABLE contract (
     employee_id INT,
     customer_id INT,
     service_id INT,
-    PRIMARY KEY (contract_id , employee_id , customer_id , service_id),
+    PRIMARY KEY (contract_id),
     FOREIGN KEY (employee_id)
         REFERENCES employee (employee_id),
     FOREIGN KEY (customer_id)
@@ -148,17 +155,28 @@ INSERT INTO customer VALUES
 (8,'KH-0008','Nguyễn Thị Hào','1999-04-08',0,'965656433','0763212345','haohao99@gmail.com','55 Nguyễn Văn Linh, Kon Tum',3),
 (9,'KH-0009','Trần Đại Danh','1994-07-01',1,'432341235','0643343433','danhhai99@gmail.com','24 Lý Thường Kiệt, Quảng Ngãi',1),
 (10,'KH-0010','Nguyễn Tâm Đắc','1989-07-01',1,'344343432','0987654321','dactam@gmail.com','22 Ngô Quyền, Đà Nẵng',2);
-INSERT INTO employee VALUES 
-(1,'Nguyễn Văn An','1970-11-07','456231786',10000000,'0901234121','annguyen@gmail.com','295 Nguyễn Tất Thành, Đà Nẵng',1,3,1,'annguyen@gmail.com'),
-(2,'Lê Văn Bình','1997-04-09','654231234',7000000,'0934212314','binhlv@gmail.com','22 Yên Bái, Đà Nẵng',1,2,2,'binhlv@gmail.com'),
-(3,'Hồ Thị Yến','1995-12-12','999231723',14000000,'0412352315','thiyen@gmail.com','K234/11 Điện Biên Phủ, Gia Lai',1,3,2,'thiyen@gmail.com'),
-(4,'Võ Công Toản','1980-04-04','123231365',17000000,'0374443232', 'toan0404@gmail.com', '77 Hoàng Diệu, Quảng Trị',1,4,4, 'toan0404@gmail.com'),
-(5,'Nguyễn Bỉnh Phát','1999-12-09','454363232',6000000,'0902341231','phatphat@gmail.com','43 Yên Bái, Đà Nẵng', 2, 1, 1,'phatphat@gmail.com'),
-(6,'Khúc Nguyễn An Nghi','2000-11-08','964542311',7000000,'0978653213','annghi20@gmail.com','294 Nguyễn Tất Thành, Đà Nẵng',2,2,3,'annghi20@gmail.com'),
-(7,'Nguyễn Hữu Hà','1993-01-01','534323231',8000000,'0941234553','nhh0101@gmail.com','4 Nguyễn Chí Thanh, Huế',2,3,2,'nhh0101@gmail.com'),
-(8,'Nguyễn Hà Đông','1989-09-03','234414123',9000000,'0642123111','donghanguyen@gmail.com','111 Hùng Vương, Hà Nội',2,4,4,'donghanguyen@gmail.com'),
-(9,'Tòng Hoang','1982-09-03','256781231',6000000,'0245144444','hoangtong@gmail.com','213 Hàm Nghi, Đà Nẵng',2,4,4,'hoangtong@gmail.com'),
-(10,'Nguyễn Công Đạo','1994-01-08','755434343',8000000,'0988767111'	,'nguyencongdao12@gmail.com','6 Hoà Khánh, Đồng Nai',2,3,2,'nguyencongdao12@gmail.com');
+INSERT INTO employee (employee_id,employee_name,employee_birthday,employee_id_card,employee_salary,employee_phone,employee_email,employee_address,position_id,education_degree_id,division_id) VALUES 
+(1,'Nguyễn Văn An','1970-11-07','456231786',10000000,'0901234121','annguyen@gmail.com','295 Nguyễn Tất Thành, Đà Nẵng',1,3,1),
+(2,'Lê Văn Bình','1997-04-09','654231234',7000000,'0934212314','binhlv@gmail.com','22 Yên Bái, Đà Nẵng',1,2,2),
+(3,'Hồ Thị Yến','1995-12-12','999231723',14000000,'0412352315','thiyen@gmail.com','K234/11 Điện Biên Phủ, Gia Lai',1,3,2),
+(4,'Võ Công Toản','1980-04-04','123231365',17000000,'0374443232', 'toan0404@gmail.com', '77 Hoàng Diệu, Quảng Trị',1,4,4),
+(5,'Nguyễn Bỉnh Phát','1999-12-09','454363232',6000000,'0902341231','phatphat@gmail.com','43 Yên Bái, Đà Nẵng', 2, 1, 1),
+(6,'Khúc Nguyễn An Nghi','2000-11-08','964542311',7000000,'0978653213','annghi20@gmail.com','294 Nguyễn Tất Thành, Đà Nẵng',2,2,3),
+(7,'Nguyễn Hữu Hà','1993-01-01','534323231',8000000,'0941234553','nhh0101@gmail.com','4 Nguyễn Chí Thanh, Huế',2,3,2),
+(8,'Nguyễn Hà Đông','1989-09-03','234414123',9000000,'0642123111','donghanguyen@gmail.com','111 Hùng Vương, Hà Nội',2,4,4),
+(9,'Tòng Hoang','1982-09-03','256781231',6000000,'0245144444','hoangtong@gmail.com','213 Hàm Nghi, Đà Nẵng',2,4,4),
+(10,'Nguyễn Công Đạo','1994-01-08','755434343',8000000,'0988767111'	,'nguyencongdao12@gmail.com','6 Hoà Khánh, Đồng Nai',2,3,2);
+INSERT INTO rent_type VALUES(1,'year'),(2,'month'),(3,'day'),(4,'hour');
+INSERT INTO service_type VALUES(1,'Villa'),(2,'House'),(3,'Room');
+INSERT INTO service VALUES
+(1,'DV-0001','Villa Beach  Front',25000,10000000,10,3,1,'vip','Có hồ bơi',500,4),
+(2,'DV-0002','House Princess 01',14000,5000000,7,2,2,'vip','Có thêm bếp nướng',null,3),
+(3,'DV-0003','Room Twin 01',5000,1000000,2,4,3,'normal','Có tivi',null,null),
+(4,'DV-0004','Villa No Beach Front',22000,9000000,8,3,1,'normal','Có hồ bơi',300,3),
+(5,'DV-0005','House Princess 02',10000,4000000,5,3,2,'normal','Có thêm bếp nướng',null,2),
+(6,'DV-0006','Room Twin 02',3000,	900000,2,4,3,'normal','Có tivi',null,null);
+
+
 
 
 -- select employee_id,employee_name,employee_birthday,employee_id_card,employee_salary,employee_phone,employee_email,employee_address,position.position_name,education_degree.education_degree_name,division.division_name
@@ -186,7 +204,47 @@ INSERT INTO employee VALUES
 -- update customer set customer_code = "KH-0002", customer_name = "Phạm Xuân Diệu" ,customer_birthday = "1992-08-08",customer_gender = 0,customer_id_card ="865342123", customer_phone = "0954333333",
 -- customer_email= "xuandieu92@gmail.com",customer_address = "K77/22 Thái Phiên, Quảng Trị",customer_type_id = 5
 -- where customer_id = 2;
+
 -- delete from customer where customer_id = 2;
+
+-- insert into employee (employee_name,employee_birthday,employee_id_card,employee_salary,employee_phone,employee_email,
+-- employee_address,position_id,education_degree_id,division_id)
+-- value ("Nguyễn Văn Bê","1996-02-20","9834758375",8000000,"0902948571","be@gmail.com","90 Lê Lợi, Quảng Nam",1,2,3);
+
+-- select * from employee;
+-- select * from employee where employee_id = 5;
+
+
+
+-- update employee set employee_name ="Nguyễn Văn An" ,employee_birthday="1970-11-07",employee_id_card="456231786",employee_salary="20000000",employee_phone="0901234121",
+-- employee_email="annguyen@gmail.com",employee_address="295 Nguyễn Tất Thành, Đà Nẵng",position_id=1,education_degree_id=3,division_id=1
+-- where employee_id = 1;
+
+-- delete from employee where employee_id = ?;
+
+-- select employee_id,employee_name,employee_birthday,employee_id_card,employee_salary,employee_phone,employee_email,employee_address,position.position_name,education_degree.education_degree_name,division.division_name
+-- from employee
+-- join position on employee.position_id = position.position_id
+-- join education_degree on employee.education_degree_id = education_degree.education_degree_id
+-- join division on employee.division_id = division.division_id
+-- where employee_name like "%nguyen%"
+-- order by employee_id;
+
+-- select customer_id,customer_code,customer_name,customer_birthday,customer_gender,customer_id_card, customer_phone,customer_email,
+-- customer_address,customer_type.customer_type_name from customer
+-- inner join customer_type on customer.customer_type_id = customer_type.customer_type_id
+-- where customer_name like "%Quan%"
+-- order by customer_id;
+
+select service_id,service_code,service_name,service_area,service_cost,service_max_people,rent_type.rent_type_name,service_type.service_type_name,
+standard_room, description_other_convenience,ifnull(pool_area,-1), ifnull(number_of_floors,-1) from service
+join rent_type on service.rent_type_id = rent_type.rent_type_id
+join service_type on service.service_type_id = service_type.service_type_id
+order by service_id;
+select * from service;
+select * from rent_type;
+
+
 
 
 

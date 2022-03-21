@@ -1,4 +1,4 @@
-package models;
+package models.employee;
 
 public class Position {
     private Integer positionId;

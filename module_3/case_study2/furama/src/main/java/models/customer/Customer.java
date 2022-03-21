@@ -1,4 +1,6 @@
-package models;
+package models.customer;
+
+import models.Person;
 
 public class Customer extends Person {
     private  String code;

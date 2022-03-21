@@ -1,7 +1,9 @@
 package repository.impl;
 
 import DTO.CustomerDTO;
-import models.Customer;
+import DTO.EmployeeDTO;
+import models.customer.Customer;
+import models.employee.Employee;
 import repository.BaseRepository;
 import repository.ICustomerRepository;
 
@@ -29,6 +31,11 @@ public class CustomerRepository implements ICustomerRepository {
             "customer_address = ?,customer_type_id = ?\n" +
             "where customer_id = ?;";
     private static final String SQL_DELETE_CUSTOMER = "delete from customer where customer_id = ?;";
+    private static final String SQL_SEARCH_CUSTOMER = "select customer_id,customer_code,customer_name,customer_birthday,customer_gender,customer_id_card, customer_phone,customer_email,\n" +
+            "customer_address,customer_type.customer_type_name from customer\n" +
+            "inner join customer_type on customer.customer_type_id = customer_type.customer_type_id\n" +
+            "where customer_name like ?\n" +
+            "order by customer_id;;";
 
     @Override
     public List<CustomerDTO> selectAllCustomer() {
@@ -171,4 +178,36 @@ public class CustomerRepository implements ICustomerRepository {
         return rowDelete;
     }
 
+    @Override
+    public List<CustomerDTO> searchCustomerByName(String search) {
+        List<CustomerDTO> searchCustomerList = new ArrayList<>();
+        Connection connection = this.baseRepository.getConnection();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL_SEARCH_CUSTOMER);
+            preparedStatement.setString(1, "%" + search + "%");
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                Integer id = resultSet.getInt("customer_id");
+                String code = resultSet.getString("customer_code");
+                String name = resultSet.getString("customer_name");
+                String birthday = resultSet.getString("customer_birthday");
+                Integer gender = resultSet.getInt("customer_gender");
+                String idCard = resultSet.getString("customer_id_card");
+                String phone = resultSet.getString("customer_phone");
+                String email = resultSet.getString("customer_email");
+                String address = resultSet.getString("customer_address");
+                String customerTypeName = resultSet.getString("customer_type_name");
+                searchCustomerList.add(new CustomerDTO(id, code, name, birthday, gender, idCard, phone, email, address, customerTypeName));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return searchCustomerList;
+    }
 }

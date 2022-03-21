@@ -1,10 +1,9 @@
 package repository.impl;
 
-import models.CustomerType;
+import models.customer.CustomerType;
 import repository.BaseRepository;
 import repository.ICustomerTypeRepository;
 
-import javax.servlet.RequestDispatcher;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

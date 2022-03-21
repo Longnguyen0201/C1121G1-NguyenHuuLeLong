@@ -1,8 +1,9 @@
 package controller;
 
 import DTO.CustomerDTO;
-import models.Customer;
-import models.CustomerType;
+import DTO.EmployeeDTO;
+import models.customer.Customer;
+import models.customer.CustomerType;
 import service.ICustomerService;
 import service.ICustomerTypeService;
 import service.impl.CustomerService;
@@ -12,7 +13,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @WebServlet(name = "CustomerServlet", value = "/customers")
@@ -35,15 +35,26 @@ public class CustomerServlet extends HttpServlet {
             case "edit":
                 formEditCustomer(request, response);
                 break;
-            case "view":
-                break;
             case "search":
+                searchCustomer(request,response);
                 break;
             default:
                 listAllCustomer(request, response);
                 break;
         }
 
+    }
+
+    private void searchCustomer(HttpServletRequest request, HttpServletResponse response) {
+        String search = request.getParameter("searchCustomer");
+        List<CustomerDTO> searchCustomerList = customerService.searchCustomerByName(search);
+        request.setAttribute("customerList", searchCustomerList);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("customer/customerList.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void formEditCustomer(HttpServletRequest request, HttpServletResponse response) {
@@ -155,6 +166,7 @@ public class CustomerServlet extends HttpServlet {
         try {
             customerService.createCustomer(customer);
             RequestDispatcher dispatcher = request.getRequestDispatcher("customer/createCustomer.jsp");
+            request.setAttribute("message", "New customer was create ");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             e.printStackTrace();

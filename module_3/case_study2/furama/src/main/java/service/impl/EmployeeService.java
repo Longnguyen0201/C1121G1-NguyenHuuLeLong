@@ -1,10 +1,10 @@
 package service.impl;
 
 import DTO.EmployeeDTO;
-import models.Division;
-import models.EducationDegree;
-import models.Employee;
-import models.Position;
+import models.employee.Division;
+import models.employee.EducationDegree;
+import models.employee.Employee;
+import models.employee.Position;
 import repository.impl.EmployeeRepository;
 import service.IEmployeeService;
 
@@ -30,5 +30,30 @@ public class EmployeeService implements IEmployeeService {
     @Override
     public List<Division> getAllDivision() {
         return employeeRepository.getAllDivision();
+    }
+
+    @Override
+    public void createEmployee(Employee employee) {
+        employeeRepository.createEmployee(employee);
+    }
+
+    @Override
+    public Employee selectEmployeeById(Integer id) {
+        return employeeRepository.selectEmployeeById(id);
+    }
+
+    @Override
+    public boolean updateEmployee(Employee employee) {
+        return employeeRepository.updateEmployee(employee);
+    }
+
+    @Override
+    public boolean deleteEmployee(Integer id) {
+        return employeeRepository.deleteEmployee(id);
+    }
+
+    @Override
+    public List<EmployeeDTO> searchEmployeeByName(String search) {
+        return employeeRepository.searchEmployeeByName(search);
     }
 }

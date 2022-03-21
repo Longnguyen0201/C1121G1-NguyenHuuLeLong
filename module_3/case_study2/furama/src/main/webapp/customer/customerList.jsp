@@ -13,25 +13,60 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/furama.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 <body>
-<jsp:include page="../header/header.jsp"></jsp:include>
-<center>
-    <h1>Customer Management</h1>
-    <h2>
-        <a href="/customers?action=create">Add New Customer</a>
-    </h2>
-    <form method="get">
-        <input type="hidden" name="action" value="search">
-        <input type="text" name="" placeholder="">
-        <button type="submit">Search</button>
-    </form>
+<nav class="navbar navbar-expand-md ">
+    <div class="container">
+        <a class="navbar-brand" href="/home">Furama</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse " id="navbarsExampleDefault">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/employees">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/customers">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contract</a>
+                </li>
+            </ul>
+        </div>
+        <form  method="get" class="form-inline my-2 my-lg-0">
+            <div class="input-group input-group-sm">
+                <input type="hidden" name="action" value="search">
+                <input name="searchCustomer" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-secondary btn-number">
+                        <i class="mdi mdi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
+<center>
+    <h2>Manage <b>Customer</b></h2>
+    <a href="/customers?action=create" class="btn btn-success" >
+         <span>Add New Employee</span></a>
+    <a href="/customers" class="btn btn-success" >
+         <span>Lists</span></a>
 </center>
 <div align="center">
-    <caption><h2>List of Customer</h2></caption>
-    <table border="1" id="example" class="table table-striped table-bordered">
+    <table id="example" class="table table-striped table-bordered">
         <thead>
         <tr>
             <th>ID</th>
@@ -45,45 +80,45 @@
             <th>Địa chỉ</th>
             <th>Loại khách hàng</th>
             <th >Chức năng</th>
-            <th></th>
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="employee" items="${customerList}">
+        <c:forEach var="customer" items="${customerList}">
             <tr>
-                <td><c:out value="${employee.id}"/></td>
-                <td><c:out value="${employee.code}"/></td>
-                <td><c:out value="${employee.name}"/></td>
-                <td><c:out value="${employee.birthday}"/></td>
+                <td><c:out value="${customer.id}"/></td>
+                <td><c:out value="${customer.code}"/></td>
+                <td><c:out value="${customer.name}"/></td>
+                <td><c:out value="${customer.birthday}"/></td>
                     <%--                <td><c:out value="${customer.gender}"/></td>--%>
                 <td><c:choose>
-                    <c:when test="${employee.gender ==0}">
+                    <c:when test="${customer.gender ==0}">
                         Nữ
                     </c:when>
-                    <c:when test="${employee.gender == 1}">
+                    <c:when test="${customer.gender == 1}">
                         Nam
                     </c:when>
                 </c:choose></td>
 
-                <td><c:out value="${employee.idCard}"/></td>
-                <td><c:out value="${employee.phone}"/></td>
-                <td><c:out value="${employee.email}"/></td>
-                <td><c:out value="${employee.address}"/></td>
-                <td><c:out value="${employee.customerTypeName}"/></td>
-                <td>
-                    <a href="/customers?action=edit&id=${employee.id}">Edit</a>
-                </td>
-                <td>
-<%--                    <a href="/customers?action=delete&id=${customer.id}">Delete</a>--%>
-                    <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-                       href="/customers?action=delete&id=${employee.id}" onclick="getID(${employee.id})">
-                        delete
+                <td><c:out value="${customer.idCard}"/></td>
+                <td><c:out value="${customer.phone}"/></td>
+                <td><c:out value="${customer.email}"/></td>
+                <td><c:out value="${customer.address}"/></td>
+                <td><c:out value="${customer.customerTypeName}"/></td>
+                <td colspan="2">
+                    <a href="/customers?action=edit&id=${customer.id}">
+                        <i class="material-icons" style="color: dodgerblue">&#xE254;</i></a>
+                    <a type="button" class="" data-toggle="modal" data-target="#exampleModal"
+                       href="/customers?action=delete&id=${customer.id}" onclick="getID(${customer.id})">
+                        <i class="material-icons" style="color: #E34724">&#xE872;</i>
                     </a>
                 </td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
+    <h2>
+        <a href="/home" style="color: cornflowerblue">Back to homepage</a>
+    </h2>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -107,9 +142,6 @@
             </div>
         </div>
     </div>
-    <h2>
-        <a href="/home">Back to homepage</a>
-    </h2>
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

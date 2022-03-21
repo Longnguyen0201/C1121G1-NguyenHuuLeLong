@@ -1,10 +1,10 @@
 package service;
 
 import DTO.EmployeeDTO;
-import models.Division;
-import models.EducationDegree;
-import models.Employee;
-import models.Position;
+import models.employee.Division;
+import models.employee.EducationDegree;
+import models.employee.Employee;
+import models.employee.Position;
 
 import java.util.List;
 
@@ -16,4 +16,14 @@ public interface IEmployeeService {
     List<EducationDegree> getAllEducation();
 
     List<Division> getAllDivision();
+
+    void createEmployee(Employee employee);
+
+    Employee selectEmployeeById(Integer id);
+
+    boolean updateEmployee(Employee employee);
+
+    boolean deleteEmployee(Integer id);
+
+    List<EmployeeDTO> searchEmployeeByName(String search);
 }

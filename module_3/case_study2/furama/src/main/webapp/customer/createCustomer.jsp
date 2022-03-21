@@ -94,6 +94,11 @@
                 </td>
             </tr>
         </table>
+        <p>
+            <c:if test='${requestScope["message"] != null}'>
+                <span class="message">${requestScope["message"]}</span>
+            </c:if>
+        </p>
     </form>
 </div>
 </body>

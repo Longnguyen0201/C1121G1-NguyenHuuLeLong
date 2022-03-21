@@ -20,61 +20,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded63016-f6e8-4428-a69e-81b8af2248f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/bai_tap/ConvertMoney.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/bai_tap/ReadNumber.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/bai_tap/SayHello.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/BmiCalculator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/DateOfMonth.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/DeclareVariables.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/LapYearCalculator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/LinearEquationResolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/RectangleProgram.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss1_introduction_to_java/thuc_hanh/SystemTime.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/bai_tap/DisplayGeometry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/bai_tap/PrimeNumber.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/bai_tap/PrimeNumberLessThan100.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/thuc_hanh/DrawingMenu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/thuc_hanh/GreateCommonFactor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/thuc_hanh/InterestCalculator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/out/production/module_2/ss2_vong_lap_trong_java/thuc_hanh/IsPrimeNumber.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/bai_tap/DisplayGeometry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/bai_tap/PrimeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/bai_tap/PrimeNumberLessThan100.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/thuc_hanh/DrawingMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/thuc_hanh/GreateCommonFactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/thuc_hanh/InterestCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_2/src/ss2_vong_lap_trong_java/thuc_hanh/IsPrimeNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/DTO/ServiceDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/controller/ServiceServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/customer/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/customer/CustomerType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/employee/Division.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/employee/EducationDegree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/employee/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/employee/Position.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/service/RentType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/service/Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/service/ServiceType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/IServiceRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/impl/ServiceRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/IServicesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/impl/ServicesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/DTO/ServiceDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/controller/ServiceServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/service/RentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/service/ServiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/IServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/impl/ServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/IServicesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/impl/ServicesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/css/formInput.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/css/furama.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/employee/editEmployee.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/service/createService.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/service/editService.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/service/serviceList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFurama/tesst.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/case_study/phan_6/MuaVeSo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/case_study/phan_6/MuaVeSo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/kiem_tra/bai03.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/kiem_tra/bai03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/kiem_tra/bai04.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/kiem_tra/bai04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/on_tap/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/on_tap/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/ss13_mang_2/bai_tap/luyen_tap_mang_1/Bai02GiaTriLonNhatTrongMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/ss13_mang_2/bai_tap/luyen_tap_mang_1/Bai02GiaTriLonNhatTrongMang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_modul.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai02.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai03.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai04.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/thi_ket_thuc_module/Bai04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/bai_tap/ConvertMoney.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/bai_tap/ReadNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/bai_tap/SayHello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/BmiCalculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/DateOfMonth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/KhaiBaoBien.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/LapYearCalculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/LinearEquationResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/RectangleProgram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/ss1/thuc_hanh/SystemTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/bai_tap/ConvertMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/bai_tap/ConvertMoney.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/bai_tap/ReadNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/bai_tap/ReadNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/bai_tap/SayHello.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/bai_tap/SayHello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/BmiCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/BmiCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/DateOfMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/DateOfMonth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/KhaiBaoBien.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/DeclareVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/LapYearCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/LapYearCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/LinearEquationResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/LinearEquationResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/RectangleProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/RectangleProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/ss1/thuc_hanh/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss1_introduction_to_java/thuc_hanh/SystemTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama.sql" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/controller/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/controller/EmployeeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/controller/EmployeeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/CustomerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/Division.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/EducationDegree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/models/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/ICustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/ICustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/ICustomerTypeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/ICustomerTypeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/IEmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/IEmployeeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/impl/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/impl/CustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/impl/CustomerTypeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/impl/CustomerTypeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/impl/EmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/repository/impl/EmployeeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/ICustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/ICustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/ICustomerTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/ICustomerTypeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/IEmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/IEmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/impl/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/impl/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/impl/CustomerTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/impl/CustomerTypeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/impl/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/classes/java/main/service/impl/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/libs/furama-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/libs/furama-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/controller/EmployeeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/controller/EmployeeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/customer/CustomerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/employee/Division.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/EducationDegree.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/employee/EducationDegree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/models/employee/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/ICustomerTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/ICustomerTypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/impl/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/impl/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/impl/CustomerTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/impl/CustomerTypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/impl/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/repository/impl/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/ICustomerTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/ICustomerTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/IEmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/impl/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/impl/CustomerTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/impl/CustomerTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/impl/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/java/service/impl/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/customer/createCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/customer/createCustomer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/customer/customerList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/customer/customerList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/customer/editCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/customer/editCustomer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/employee/createEmployee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/employee/createEmployee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/employee/employeeList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/employee/employeeList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/case_study2/furama/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_3/ss11_MVC/exercsie/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_3/ss11_MVC/exercsie/product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFurama/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/testFurama/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFurama/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/testFurama/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +120,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -102,19 +138,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/tạp code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\CodeGym\Module\module_1\ss_lap_trinh_huong_doi_tuong_2\bai_tap" />
-      <recent name="D:\CodeGym\Module\module_1\ss11_cau_truc_lap_2\bai_tap\luyen_tap_lap_2" />
-      <recent name="D:\CodeGym\Module\module_1\ss11_cau_truc_lap_2\bai_tap\luyen_tap_lap_1" />
+      <recent name="D:\CodeGym\Module\testFurama" />
+      <recent name="D:\CodeGym\Module\module_3\ss8_bootstrap\exercise\create_galley_use_bootstrap" />
+      <recent name="D:\CodeGym\Module\module_3\ss7_thiet_ke_bo_cuc\exercise\create_layout" />
+      <recent name="D:\CodeGym\Module\module_3\ss8_bootstrap\practice\build_login_form" />
+      <recent name="D:\CodeGym\Module\module_3\ss6_css\exercise\EmbedCssInTheHtmlPage" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.test.html">
@@ -143,6 +183,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -224,6 +265,33 @@
       <workItem from="1640675592252" duration="1614000" />
       <workItem from="1640856676155" duration="2282000" />
       <workItem from="1640882677519" duration="33000" />
+      <workItem from="1645521600765" duration="1847000" />
+      <workItem from="1645609969311" duration="210000" />
+      <workItem from="1646293031446" duration="946000" />
+      <workItem from="1646366750333" duration="1767000" />
+      <workItem from="1646368547048" duration="1894000" />
+      <workItem from="1646375629744" duration="1786000" />
+      <workItem from="1646377459901" duration="564000" />
+      <workItem from="1646381737245" duration="940000" />
+      <workItem from="1646383611667" duration="1786000" />
+      <workItem from="1646385758218" duration="1780000" />
+      <workItem from="1646387574623" duration="1565000" />
+      <workItem from="1646404175934" duration="1242000" />
+      <workItem from="1646577794608" duration="41000" />
+      <workItem from="1646577857152" duration="17000" />
+      <workItem from="1646577910784" duration="5812000" />
+      <workItem from="1646585267168" duration="307000" />
+      <workItem from="1646625106820" duration="33322000" />
+      <workItem from="1646710445848" duration="24401000" />
+      <workItem from="1646797270479" duration="83000" />
+      <workItem from="1646797376930" duration="126000" />
+      <workItem from="1646798554108" duration="50000" />
+      <workItem from="1646812314145" duration="4000" />
+      <workItem from="1646814729380" duration="611000" />
+      <workItem from="1646816691430" duration="4000" />
+      <workItem from="1646891255982" duration="4000" />
+      <workItem from="1647438034026" duration="3502000" />
+      <workItem from="1647854953843" duration="442000" />
     </task>
     <servers />
   </component>
@@ -246,150 +314,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="24" y="108" key="#Inspections" timestamp="1638770237070">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="24" y="108" key="#Inspections/0.0.1440.860@0.0.1440.860" timestamp="1638770237070" />
-    <state x="0" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638865862423">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="0" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1638865862423" />
-    <state x="81" y="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1639445243024">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="81" y="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.860@0.0.1440.860" timestamp="1639445243024" />
-    <state x="556" y="185" key="FileChooserDialogImpl" timestamp="1640882707417">
+    <state x="573" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1647855065989">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1639666804949" />
-    <state x="-940" y="185" key="FileChooserDialogImpl/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1638705751518" />
-    <state x="556" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1640882707417" />
-    <state width="1017" height="178" key="GridCell.Tab.0.bottom" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.0.bottom/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688903" />
-    <state width="877" height="272" key="GridCell.Tab.0.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="1017" height="178" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.0.center" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.0.center/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688903" />
-    <state width="877" height="272" key="GridCell.Tab.0.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="1017" height="178" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.0.left" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.0.left/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688903" />
-    <state width="877" height="272" key="GridCell.Tab.0.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243736" />
-    <state width="1017" height="178" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.0.right" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.0.right/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688903" />
-    <state width="877" height="272" key="GridCell.Tab.0.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="1017" height="178" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.1.bottom" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.1.bottom/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
-    <state width="877" height="272" key="GridCell.Tab.1.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="1017" height="178" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.1.center" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.1.center/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
-    <state width="877" height="272" key="GridCell.Tab.1.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="1017" height="178" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.1.left" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.1.left/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
-    <state width="877" height="272" key="GridCell.Tab.1.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="1017" height="178" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.1.right" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.1.right/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
-    <state width="877" height="272" key="GridCell.Tab.1.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243737" />
-    <state width="1017" height="178" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.2.bottom" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.2.bottom/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.2.bottom/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
-    <state width="877" height="272" key="GridCell.Tab.2.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="1017" height="178" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.2.center" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.2.center/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.2.center/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
-    <state width="877" height="272" key="GridCell.Tab.2.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="1017" height="178" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.2.left" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.2.left/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.2.left/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
-    <state width="877" height="272" key="GridCell.Tab.2.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="1017" height="178" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.2.right" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.2.right/0.0.1440.860@0.0.1440.860" timestamp="1639824515828" />
-    <state width="696" height="340" key="GridCell.Tab.2.right/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688904" />
-    <state width="877" height="272" key="GridCell.Tab.2.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="1017" height="178" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.3.bottom" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.3.bottom/0.0.1440.860@0.0.1440.860" timestamp="1639824515829" />
-    <state width="696" height="340" key="GridCell.Tab.3.bottom/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
-    <state width="877" height="272" key="GridCell.Tab.3.bottom/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="1017" height="178" key="GridCell.Tab.3.bottom/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.3.center" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.3.center/0.0.1440.860@0.0.1440.860" timestamp="1639824515829" />
-    <state width="696" height="340" key="GridCell.Tab.3.center/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
-    <state width="877" height="272" key="GridCell.Tab.3.center/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="1017" height="178" key="GridCell.Tab.3.center/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.3.left" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.3.left/0.0.1440.860@0.0.1440.860" timestamp="1639824515829" />
-    <state width="696" height="340" key="GridCell.Tab.3.left/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
-    <state width="877" height="272" key="GridCell.Tab.3.left/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="1017" height="178" key="GridCell.Tab.3.left/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state width="1017" height="178" key="GridCell.Tab.3.right" timestamp="1640677207677">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="696" height="343" key="GridCell.Tab.3.right/0.0.1440.860@0.0.1440.860" timestamp="1639824515829" />
-    <state width="696" height="340" key="GridCell.Tab.3.right/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639584688905" />
-    <state width="877" height="272" key="GridCell.Tab.3.right/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1638938243738" />
-    <state width="1017" height="178" key="GridCell.Tab.3.right/0.0.1600.860@0.0.1600.860" timestamp="1640677207677" />
-    <state x="59" y="197" key="run.anything.popup" timestamp="1640438121571">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="59" y="197" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1640438121571" />
-    <state x="152" y="292" key="scopes" timestamp="1639458097287">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="152" y="292" key="scopes/0.0.1440.860@0.0.1440.860" timestamp="1639458097287" />
-    <state x="30" y="181" width="747" height="678" key="search.everywhere.popup" timestamp="1640157803525">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="27" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1639619838279" />
-    <state x="-1413" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/-1440.0.1440.860@-1440.0.1440.860" timestamp="1639576471945" />
-    <state x="30" y="181" width="747" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1640157803525" />
+    <state x="573" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1647855065989" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

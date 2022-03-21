@@ -1,7 +1,7 @@
 package service.impl;
 
 import DTO.CustomerDTO;
-import models.Customer;
+import models.customer.Customer;
 import repository.ICustomerRepository;
 import repository.impl.CustomerRepository;
 import service.ICustomerService;
@@ -33,5 +33,10 @@ public class CustomerService implements ICustomerService {
     @Override
     public boolean deleteCustomerById(Integer id) {
         return customerRepository.deleteCustomerById(id);
+    }
+
+    @Override
+    public List<CustomerDTO> searchCustomerByName(String search) {
+        return customerRepository.searchCustomerByName(search);
     }
 }

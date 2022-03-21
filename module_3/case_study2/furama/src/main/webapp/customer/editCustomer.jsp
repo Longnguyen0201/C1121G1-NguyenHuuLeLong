@@ -23,7 +23,7 @@
                 <h2>Update Customer</h2>
             </caption>
             <c:if test="${customer != null}">
-                <input type="hidden" name="id" value="<c:out value='${customer.id}'/>"/>
+                <input type="hidden" name="id" value="${customer.id}"/>
             </c:if>
             <tr>
                 <th>Mã khách hàng:</th>
