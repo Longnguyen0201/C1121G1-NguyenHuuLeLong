@@ -14,6 +14,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet(name = "EmployeeServlet", value = "/employees")
 public class EmployeeServlet extends HttpServlet {
@@ -175,14 +176,34 @@ public class EmployeeServlet extends HttpServlet {
         Integer educationDegree = Integer.parseInt(request.getParameter("educationDegree"));
         Integer division = Integer.parseInt(request.getParameter("division"));
         String usename = request.getParameter("employee_email");
-        Employee employee = new Employee(name, birthday, idCard, salary, phone, email, address, position, educationDegree, division, usename);
-        employeeService.createEmployee(employee);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("employee/createEmployee.jsp");
-        request.setAttribute("message", "New employee was create ");
-        try {
-            dispatcher.forward(request, response);
-        } catch (ServletException | IOException e) {
-            e.printStackTrace();
+        Employee employee = new Employee(name, birthday, idCard, salary, phone, email, address, position,
+                educationDegree, division, usename);
+        Map<String,String> map = employeeService.createEmployee(employee);
+        if (map.isEmpty()){
+            request.setAttribute("message", "New employee was create ");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("employee/createEmployee.jsp");
+            try {
+                dispatcher.forward(request, response);
+            } catch (ServletException | IOException e) {
+                e.printStackTrace();
+            }
+        }else{
+            List<Position> positionList = employeeService.getAllPosition();
+            request.setAttribute("positionList", positionList);
+            List<EducationDegree> educationDegreeList = employeeService.getAllEducation();
+            request.setAttribute("educationDegreeList", educationDegreeList);
+            List<Division> divisionList = employeeService.getAllDivision();
+            request.setAttribute("divisionList", divisionList);
+
+            request.setAttribute("errors",map);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("employee/createEmployee.jsp");
+            try {
+                dispatcher.forward(request, response);
+            } catch (ServletException | IOException e) {
+                e.printStackTrace();
+            }
         }
+
+
     }
 }

@@ -1,0 +1,20 @@
+
+
+<!--linear-gradient(90deg , rgb({{r1}},{{g1}},{{b1}}) 0%, rgb({{r2}},{{g2}},{{b2}}) 74%-->
+
+<div class="myclass" [ngStyle]="setMyStyle()"> color change
+</div>
+<!--<p [style.background-image]="'linear-gradient(90deg, rgb(' + r1 + ',' + g1 + ',' + b1 + ') 0%, rgb(255,37,37) 74%)'">-->
+<!--sdfsdfsf-->
+<!--</p>-->
+<!--<p [style.background-image]="'linear-gradient(90deg , rgb(' + r1 + ',' + g1 + ',' + b1 + ') 0%, rgb(255,37,37)'"></p>-->
+<label>Color 1:</label><br>
+<input #element type="range" min="0" max="255"  (change)="changeR1($event)" ><br>
+<input #element type="range" min="0" max="255"  (change)="changeG1($event)"><br>
+<input #element type="range" min="0" max="255"  (change)="changeB1($event)"><br>
+<label>Color 2:</label><br>
+<input #element type="range" min="0" max="255" (change)="changeR2($event)" ><br>
+<input #element type="range" min="0" max="255" (change)="changeG2($event)"><br>
+<input #element type="range" min="0" max="255" (change)="changeB2($event)"><br>
+<label>degree:</label><br>
+<input #element type="range" min="0" max="360" (change)="changeDeg($event)" ><br>

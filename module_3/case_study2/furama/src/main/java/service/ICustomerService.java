@@ -4,11 +4,12 @@ import DTO.CustomerDTO;
 import models.customer.Customer;
 
 import java.util.List;
+import java.util.Map;
 
 public interface ICustomerService {
     List<CustomerDTO> selectAllCustomer();
 
-    void createCustomer(Customer customer);
+    Map<String, String> createCustomer(Customer customer);
 
     Customer selectCustomerById(Integer id);
 

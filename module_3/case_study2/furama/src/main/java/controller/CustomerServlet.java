@@ -14,6 +14,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet(name = "CustomerServlet", value = "/customers")
 public class CustomerServlet extends HttpServlet {
@@ -155,22 +156,43 @@ public class CustomerServlet extends HttpServlet {
         String code = request.getParameter("customerCode");
         String name = request.getParameter("customerName");
         String birthday = request.getParameter("birthday");
-        Integer gender = Integer.parseInt(request.getParameter("gender"));
         String idCard = request.getParameter("idCard");
+        Integer gender = Integer.parseInt(request.getParameter("gender"));
         String phone = request.getParameter("phone");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
         Integer customerTypeId = Integer.parseInt(request.getParameter("customerType"));
         Customer customer = new Customer(code, name, birthday, gender, idCard, phone, email, address, customerTypeId);
 
-        try {
-            customerService.createCustomer(customer);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("customer/createCustomer.jsp");
-            request.setAttribute("message", "New customer was create ");
-            dispatcher.forward(request, response);
-        } catch (ServletException | IOException e) {
-            e.printStackTrace();
+        Map<String,String> map = customerService.createCustomer(customer);
+        if (map.isEmpty()){
+            request.setAttribute("message", "New Customer was create ");
+            try {
+                request.getRequestDispatcher("customer/createCustomer.jsp").forward(request,response);
+            } catch (ServletException | IOException e) {
+                e.printStackTrace();
+            }
+        }else {
+            List<CustomerType> customerTypeList = customerTypeService.getAllCustomerType();
+            request.setAttribute("customerTypeList", customerTypeList);
+
+            request.setAttribute("errors",map);;
+            try {
+                request.getRequestDispatcher("customer/createCustomer.jsp").forward(request,response);
+            } catch (ServletException | IOException e) {
+                e.printStackTrace();
+            }
+
         }
+
+//        try {
+//            customerService.createCustomer(customer);
+//            RequestDispatcher dispatcher = request.getRequestDispatcher("customer/createCustomer.jsp");
+//            request.setAttribute("message", "New customer was create ");
+//            dispatcher.forward(request, response);
+//        } catch (ServletException | IOException e) {
+//            e.printStackTrace();
+//        }
 
     }
 }

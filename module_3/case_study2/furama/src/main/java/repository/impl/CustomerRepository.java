@@ -21,7 +21,7 @@ public class CustomerRepository implements ICustomerRepository {
             "inner join customer_type on customer.customer_type_id = customer_type.customer_type_id\n" +
             "order by customer_id;";
     private static final String SQL_CREATE_CUSTOMER = "insert into customer (customer_code, customer_name, " +
-            "customer_birthday, customer_gender,customer_id_card, customer_phone,customer_email,customer_address,customer_type_id)\n" +
+            "customer_birthday, customer_gender,customer_id_card, customer_phone,customer_email,customer_address,customer_type_id)" +
             "value (?,?,?,?,?,?,?,?,?);";
     private static final String SQL_SELECT_CUSTOMER_BY_ID = "select  customer_id,customer_code,customer_name,customer_birthday,customer_gender,customer_id_card, customer_phone,customer_email,\n" +
             "customer_address,customer_type_id from customer\n" +

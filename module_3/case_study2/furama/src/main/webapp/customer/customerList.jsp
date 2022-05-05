@@ -41,7 +41,7 @@
                     <a class="nav-link" href="/services">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contract</a>
+                    <a class="nav-link" href="/contracts">Contract</a>
                 </li>
             </ul>
         </div>
@@ -61,7 +61,7 @@
 <center>
     <h2>Manage <b>Customer</b></h2>
     <a href="/customers?action=create" class="btn btn-success" >
-         <span>Add New Employee</span></a>
+         <span>Add New Customer</span></a>
     <a href="/customers" class="btn btn-success" >
          <span>Lists</span></a>
 </center>

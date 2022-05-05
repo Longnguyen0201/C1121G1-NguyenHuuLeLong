@@ -127,9 +127,7 @@ public class ServiceServlet extends HttpServlet {
         request.setAttribute("message", "Service was update");
         try {
             dispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
     }

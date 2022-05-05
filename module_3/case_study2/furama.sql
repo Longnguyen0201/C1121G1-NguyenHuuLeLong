@@ -106,7 +106,7 @@ CREATE TABLE service (
         REFERENCES service_type (service_type_id)
 );
 CREATE TABLE contract (
-    contract_id INT NOT NULL,
+    contract_id INT NOT NULL auto_increment,
     contract_start_date DATETIME NOT NULL,
     contract_end_date DATETIME NOT NULL,
     contract_deposit DOUBLE NOT NULL,
@@ -134,7 +134,7 @@ CREATE TABLE contract_detail (
     contract_id INT NOT NULL,
     attach_service_id INT NOT NULL,
     quantity INT NOT NULL,
-    PRIMARY KEY (contract_detail_id , contract_id , attach_service_id),
+    PRIMARY KEY (contract_detail_id,contract_id,attach_service_id),
     FOREIGN KEY (attach_service_id)
         REFERENCES attach_service (attach_service_id),
     FOREIGN KEY (contract_id)
@@ -175,6 +175,42 @@ INSERT INTO service VALUES
 (4,'DV-0004','Villa No Beach Front',22000,9000000,8,3,1,'normal','Có hồ bơi',300,3),
 (5,'DV-0005','House Princess 02',10000,4000000,5,3,2,'normal','Có thêm bếp nướng',null,2),
 (6,'DV-0006','Room Twin 02',3000,	900000,2,4,3,'normal','Có tivi',null,null);
+INSERT INTO attach_service VALUES
+(1,'Karaoke',10000,'giờ','tiện nghi,hiện tại'),
+(2,'Thuê xe máy',10000,'chiếc','hỏng 1 xe'),
+(3,'Thuê xe đạp',20000,'chiếc','tốt'),
+(4,'Buffet buổi sáng',15000,'suất','đầy đủ đồ ăn, tráng miệng'),
+(5,'Buffet buổi trưa',90000,'suất','đầy đủ đồ ăn, tráng miệng'),
+(6,'Buffet buổi tối',16000,'suất','đầy đủ đồ ăn, tráng miệng');
+INSERT INTO contract VALUES
+(1,'2020-12-08','2020-12-08',0,100000,3,1,3),
+(2,'2020-07-14','2020-07-21',200000,800000,7,3,1),
+(3,'2021-03-15','2021-03-17',50000,1000000,3,4,2),
+(4,'2021-01-14','2021-01-18',100000,560000,7,5,5),
+(5,'2021-07-14','2021-07-15',0,400000,7,2,6),
+(6,'2021-06-01','2021-06-03',0,400000,7,7,6),
+(7,'2021-09-02','2021-09-05',100000,700000,7,4,4),
+(8,'2021-06-17','2021-06-18',150000,900000,3,4,1),
+(9,'2020-11-19','2020-11-19',0,600000,3,4,3),
+(10,'2021-04-25','2021-04-25',0,550000,2,2,1),
+(11,'2021-05-25','2021-05-27',0,590000,7,10,1);
+
+select * from employee;
+
+INSERT INTO contract_detail VALUES
+(1,	2,	4, 5),
+(2,	2,	5, 8),
+(3,	2,	6, 15);
+
+select * from contract;
+select * from contract_detail;
+
+select contract_id, contract_start_date, contract_end_date, contract_deposit,contract_total_money,
+employee_name,customer_name,service_name from contract
+join employee on employee.employee_id = contract.employee_id
+join customer on customer.customer_id = contract.customer_id
+join service on service.service_id = contract.service_id
+order by contract_id;
 
 
 
@@ -236,13 +272,17 @@ INSERT INTO service VALUES
 -- where customer_name like "%Quan%"
 -- order by customer_id;
 
-select service_id,service_code,service_name,service_area,service_cost,service_max_people,rent_type.rent_type_name,service_type.service_type_name,
-standard_room, description_other_convenience,ifnull(pool_area,-1), ifnull(number_of_floors,-1) from service
-join rent_type on service.rent_type_id = rent_type.rent_type_id
-join service_type on service.service_type_id = service_type.service_type_id
-order by service_id;
-select * from service;
-select * from rent_type;
+-- select service_id,service_code,service_name,service_area,service_cost,service_max_people,rent_type.rent_type_name,service_type.service_type_name,
+-- standard_room, description_other_convenience,ifnull(pool_area,-1), ifnull(number_of_floors,-1) from service
+-- join rent_type on service.rent_type_id = rent_type.rent_type_id
+-- join service_type on service.service_type_id = service_type.service_type_id
+-- order by service_id;
+-- select * from service;
+-- select * from rent_type;
+select*from contract; 
+insert into contract(contract_start_date,contract_end_date,contract_deposit,contract_total_money,employee_id,customer_id,service_id)
+value (?,?,?,?,?,?,?);
+
 
 
 

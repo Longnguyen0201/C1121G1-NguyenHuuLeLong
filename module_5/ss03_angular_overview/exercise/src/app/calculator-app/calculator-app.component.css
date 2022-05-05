@@ -1,0 +1,17 @@
+table {
+  border-style: solid;
+  width: auto;
+  border:1px solid black;
+}
+
+input {
+  color: blue;
+  background: white;
+}
+td{
+  text-align: center;
+}
+td:hover{
+  background-color:#ddd;
+  cursor:pointer;
+}

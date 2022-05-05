@@ -8,6 +8,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
 <head>
     <title>Create Service</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700">
@@ -26,22 +27,25 @@
             <div class="contact-form">
                 <h1>Create new Employee</h1>
                 <h3><span class="message">${requestScope["message"]}</span></h3>
-                <form method="post">
+                <form method="post" class="needs-validation" novalidate>
                     <div class="form-group">
                         <label>Họ và tên</label>
                         <input type="text" name="name" class="form-control" required>
+                        <p style="color: red">${errors.get("name")}</p>
                     </div>
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label>Ngày sinh</label>
-                                <input type="text" name="birthday" class="form-control" required>
+                                <input type="date" name="birthday" class="form-control" required>
+                                <p style="color: red">${errors.get("birthday")}</p>
                             </div>
                         </div>
                         <div class="col-sm-8">
                             <div class="form-group">
                                 <label>Số căn cước/CMND:</label>
                                 <input type="text" name="idCard" class="form-control" required>
+                                <p style="color: red">${errors.get("idCard")}</p>
                             </div>
                         </div>
                     </div>
@@ -50,18 +54,21 @@
                             <div class="form-group">
                                 <label>Mức lương:</label>
                                 <input type="number" name="salary" class="form-control" required>
+                                <p style="color: red">${errors.get("salary")}</p>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label>Điện thoại:</label>
                                 <input type="text" name="phone" class="form-control" required>
+                                <p style="color: red">${errors.get("phone")}</p>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label>email:</label>
-                                <input type="text" name="email" class="form-control" required>
+                                <input type="email" name="email" class="form-control" required>
+                                <p style='color: red'>${errors.get("email")}</p>
                             </div>
                         </div>
                     </div>
@@ -102,7 +109,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <a href="/services" class="btn btn-primary"> Close
+                        <a href="/employees" class="btn btn-primary"> Close
                         </a>
                         <input type="submit" class="btn btn-primary">
                     </div>
@@ -110,7 +117,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>

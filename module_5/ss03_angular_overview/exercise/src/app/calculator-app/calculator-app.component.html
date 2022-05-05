@@ -1,0 +1,29 @@
+<table  >
+  <tr>
+    <th colspan="4"><input type="text" [(ngModel)]="display"></th>
+  </tr>
+  <tr>
+    <td><button (click)="btn('1')">1</button></td>
+    <td><button (click)="btn('2')">2</button></td>
+    <td><button (click)="btn('3')">3</button></td>
+    <td><button (click)="btn('+')">+</button></td>
+  </tr>
+  <tr>
+    <td><button (click)="btn('4')">4</button></td>
+    <td><button (click)="btn('5')">5</button></td>
+    <td><button (click)="btn('6')">6</button></td>
+    <td><button (click)="btn('-')">-</button></td>
+  </tr>
+  <tr>
+    <td><button (click)="btn('7')">7</button></td>
+    <td><button (click)="btn('8')">8</button></td>
+    <td><button (click)="btn('9')">9</button></td>
+    <td><button (click)="btn('*')">X</button></td>
+  </tr>
+  <tr>
+    <td><button (click)="clearAll()">C</button></td>
+    <td><button (click)="btn('0')">0</button></td>
+    <td><button (click)="equal()">=</button></td>
+    <td><button (click)="btn('/')">/</button></td>
+  </tr>
+</table>

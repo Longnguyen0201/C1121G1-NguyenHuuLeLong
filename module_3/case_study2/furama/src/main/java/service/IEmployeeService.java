@@ -7,6 +7,7 @@ import models.employee.Employee;
 import models.employee.Position;
 
 import java.util.List;
+import java.util.Map;
 
 public interface IEmployeeService {
     List<EmployeeDTO> selectAllEmployee();
@@ -17,7 +18,7 @@ public interface IEmployeeService {
 
     List<Division> getAllDivision();
 
-    void createEmployee(Employee employee);
+    Map<String, String> createEmployee(Employee employee);
 
     Employee selectEmployeeById(Integer id);
 
