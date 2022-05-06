@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
+    <style>
+        .body-edit {
+            color: #000;
+            background: lightskyblue;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .contact-form {
+            padding: 50px;
+            margin: 30px auto;
+        }
+
+        .contact-form h1 {
+            font-size: 42px;
+            font-family: 'Pacifico', sans-serif;
+            margin: 0 0 50px;
+            text-align: center;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form .form-control, .contact-form .btn {
+            min-height: 40px;
+            border-radius: 2px;
+        }
+
+        .contact-form .form-control {
+            border-color: #e2c705;
+        }
+
+        .contact-form .form-control:focus {
+            border-color: #d8b012;
+            box-shadow: 0 0 8px #dcae10;
+        }
+
+        .contact-form .btn-primary, .contact-form .btn-primary:active {
+            min-width: 250px;
+            color: #fcda2e;
+            background: #000 !important;
+            margin-top: 20px;
+            border: none;
+        }
+
+        .contact-form .btn-primary:hover {
+            color: #fff;
+        }
+
+        .contact-form .btn-primary i {
+            margin-right: 5px;
+        }
+
+        .contact-form label {
+            opacity: 0.9;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+
+        .const {
+            color: red;
+        }
+    </style>
+</head>
+<body class="body-edit">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="https://furamavietnam.com/vi/">
+            <img
+                    src="https://www.furama.com/images/LOGOFurama_4C_Normal.png"
+                    height="40"
+                    alt="furama Logo"
+                    loading="lazy"
+                    style="margin-top: -1px;"/>
+        </a>
+        <!-- Toggle button -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contract</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-link px-3 me-2">
+                    Login
+                </button>
+                <button type="button" class="btn btn-primary me-3">
+                    Sign up for free
+                </button>
+                <a
+                        class="btn btn-dark px-3"
+                        href="https://github.com/"
+                        role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </div>
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<div class="container-lg">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="contact-form">
+                <h1>Update Service</h1>
+                <form action="#" method="post" novalidate="novalidate">
+                    <!--                    <input type="hidden" th:value="${serviceTypeIdNow}" id="idNow" name="idNow">-->
+                    <div class="form-group">
+                        <label>Loại dịch vụ <span class="const">*</span> </label>
+                        <select class="form-control" id="id-serviceType">
+                            <option value="1">Villa</option>
+                            <option value="2">House</option>
+                            <option value="3">Room</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Mã dịch vụ <span class="const">*</span></label>
+                                <input type="text" name="author" class="form-control" value="DV-0012" required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label>Tên dịch vụ <span class="const">*</span> </label>
+                                <input type="text" name="author" class="form-control" value="Phòng Superior hướng hồ"
+                                       required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Diện tích sử dụng (m<sup>2</sup>) <span class="const">*</span></label>
+                                <input type="text" name="content" class="form-control" value="40,1"
+                                       required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Giá dịch vụ <span class="const">*</span> </label>
+                                <input type="text" name="content" class="form-control" value="120$"
+                                       required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Số người sử dụng tối đa: </label>
+                                <input type="text" name="content" class="form-control" value="4"
+                                       required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tiêu chuẩn phòng <span class="const">*</span> </label>
+                        <input type="text" name="content" class="form-control" value="Vip" required/>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả </label>
+                        <textarea name="content" class="form-control" maxlength="100" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label> Kiểu thuê <span class="const">*</span> </label>
+                        <select class="form-control">
+                            <option value="1">Year</option>
+                            <option value="2">Month</option>
+                            <option value="3">Day</option>
+                            <option value="4">Hour</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group" id="poolArea">
+                                <label>Diện tích hồ bơi (m<sup>2</sup>)</label>
+                                <input type="text" name="content" class="form-control" value="150"
+                                       required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group" id="numberOfFloors">
+                                <label>Số tầng </label>
+                                <input type="text" name="content" class="form-control" value="3"
+                                       required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a style="margin-right: 15px" href="/services" class="btn btn-primary"> Hủy
+                        </a>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Xác nhận</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+</html>

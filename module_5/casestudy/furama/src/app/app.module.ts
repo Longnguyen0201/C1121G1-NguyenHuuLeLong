@@ -3,13 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { PetComponent } from './pet/pet.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { EditServiceComponent } from './edit-service/edit-service.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PetComponent
+    HeaderComponent,
+    FooterComponent,
+    EditServiceComponent
   ],
   imports: [
     BrowserModule
