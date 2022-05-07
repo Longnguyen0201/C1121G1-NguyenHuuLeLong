@@ -1,0 +1,47 @@
+<h2>Today's article</h2>
+<hr>
+<table>
+  <tbody>
+  <tr>
+    <app-navbar></app-navbar>
+  </tr>
+  <tr id="pagespace" title="" style="height:10px"></tr>
+  <tr>
+    <td>
+      <table border="0" cellpadding="0" cellspacing="0" class="itemlist">
+        <tbody>
+
+            <tr align="left" valign="top" class="title" *ngFor="let art of articles" >
+              <a href="{{art.url}}" target="_blank">{{art.title}}</a>:
+              <app-like></app-like>
+            </tr>
+
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<hr>
+<div>
+  <h2>Article Information</h2>
+  <table>
+    <tr>
+      <td>Title:</td>
+      <td><textarea [(ngModel)]="article.title" cols="70"></textarea></td>
+    </tr>
+    <tr>
+      <td>Url:</td>
+      <td>
+        <textarea [(ngModel)]="article.url" cols="70"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button style="float: right" (click)="addNewArticle()">Add</button>
+      </td>
+    </tr>
+  </table>
+</div>
+<app-footer></app-footer>
