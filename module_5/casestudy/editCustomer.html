@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
+    <style>
+        .body-edit {
+            color: #000;
+            background: #74EBD5;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .contact-form {
+            padding: 50px;
+            margin: 30px auto;
+        }
+
+        .contact-form h1 {
+            font-size: 42px;
+            font-family: 'Pacifico', sans-serif;
+            margin: 0 0 50px;
+            text-align: center;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form .form-control, .contact-form .btn {
+            min-height: 40px;
+            border-radius: 2px;
+        }
+
+        .contact-form .form-control {
+            border-color: #e2c705;
+        }
+
+        .contact-form .form-control:focus {
+            border-color: #d8b012;
+            box-shadow: 0 0 8px #dcae10;
+        }
+
+        .contact-form .btn-primary, .contact-form .btn-primary:active {
+            min-width: 250px;
+            color: #fcda2e;
+            background: #000 !important;
+            margin-top: 20px;
+            border: none;
+        }
+
+        .contact-form .btn-primary:hover {
+            color: #fff;
+        }
+
+        .contact-form .btn-primary i {
+            margin-right: 5px;
+        }
+
+        .contact-form label {
+            opacity: 0.9;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+
+        .const {
+            color: red;
+        }
+    </style>
+</head>
+<body class="body-edit">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="https://furamavietnam.com/vi/">
+            <img
+                    src="https://www.furama.com/images/LOGOFurama_4C_Normal.png"
+                    height="40"
+                    alt="furama Logo"
+                    loading="lazy"
+                    style="margin-top: -1px;"/>
+        </a>
+        <!-- Toggle button -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contract</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-link px-3 me-2">
+                    Login
+                </button>
+                <button type="button" class="btn btn-primary me-3">
+                    Sign up for free
+                </button>
+                <a
+                        class="btn btn-dark px-3"
+                        href="https://github.com/"
+                        role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </div>
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<div class="container-lg">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="contact-form">
+                <h1>Update Customer</h1>
+                <form action="#"  method="post" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Mã khách hàng<span class="const">*</span>: </label>
+                                <input type="text" name="author" class="form-control" value="KH-0001"
+                                       required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="form-group">
+                                <label>Tên Khách Hàng<span class="const">*</span>: </label>
+                                <input type="text" name="author" class="form-control" value="Ngô Bá Khá"
+                                       required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày sinh<span class="const">*</span>: </label>
+                        <input type="date" name="content" class="form-control" value="04-12-1998" required/>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Gới tính :</label>
+                                <select class="form-control">
+                                    <option value="1" > Nam</option>
+                                    <option value="0" > Nữ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="form-group">
+                                <label>CMND/CCCD<span class="const">*</span>: </label>
+                                <input type="text" name="content" class="form-control" value="2039485938"
+                                       required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Điện thoại: </label>
+                        <input type="text" name="content" class="form-control"  value="0901857392" required/>
+                    </div>
+                    <div class="form-group">
+                        <label>Email: </label>
+                        <input type="text" name="content" class="form-control" value="khavippro@gmail.com"  required/>
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ <span class="const">*</span>: </label>
+                        <input type="text" name="content" class="form-control" value="124,Ngyễn Trãi,Phú Thọ"  required/>
+                    </div>
+                    <div class="form-group">
+                        <label>Loại khách hàng<span class="const">*</span>: </label>
+                        <select  class="form-control">
+                            <option value="1">Member</option>
+                            <option value="2">Silver</option>
+                            <option value="3">Gold</option>
+                            <option value="4">Platinium</option>
+                            <option value="5">Diamond</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <a href="/customers" class="btn btn-primary"> Hủy
+                        </a>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Xác nhận</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+</html>
+
