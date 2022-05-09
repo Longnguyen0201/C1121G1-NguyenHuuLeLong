@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
+    <style>
+        /*body{*/
+        /*    background-color: #8EC5FC;*/
+        /*    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);*/
+        /*}*/
+        /*.body-card{*/
+        /*    background-color: #8EC5FC;*/
+        /*    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);*/
+        /*}*/
+        td {
+            font-style: normal;
+            font-family: Tahoma;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="https://furamavietnam.com/vi/">
+            <img
+                    src="https://www.furama.com/images/LOGOFurama_4C_Normal.png"
+                    height="40"
+                    alt="furama Logo"
+                    loading="lazy"
+                    style="margin-top: -1px;"/>
+        </a>
+        <!-- Toggle button -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contract</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-link px-3 me-2">
+                    Login
+                </button>
+                <button type="button" class="btn btn-primary me-3">
+                    Sign up for free
+                </button>
+                <a
+                        class="btn btn-dark px-3"
+                        href="https://github.com/"
+                        role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </div>
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<div class="card body-card">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
+        Danh Sách Khách Hàng
+    </h3>
+    <div class="card-body">
+        <div id="table" class="table-editable">
+            <div style="display: flex; justify-content: flex-end">
+            <span class="table-add float-right mb-3 mr-2">
+                <a href="#" class="text-success"><i class="fas fa-plus fa-2x" aria-hidden="true"></i></a>
+            </span>
+            </div>
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                <tr>
+                    <th class="text-center">STT</th>
+                    <th class="text-center">Mã khách hàng</th>
+                    <th class="text-center">Tên khách hàng</th>
+                    <th class="text-center">Ngày sinh</th>
+                    <th class="text-center">Giới tính</th>
+                    <th class="text-center">CMND/CCCD</th>
+                    <th class="text-center">Điện thoại</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Địa chỉ</th>
+                    <th class="text-center">Loại khách hàng</th>
+                    <th class="text-center">Edit</th>
+                    <th class="text-center">Remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="pt-3-half">1</td>
+                    <td class="pt-3-half">KH-0001</td>
+                    <td class="pt-3-half">Ngô Bá Khá</td>
+                    <td class="pt-3-half">04-12-1998</td>
+                    <td class="pt-3-half">Nam</td>
+                    <td class="pt-3-half">2039485938</td>
+                    <td class="pt-3-half">0901857392</td>
+                    <td class="pt-3-half">khavippro@gmail.com</td>
+                    <td class="pt-3-half">124,Ngyễn Trãi,Phú Thọ</td>
+                    <td class="pt-3-half">Gold</td>
+                    <td>
+                        <span class="table-remove">
+                            <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>
+                         </span>
+                    </td>
+                    <td>
+                      <span class="table-remove">
+                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
+                      </span>
+                    </td>
+                </tr>
+                <!-- This is our clonable table line -->
+                <tr>
+                    <td class="pt-3-half">2</td>
+                    <td class="pt-3-half">KH-0002</td>
+                    <td class="pt-3-half">Huỳnh Văn Bánh</td>
+                    <td class="pt-3-half">04-12-1990</td>
+                    <td class="pt-3-half">Nam</td>
+                    <td class="pt-3-half">2039675128</td>
+                    <td class="pt-3-half">0909787739</td>
+                    <td class="pt-3-half">banhxe@gmail.com</td>
+                    <td class="pt-3-half">342,Lê Lợi, Hà Nội</td>
+                    <td class="pt-3-half">Platinium</td>
+                    <td>
+                        <span class="table-remove">
+                            <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>
+                         </span>
+                    </td>
+                    <td>
+                        <span class="table-remove">
+                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
+                        </span>
+                    </td>
+                </tr>
+                <!-- This is our clonable table line -->
+                <tr>
+                    <td class="pt-3-half">3</td>
+                    <td class="pt-3-half">KH-0003</td>
+                    <td class="pt-3-half">Dương Minh Tuyền</td>
+                    <td class="pt-3-half">12-05-1989</td>
+                    <td class="pt-3-half">Nam</td>
+                    <td class="pt-3-half">3199675199</td>
+                    <td class="pt-3-half">0909786666</td>
+                    <td class="pt-3-half">tuyen.mom@gmail.com</td>
+                    <td class="pt-3-half">342,Hai Bà Trưng, Hà Nội</td>
+                    <td class="pt-3-half">Diamond</td>
+                    <td>
+                        <span class="table-remove">
+                            <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>
+                         </span>
+                    </td>
+                    <td>
+                      <span class="table-remove">
+                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
+                      </span>
+                    </td>
+                </tr>
+                <!-- This is our clonable table line -->
+                <tr class="hide">
+                    <td class="pt-3-half">4</td>
+                    <td class="pt-3-half">KH-0004</td>
+                    <td class="pt-3-half">Trương Văn Cam</td>
+                    <td class="pt-3-half">12-05-1974</td>
+                    <td class="pt-3-half">Nam</td>
+                    <td class="pt-3-half">3199679999</td>
+                    <td class="pt-3-half">09096049171</td>
+                    <td class="pt-3-half">Cam.giam.gia@gmail.com</td>
+                    <td class="pt-3-half">342,Phố Hàng Đậu, Hà Nội</td>
+                    <td class="pt-3-half">Diamond</td>
+                    <td>
+                        <span class="table-remove">
+                            <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>
+                         </span>
+                    </td>
+                    <td>
+                      <span class="table-remove">
+                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
+                      </span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+</html>
