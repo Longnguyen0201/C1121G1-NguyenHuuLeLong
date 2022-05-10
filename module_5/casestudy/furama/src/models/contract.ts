@@ -1,6 +1,3 @@
-import {Customer} from './customer';
-import {Facility} from './facility';
-
 export class Contract{
   contractId: number;
   contractCode: string;

@@ -17,6 +17,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {RouterModule} from '@angular/router';
 import {CustomerService} from '../services/customer-service';
 import {FacilityService} from '../services/facility-service';
+import {ContractService} from "../services/contract-service";
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import {FacilityService} from '../services/facility-service';
     AppRoutingModule,
     RouterModule
   ],
-  providers: [CustomerService, FacilityService],
+  providers: [CustomerService, FacilityService, ContractService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
