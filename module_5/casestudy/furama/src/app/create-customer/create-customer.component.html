@@ -1,0 +1,78 @@
+<div class="body-edit">
+<div class="container-lg">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="contact-form">
+        <h1>Add new customer</h1>
+        <form action="#"  method="post" novalidate="novalidate">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="form-group">
+                <label>Mã khách hàng <span class="const">*</span>: </label>
+                <input type="text" name="author" class="form-control" placeholder="ex:KH-xxxx"
+                       required/>
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="form-group">
+                <label>Tên khách hàng <span class="const">*</span>: </label>
+                <input type="text" name="author" class="form-control" placeholder="ex: Nguyễn Văn A"
+                       required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Ngày sinh: </label>
+            <input type="date" name="content" class="form-control"  required/>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="form-group">
+                <label>Giới tính <span class="const">*</span></label>
+                <select class="form-control">
+                  <option value="1" >Nam</option>
+                  <option value="0" >Nữ</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="form-group">
+                <label>CMND/CCCD <span class="const">*</span>: </label>
+                <input type="text" name="content" class="form-control"
+                       required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Số điện thoại <span class="const">*</span>: </label>
+            <input type="text" name="content" class="form-control"  required/>
+          </div>
+          <div class="form-group">
+            <label>Email <span class="const">*</span>: </label>
+            <input type="text" name="content" class="form-control" placeholder="ex: abc@gmail.com"  required/>
+          </div>
+          <div class="form-group">
+            <label>ĐỊa chỉ: </label>
+            <input type="text" name="content" class="form-control"  required/>
+          </div>
+          <div class="form-group">
+            <label>Loại khách hàng <span class="const">*</span>: </label>
+            <select  class="form-control">
+              <option value="1">Member</option>
+              <option value="2">Silver</option>
+              <option value="3">Gold</option>
+              <option value="4">Platinium</option>
+              <option value="5">Diamond</option>
+            </select>
+          </div>
+          <div class="text-center">
+            <a style="margin-right: 15px" href="/customers" class="btn btn-primary"> Hủy
+            </a>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Xác nhận</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

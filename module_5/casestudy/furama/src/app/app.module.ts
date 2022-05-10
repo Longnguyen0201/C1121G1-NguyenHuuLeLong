@@ -7,6 +7,16 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { EditServiceComponent } from './edit-service/edit-service.component';
 import { ListServiceComponent } from './list-service/list-service.component';
+import { CreateServiceComponent } from './create-service/create-service.component';
+import { ListCustomerComponent } from './list-customer/list-customer.component';
+import { EditCustomerComponent } from './edit-customer/edit-customer.component';
+import { CreateCustomerComponent } from './create-customer/create-customer.component';
+import { CreateContractComponent } from './create-contract/create-contract.component';
+import { ListContractComponent } from './list-contract/list-contract.component';
+import {AppRoutingModule} from './app-routing.module';
+import {RouterModule} from '@angular/router';
+import {CustomerService} from '../services/customer-service';
+import {FacilityService} from '../services/facility-service';
 
 @NgModule({
   declarations: [
@@ -15,12 +25,20 @@ import { ListServiceComponent } from './list-service/list-service.component';
     HeaderComponent,
     FooterComponent,
     EditServiceComponent,
-    ListServiceComponent
+    ListServiceComponent,
+    CreateServiceComponent,
+    ListCustomerComponent,
+    EditCustomerComponent,
+    CreateCustomerComponent,
+    CreateContractComponent,
+    ListContractComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [CustomerService, FacilityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

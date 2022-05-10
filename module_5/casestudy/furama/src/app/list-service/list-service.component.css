@@ -1,0 +1,11 @@
+.nav-div-a{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}
+.nav-div{
+  position: relative;
+  width: 100%;
+  height: 60px
+}

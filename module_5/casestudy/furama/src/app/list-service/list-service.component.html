@@ -1,24 +1,12 @@
 <main>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
-
-    <!-- Navbar brand -->
-    <span class="navbar-brand">Categories:</span>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-            aria-controls="basicExampleNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
+  <nav class=" navbar  navbar-dark mdb-color  mt-3 mb-5">
+    <div class="nav-div" >
+      <a [routerLink]="['/create-service']" class="text-success nav-div-a">Create Service</a>
     </div>
     <!-- Collapsible content -->
 
   </nav>
-
   <!--Section: Products v.3-->
   <section class="text-center mb-4 container">
 
@@ -26,14 +14,14 @@
     <div class="row wow fadeIn">
 
       <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let facility of facilitys">
         <!--Card 1-->
         <div class="card">
 
           <!--Card image-->
           <div class="view overlay">
             <img
-              src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-F-370x239.jpg"
+              src="{{facility.serviceImg}}"
               class="card-img-top" alt="">
             <a>
               <div class="mask rgba-white-slight"></div>
@@ -45,16 +33,16 @@
           <div class="card-body text-center">
             <!--Category & Title-->
             <a href="" class="grey-text">
-              <h5>Phòng Superior hướng hồ</h5>
+              <h5>{{facility.serviceName}}</h5>
             </a>
             <h5>
               <strong>
-                <small>Diện tích phòng: 40.1 m<sup>2</sup></small>
+                <small>Diện tích phòng: {{facility.serviceArea}} m<sup>2</sup></small>
               </strong>
             </h5>
 
             <h4 class="font-weight-bold blue-text">
-              <strong>120$</strong>
+              <strong>{{facility.servicePrice}}$</strong>
             </h4>
             <h3 class="table-remove">
                  <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a>
@@ -66,210 +54,7 @@
         <!--Card 1-->
       </div>
       <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <!--Card 2-->
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view overlay">
-            <img
-              src="https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Garden-Deluxe-twin-bed-F-370x239.jpg"
-              class="card-img-top" alt="">
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!--Card image-->
-
-          <!--Card content-->
-          <div class="card-body text-center">
-            <!--Category & Title-->
-            <a href="" class="grey-text">
-              <h5>Phòng Deluxe hướng vườn</h5>
-            </a>
-            <h5>
-              <strong>
-                <small>Diện tích phòng: 43.7 m<sup>2</sup></small>
-              </strong>
-            </h5>
-
-            <h4 class="font-weight-bold blue-text">
-              <strong>139$</strong>
-            </h4>
-            <h3 class="table-remove">
-              <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a>
-            </h3>
-          </div>
-          <!--Card content-->
-
-        </div>
-        <!--Card 2-->
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <!--Card 3-->
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view overlay">
-            <img
-              src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-F-370x239.jpg"
-              class="card-img-top" alt="">
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!--Card image-->
-
-          <!--Card content-->
-          <div class="card-body text-center">
-            <!--Category & Title-->
-            <a href="" class="grey-text">
-              <h5>Phòng Deluxe hướng biển</h5>
-            </a>
-            <h5>
-              <strong>
-                <small>Diện tích phòng: 43.7 m<sup>2</sup></small>
-              </strong>
-            </h5>
-
-            <h4 class="font-weight-bold blue-text">
-              <strong>219$</strong>
-            </h4>
-            <h3 class="table-remove">
-              <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a>
-            </h3>
-          </div>
-          <!--Card content-->
-
-        </div>
-        <!--Card 3-->
-      </div>
-      <!--Fourth column-->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <!--Card 4-->
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view overlay">
-            <img
-              src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg"
-              class="card-img-top" alt="">
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!--Card image-->
-
-          <!--Card content-->
-          <div class="card-body text-center">
-            <!--Category & Title-->
-            <a href="" class="grey-text">
-              <h5>Phòng Suite hướng biển</h5>
-            </a>
-            <h5>
-              <strong>
-                <small>Diện tích phòng: 85.5 m<sup>2</sup></small>
-              </strong>
-            </h5>
-
-            <h4 class="font-weight-bold blue-text">
-              <strong>500$</strong>
-            </h4>
-            <h3 class="table-remove">
-              <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a>
-            </h3>
-          </div>
-          <!--Card content-->
-
-        </div>
-        <!--Card 4-->
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <!--Card 5-->
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view overlay">
-            <img
-              src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-F-370x239.jpg"
-              class="card-img-top" alt="">
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!--Card image-->
-
-          <!--Card content-->
-          <div class="card-body text-center">
-            <!--Category & Title-->
-            <a href="" class="grey-text">
-              <h5>Phòng Studio Suite hướng biển</h5>
-            </a>
-            <h5>
-              <strong>
-                <small>Diện tích phòng: 40.1 m<sup>2</sup></small>
-              </strong>
-            </h5>
-
-            <h4 class="font-weight-bold blue-text">
-              <strong>450$</strong>
-            </h4>
-            <h3 class="table-remove">
-              <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a>
-            </h3>
-          </div>
-          <!--Card content-->
-
-        </div>
-        <!--Card 5-->
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <!--Card 6-->
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view overlay">
-            <img
-              src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-F-370x239.jpg"
-              class="card-img-top" alt="">
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!--Card image-->
-
-          <!--Card content-->
-          <div class="card-body text-center">
-            <!--Category & Title-->
-            <a href="" class="grey-text">
-              <h5>Phòng Superior hướng Vườn</h5>
-            </a>
-            <h5>
-              <strong>
-                <small>Diện tích phòng: 40.1 m<sup>2</sup></small>
-              </strong>
-            </h5>
-
-            <h4 class="font-weight-bold blue-text">
-              <strong>200$</strong>
-            </h4>
-            <h3 class="table-remove">
-              <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a>
-            </h3>
-          </div>
-          <!--Card content-->
-
-        </div>
-        <!--Card 6-->
-      </div>
     </div>
-
 
   </section>
   <!--Section: Products v.3-->

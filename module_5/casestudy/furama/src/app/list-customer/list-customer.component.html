@@ -1,0 +1,131 @@
+<div class="card body-card">
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
+    Danh Sách Khách Hàng
+  </h3>
+  <div class="card-body">
+    <div id="table" class="table-editable">
+      <div style="display: flex; justify-content: flex-end">
+            <span class="table-add float-right mb-3 mr-2">
+                <a [routerLink]="['/create-customer']" class="text-success"><i class="fas fa-plus fa-2x" aria-hidden="true"></i></a>
+            </span>
+      </div>
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+        <tr >
+          <th class="text-center">STT</th>
+          <th class="text-center">Mã khách hàng</th>
+          <th class="text-center">Tên khách hàng</th>
+          <th class="text-center">Ngày sinh</th>
+          <th class="text-center">Giới tính</th>
+          <th class="text-center">CMND/CCCD</th>
+          <th class="text-center">Điện thoại</th>
+          <th class="text-center">Email</th>
+          <th class="text-center">Địa chỉ</th>
+          <th class="text-center">Loại khách hàng</th>
+          <th class="text-center">Edit</th>
+          <th class="text-center">Remove</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let customer of customers">
+          <td class="pt-3-half" >{{customer.customerId}}</td>
+          <td class="pt-3-half" >{{customer.customerCode}}</td>
+          <td class="pt-3-half">{{customer.customerName}}</td>
+          <td class="pt-3-half">{{customer.customerBirthday}}</td>
+          <td class="pt-3-half">{{customer.customerGender}}</td>
+          <td class="pt-3-half">{{customer.customerIdCard}}</td>
+          <td class="pt-3-half">{{customer.customerPhone}}</td>
+          <td class="pt-3-half">{{customer.customerEmail}}</td>
+          <td class="pt-3-half">{{customer.customerAddress}}</td>
+          <td class="pt-3-half">
+            <p *ngIf="customer.customerTypeId==1">Member</p>
+            <p *ngIf="customer.customerTypeId==2">Silver</p>
+            <p *ngIf="customer.customerTypeId==3">Gold</p>
+            <p *ngIf="customer.customerTypeId==4">Platinium</p>
+            <p *ngIf="customer.customerTypeId==5">Diamond</p>
+          </td>
+          <td>
+                        <span class="table-remove">
+                            <button [routerLink]="['/edit-customer',customer.customerId]" type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>
+                         </span>
+          </td>
+          <td>
+                      <span class="table-remove">
+                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
+                      </span>
+          </td>
+        </tr>
+        <!-- This is our clonable table line -->
+<!--        <tr>-->
+<!--          <td class="pt-3-half">2</td>-->
+<!--          <td class="pt-3-half">KH-0002</td>-->
+<!--          <td class="pt-3-half">Huỳnh Văn Bánh</td>-->
+<!--          <td class="pt-3-half">04-12-1990</td>-->
+<!--          <td class="pt-3-half">Nam</td>-->
+<!--          <td class="pt-3-half">2039675128</td>-->
+<!--          <td class="pt-3-half">0909787739</td>-->
+<!--          <td class="pt-3-half">banhxe@gmail.com</td>-->
+<!--          <td class="pt-3-half">342,Lê Lợi, Hà Nội</td>-->
+<!--          <td class="pt-3-half">Platinium</td>-->
+<!--          <td>-->
+<!--                        <span class="table-remove">-->
+<!--                            <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>-->
+<!--                         </span>-->
+<!--          </td>-->
+<!--          <td>-->
+<!--                        <span class="table-remove">-->
+<!--                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>-->
+<!--                        </span>-->
+<!--          </td>-->
+<!--        </tr>-->
+<!--        &lt;!&ndash; This is our clonable table line &ndash;&gt;-->
+<!--        <tr>-->
+<!--          <td class="pt-3-half">3</td>-->
+<!--          <td class="pt-3-half">KH-0003</td>-->
+<!--          <td class="pt-3-half">Dương Minh Tuyền</td>-->
+<!--          <td class="pt-3-half">12-05-1989</td>-->
+<!--          <td class="pt-3-half">Nam</td>-->
+<!--          <td class="pt-3-half">3199675199</td>-->
+<!--          <td class="pt-3-half">0909786666</td>-->
+<!--          <td class="pt-3-half">tuyen.mom@gmail.com</td>-->
+<!--          <td class="pt-3-half">342,Hai Bà Trưng, Hà Nội</td>-->
+<!--          <td class="pt-3-half">Diamond</td>-->
+<!--          <td>-->
+<!--                        <span class="table-remove">-->
+<!--                            <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>-->
+<!--                         </span>-->
+<!--          </td>-->
+<!--          <td>-->
+<!--                      <span class="table-remove">-->
+<!--                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>-->
+<!--                      </span>-->
+<!--          </td>-->
+<!--        </tr>-->
+<!--        &lt;!&ndash; This is our clonable table line &ndash;&gt;-->
+<!--        <tr class="hide">-->
+<!--          <td class="pt-3-half">4</td>-->
+<!--          <td class="pt-3-half">KH-0004</td>-->
+<!--          <td class="pt-3-half">Trương Văn Cam</td>-->
+<!--          <td class="pt-3-half">12-05-1974</td>-->
+<!--          <td class="pt-3-half">Nam</td>-->
+<!--          <td class="pt-3-half">3199679999</td>-->
+<!--          <td class="pt-3-half">09096049171</td>-->
+<!--          <td class="pt-3-half">Cam.giam.gia@gmail.com</td>-->
+<!--          <td class="pt-3-half">342,Phố Hàng Đậu, Hà Nội</td>-->
+<!--          <td class="pt-3-half">Diamond</td>-->
+<!--          <td>-->
+<!--            <span class="table-remove">-->
+<!--              <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>-->
+<!--            </span>-->
+<!--          </td>-->
+<!--          <td>-->
+<!--            <span class="table-remove">-->
+<!--              <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>-->
+<!--            </span>-->
+<!--          </td>-->
+<!--        </tr>-->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

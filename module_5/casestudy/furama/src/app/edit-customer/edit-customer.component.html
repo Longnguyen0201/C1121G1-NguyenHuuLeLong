@@ -1,0 +1,78 @@
+<div class="body-edit">
+<div class="container-lg">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="contact-form">
+        <h1>Update Customer</h1>
+        <form action="#"  method="post" novalidate="novalidate">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="form-group">
+                <label>Mã khách hàng<span class="const">*</span>: </label>
+                <input type="text" name="author" class="form-control" value="{{customer.customerCode}}"
+                       required/>
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="form-group">
+                <label>Tên Khách Hàng<span class="const">*</span>: </label>
+                <input type="text" name="author" class="form-control" value="{{customer.customerName}}"
+                       required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Ngày sinh<span class="const">*</span>: </label>
+            <input type="date" name="content" class="form-control" value="{{customer.customerBirthday}}" required/>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="form-group">
+                <label>Gới tính :</label>
+                <select class="form-control">
+                  <option value="1" > Nam</option>
+                  <option value="0" > Nữ</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="form-group">
+                <label>CMND/CCCD<span class="const">*</span>: </label>
+                <input type="text" name="content" class="form-control" value="{{customer.customerIdCard}}"
+                       required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Điện thoại: </label>
+            <input type="text" name="content" class="form-control"  value="{{customer.customerPhone}}" required/>
+          </div>
+          <div class="form-group">
+            <label>Email: </label>
+            <input type="text" name="content" class="form-control" value="{{customer.customerEmail}}"  required/>
+          </div>
+          <div class="form-group">
+            <label>Địa chỉ <span class="const">*</span>: </label>
+            <input type="text" name="content" class="form-control" value="{{customer.customerAddress}}"  required/>
+          </div>
+          <div class="form-group">
+            <label>Loại khách hàng<span class="const">*</span>: </label>
+            <select  class="form-control" >
+              <option *ngIf="customer.customerTypeId == 1" value="1" selected>Member</option>
+              <option *ngIf="customer.customerTypeId == 2" value="2" selected>Silver</option>
+              <option *ngIf="customer.customerTypeId == 3" value="3" selected>Gold</option>
+              <option *ngIf="customer.customerTypeId == 4" value="4" selected>Platinium</option>
+              <option *ngIf="customer.customerTypeId == 5" value="5" selected>Diamond</option>
+            </select>
+          </div>
+          <div class="text-center">
+            <a href="/customers" class="btn btn-primary"> Hủy
+            </a>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Xác nhận</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
