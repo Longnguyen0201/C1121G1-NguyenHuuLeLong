@@ -1,0 +1,32 @@
+<br>
+<p>*******************************************</p>
+<h1>Login</h1>
+<form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="email">Email </label><br>
+    <input type="text" id="email" name="email" formControlName="email"><br>
+    <div *ngIf="email.invalid&&(email.touched||email.dirty)">
+      <div [hidden]="!email.errors.required">
+        <p style="color: red">Email không được bỏ trống</p>
+      </div>
+      <div [hidden]="!email.errors.pattern">
+        <p style="color: red">Email sai định dạng (ex: abcde@gmail.com)</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="password">Password </label><br>
+    <input type="password" id="password" name="password" formControlName="password"><br>
+    <div *ngIf="password.invalid&&(password.touched||password.dirty)">
+      <div [hidden]="!password.errors.required">
+        <p style="color: red">Password không được bỏ trống</p>
+      </div>
+      <div [hidden]="!password.errors.minlength">
+        <p style="color: red">Kí tự phải lớn hơn 6</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>

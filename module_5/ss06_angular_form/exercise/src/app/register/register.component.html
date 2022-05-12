@@ -1,0 +1,96 @@
+<form [formGroup]="fromRegister" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label for="email">Email </label><br>
+    <input type="text" id="email" name="email" formControlName="email"><br>
+    <div *ngIf="email.invalid&&(email.touched||email.dirty)">
+      <div [hidden]="!email.errors.required">
+        <p style="color: red">Email không được bỏ trống</p>
+      </div>
+      <div [hidden]="!email.errors.pattern">
+        <p style="color: red">Email sai định dạng (ex: abcde@gmail.com)</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="password">Password </label><br>
+    <input type="password" id="password" name="password" formControlName="password"><br>
+    <div *ngIf="password.invalid&&(password.touched||password.dirty)">
+      <div [hidden]="!password.errors.required">
+        <p style="color: red">Password không được bỏ trống</p>
+      </div>
+      <div [hidden]="!password.errors.minlength">
+        <p style="color: red">Kí tự phải lớn hơn 6</p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <label for="confirmPassword">Confirm password </label><br>
+    <input type="password" id="confirmPassword" name="confirmPassword" formControlName="confirmPassword" (change)="checkPasswords()"><br>
+    <div *ngIf="confirmPassword.invalid&&(confirmPassword.touched||confirmPassword.dirty)">
+      <div [hidden]="!confirmPassword.errors.required">
+        <p style="color: red">Password không được bỏ trống</p>
+      </div>
+      <div [hidden]="!confirmPassword.errors.minlength">
+        <p style="color: red">Kí tự phải lớn hơn 6</p>
+      </div>
+      <div [hidden]="!confirmPassword.errors.notSame">
+        <p style="color: red">Xác nhận không giống với mật khẩu</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="country">Country </label><br>
+    <select id="country" name="country" formControlName="country">
+      <option value="1">Hà Nội</option>
+      <option value="2">Hải Phòng</option>
+      <option value="3">Đà Nẵng</option>
+      <option value="4">Hồ Chí minh</option>
+      <option value="5">Cần Thơ</option>
+    </select><br>
+    <div *ngIf="country.invalid&&(country.touched||country.dirty)">
+      <div [hidden]="!country.errors.required">
+        <p style="color: red">Quê quán không được bỏ trống</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="age">Age </label><br>
+    <input type="text" id="age" name="age" formControlName="age"><br>
+    <div *ngIf="age.invalid&&(age.touched||age.dirty)">
+      <div [hidden]="!age.errors.required">
+        <p style="color: red">Tuổi không được bỏ trống</p>
+      </div>
+      <div [hidden]="!age.errors.minlength">
+        <p style="color: red">Tuổi phải lớn hơn 18</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="gender">Geneder </label><br>
+    <input type="radio" value="male" id="gender" name="gender" formControlName="gender"> Male
+    <input type="radio" value="female" id="gender" name="gender" formControlName="gender"> Female<br>
+    <div *ngIf="gender.invalid&&(gender.touched||gender.dirty)">
+      <div [hidden]="!gender.errors.required">
+        <p style="color: red">Giới tính không được bỏ trống</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="phone">Phone </label><br>
+    <input type="text" id="phone" name="phone" formControlName="phone"><br>
+    <div *ngIf="phone.invalid&&(phone.touched||phone.dirty)">
+      <div [hidden]="!phone.errors.required">
+        <p style="color: red">Điện thoại không được bỏ trống</p>
+      </div>
+      <div [hidden]="!phone.errors.pattern">
+        <p style="color: red">Điện thoại sai định dạng (ex: +84xxxxxxxx)</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+
+</form>

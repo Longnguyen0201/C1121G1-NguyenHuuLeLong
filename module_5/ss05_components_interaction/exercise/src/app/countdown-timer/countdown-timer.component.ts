@@ -9,17 +9,18 @@ export class CountdownTimerComponent implements OnInit, OnChanges, OnDestroy {
   message = '';
   remainingTime: number;
   @Input() seconds = 11;
+   seconds2 = 13;
   @Output() finish = new EventEmitter<boolean>();
   private intervalId = 0 ;
   constructor() {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if ('seconds' in changes) {
-      let v = changes.seconds.currentValue;
-      v = typeof v === 'undefined' ? 11 : v;
+    if ('seconds2' in changes) {
+      let v = changes.seconds2.currentValue;
+      v = typeof v === 'undefined' ? 13 : v;
       const vFix = Number(v);
-      this.seconds = Number.isNaN(vFix) ? 11 : vFix;
+      this.seconds = Number.isNaN(vFix) ? 13 : vFix;
     }
   }
 
@@ -39,14 +40,14 @@ export class CountdownTimerComponent implements OnInit, OnChanges, OnDestroy {
 
   reset() {
     this.clearTimer();
-    this.remainingTime = this.seconds;
+    this.remainingTime = this.seconds2;
     this.message = 'Click start button to start the countdown';
   }
 
   start() {
     this.countDown();
     if (this.remainingTime <= 0) {
-      this.remainingTime = this.seconds;
+      this.remainingTime = this.seconds2;
     }
   }
 

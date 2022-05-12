@@ -17,7 +17,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {RouterModule} from '@angular/router';
 import {CustomerService} from '../services/customer-service';
 import {FacilityService} from '../services/facility-service';
-import {ContractService} from "../services/contract-service";
+import {ContractService} from '../services/contract-service';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,12 +33,13 @@ import {ContractService} from "../services/contract-service";
     EditCustomerComponent,
     CreateCustomerComponent,
     CreateContractComponent,
-    ListContractComponent
+    ListContractComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   providers: [CustomerService, FacilityService, ContractService],
   bootstrap: [AppComponent]
