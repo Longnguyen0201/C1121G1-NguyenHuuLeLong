@@ -38,21 +38,22 @@
           <td class="pt-3-half">{{customer.customerEmail}}</td>
           <td class="pt-3-half">{{customer.customerAddress}}</td>
           <td class="pt-3-half">
-            <p *ngIf="customer.customerTypeId==1">Member</p>
-            <p *ngIf="customer.customerTypeId==2">Silver</p>
+            <p *ngIf="customer.customerTypeId==1">Diamond</p>
+            <p *ngIf="customer.customerTypeId==2">Platinium</p>
             <p *ngIf="customer.customerTypeId==3">Gold</p>
-            <p *ngIf="customer.customerTypeId==4">Platinium</p>
-            <p *ngIf="customer.customerTypeId==5">Diamond</p>
+            <p *ngIf="customer.customerTypeId==4">silver</p>
+            <p *ngIf="customer.customerTypeId==5">Member</p>
           </td>
           <td>
-                        <span class="table-remove">
-                            <button [routerLink]="['/edit-customer',customer.customerId]" type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>
-                         </span>
+            <span class="table-remove">
+              <button routerLink="/edit-customer/{{customer.customerId}}"
+                      type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>
+            </span>
           </td>
           <td>
-                      <span class="table-remove">
-                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
-                      </span>
+            <span class="table-remove">
+              <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
+            </span>
           </td>
         </tr>
         <!-- This is our clonable table line -->

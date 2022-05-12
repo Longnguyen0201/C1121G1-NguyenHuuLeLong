@@ -4,16 +4,20 @@
       <div class="col-md-8 mx-auto">
         <div class="contact-form">
           <h1>Add new customer</h1>
-          <form [formGroup]="formCustomerCreate" (ngSubmit)="onSubmit()" novalidate>
+          <form [formGroup]="formCustomerCreate" (ngSubmit)="onSubmit()" >
             <div class="row">
               <div class="col-sm-5">
                 <div class="form-group">
                   <label for="customerCode">Mã khách hàng <span class="const">*</span>: </label>
                   <input id="customerCode" type="text" name="customerCode" class="form-control" placeholder="ex:KH-xxxx"
                          formControlName="customerCode" required/>
-                  <div class="error-valid" *ngIf="!formCustomerCreate.controls.customerCode?.valid &&
-                  (formCustomerCreate.controls.customerCode?.dirty || formCustomerCreate.controls.customerCode?.touched)">
-                    <p class="error-valid">Mã khách hàng không được bỏ trống </p>
+                  <div  *ngIf="customerCode.invalid&&(customerCode.touched||customerCode.dirty)">
+                    <p class="error-valid" [hidden]="!customerCode.errors.required">
+                      Mã khách hàng không được bỏ trống
+                    </p>
+                    <p [hidden]="!customerCode.errors.pattern">
+                      <span style="color: red">Mã khách hàng sai định dạng (ex: KH-xxxx)</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -22,9 +26,10 @@
                   <label>Tên khách hàng <span class="const">*</span>: </label>
                   <input type="text" name="customerName" class="form-control" placeholder="ex: Nguyễn Văn A"
                          formControlName="customerName" required/>
-                  <div class="error-valid" *ngIf="!formCustomerCreate.controls.customerName?.valid &&
-                  (formCustomerCreate.controls.customerName?.dirty ||formCustomerCreate.controls.customerName?.touched)">
-                    <p class="error-valid"> Tên khách hàng không được bỏ trống
+                  <div *ngIf="customerName.invalid&&(customerName.touched||customerName.dirty)">
+                    <p [hidden]="!customerName.errors.required">
+                      <span style="color: red">Tên khách hàng không được bỏ trống</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -33,9 +38,10 @@
               <label>Ngày sinh: </label>
               <input type="date" name="customerBirthday" class="form-control" formControlName="customerBirthday"
                      required/>
-              <div class="error-valid" *ngIf="!formCustomerCreate.controls.customerBirthday?.valid &&
-               (formCustomerCreate.controls.customerBirthday?.dirty || formCustomerCreate.controls.customerBirthday?.touched)">
-                <p class="error-valid">Ngày sinh không được bỏ trống</p>
+              <div *ngIf="customerBirthday.invalid&&(customerBirthday.touched||customerBirthday.dirty)">
+                <p [hidden]="!customerBirthday.errors.required">
+                  <span style="color: red">Ngày sinh không được bỏ trống</span>
+                </p>
               </div>
             </div>
             <div class="row">
@@ -46,19 +52,22 @@
                     <option value="1">Nam</option>
                     <option value="0">Nữ</option>
                   </select>
-                  <div class="error-valid" *ngIf="!formCustomerCreate.controls.customerGender?.valid &&
-                   (formCustomerCreate.controls.customerGender?.dirty || formCustomerCreate.controls.customerGender?.touched)">
-                    <p class="error-valid">Giới tính không được bỏ trống</p>
+                  <div *ngIf="customerGender.invalid&&(customerGender.touched||customerGender.dirty)">
+                    <p [hidden]="!customerGender.errors.required">
+                      <span style="color: red">Giới tính không được bỏ trống</span>
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col-sm-7">
                 <div class="form-group">
                   <label>CMND/CCCD <span class="const">*</span>: </label>
-                  <input type="text" class="form-control" name="customerIdCard" formControlName="customerIdCard" required/>
-                  <div class="error-valid" *ngIf="!formCustomerCreate.controls.customerIdCard?.valid &&
-                  (formCustomerCreate.controls.customerIdCard?.dirty ||formCustomerCreate.controls.customerIdCard?.touched)">
-                    <p class="error-valid"> CMND/CCCD không được bỏ trống</p>
+                  <input type="text" class="form-control" name="customerIdCard" formControlName="customerIdCard"
+                         required/>
+                  <div *ngIf="customerIdCard.invalid&&(customerIdCard.touched||customerIdCard.dirty)">
+                    <p [hidden]="!customerIdCard.errors.required">
+                      <span style="color: red">CMND/CCCD không được bỏ trống</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -66,48 +75,52 @@
             <div class="form-group">
               <label>Số điện thoại <span class="const">*</span>: </label>
               <input type="text" class="form-control" name="customerPhone" formControlName="customerPhone" required/>
-              <div class="error-valid" *ngIf="!formCustomerCreate.controls.customerPhone?.valid &&
-              (formCustomerCreate.controls.customerPhone?.dirty ||formCustomerCreate.controls.customerPhone?.touched)">
-                <p class="error-valid">Số điện thoại không được bỏ trống</p>
+              <div *ngIf="customerPhone.invalid&&(customerPhone.touched||customerPhone.dirty)">
+                <p [hidden]="!customerPhone.errors.required">
+                  <span style="color: red">Số điện thoại không được bỏ trống</span>
+                </p>
               </div>
             </div>
             <div class="form-group">
               <label>Email <span class="const">*</span>: </label>
               <input type="text" class="form-control" placeholder="ex: abc@gmail.com"
                      name="customerEmail" formControlName="customerEmail" required/>
-              <div class="error-valid" *ngIf="!formCustomerCreate.controls.customerEmail?.valid &&
-              (formCustomerCreate.controls.customerEmail?.dirty || formCustomerCreate.controls.customerEmail?.touched)">
-                <p class="error-valid"> email không được bỏ trống</p>
+              <div *ngIf="customerEmail.invalid&&(customerEmail.touched||customerEmail.dirty)">
+                <p [hidden]="!customerEmail.errors.required">
+                  <span style="color: red">Email không được bỏ trống</span>
+                </p>
               </div>
             </div>
             <div class="form-group">
               <label>ĐỊa chỉ: </label>
               <input type="text" class="form-control"
                      name="customerAddress" formControlName="customerAddress" required/>
-              <div class="error-valid" *ngIf="!formCustomerCreate.controls.customerAddress?.valid &&
-               (formCustomerCreate.controls.customerAddress?.dirty || formCustomerCreate.controls.customerAddress?.touched)">
-                <p class="error-valid">Địa chỉ không được bỏ trống</p>
+              <div *ngIf="customerAddress.invalid&&(customerAddress.touched||customerAddress.dirty)">
+                <p [hidden]="!customerAddress.errors.required">
+                  <span style="color: red">Địa chỉ không được bỏ trống</span>
+                </p>
               </div>
             </div>
             <div class="form-group">
               <label>Loại khách hàng <span class="const">*</span>: </label>
               <select class="form-control" name="customerTypeId" formControlName="customerTypeId">
-                <option value="1">Member</option>
-                <option value="2">Silver</option>
-                <option value="3">Gold</option>
-                <option value="4">Platinium</option>
-                <option value="5">Diamond</option>
+                <option *ngFor="let customerType of customerTypeList"
+                        [ngValue]="customerType.customerTypeId">{{customerType.customerTypeName}}</option>
+                <!--                <option value="2">Silver</option>-->
+                <!--                <option value="3">Gold</option>-->
+                <!--                <option value="4">Platinium</option>-->
+                <!--                <option value="5">Diamond</option>-->
               </select>
-              <div  *ngIf="!formCustomerCreate.controls.customerTypeId?.valid &&
-              (formCustomerCreate.controls.customerTypeId?.dirty ||formCustomerCreate.controls.customerTypeId?.touched)">
-                <p class="error-valid"> Loại khách hàng không được bỏ trống</p>
+              <div *ngIf="customerTypeId.invalid&&(customerTypeId.touched||customerTypeId.dirty)">
+                <p [hidden]="!customerTypeId.errors.required">
+                  <span style="color: red">Loại khách hàng không được bỏ trống</span>
+                </p>
               </div>
             </div>
             <div class="text-center">
               <a style="margin-right: 15px" href="/customers" class="btn btn-primary"> Hủy
               </a>
-              <button type="submit" class="btn btn-primary" [disabled]="!formCustomerCreate.valid"><i
-                class="fa fa-paper-plane"></i>Xác nhận
+              <button  type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Xác nhận
               </button>
             </div>
           </form>

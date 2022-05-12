@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {Customer} from '../../models/customer';
 import {CustomerService} from '../../services/customer-service';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
+import {CustomerTypeService} from '../../services/customer-type-service';
+import {CustomerType} from '../../models/customer-type';
 
 @Component({
   selector: 'app-create-customer',
@@ -12,9 +14,10 @@ import {Router} from '@angular/router';
 export class CreateCustomerComponent implements OnInit {
   customer: Customer;
   customers: Customer[] = [];
-  route: Router;
+  customerTypeList: CustomerType[];
+
   formCustomerCreate: FormGroup = new FormGroup({
-    customerCode: new FormControl('', [Validators.required, Validators.pattern('^KH-\\\\d{4}$')] ),
+    customerCode: new FormControl('', [Validators.required, Validators.pattern('^KH-\\d{4}$')]),
     customerName: new FormControl('', Validators.required),
     customerBirthday: new FormControl('', Validators.required),
     customerGender: new FormControl('', Validators.required),
@@ -25,16 +28,53 @@ export class CreateCustomerComponent implements OnInit {
     customerTypeId: new FormControl('', Validators.required)
   });
 
-  constructor(private customerService: CustomerService) { }
+  constructor(private router: ActivatedRoute,
+              private  route: Router,
+              private customerService: CustomerService,
+              private customerTypeService: CustomerTypeService) {
+    this.customerTypeList = this.customerTypeService.getCustomerTypeList();
+  }
+
+  get customerCode() {
+    return this.formCustomerCreate.get('customerCode');
+  }
+  get customerName() {
+    return this.formCustomerCreate.get('customerName');
+  }
+  get customerBirthday() {
+    return this.formCustomerCreate.get('customerBirthday');
+  }
+  get customerGender() {
+    return this.formCustomerCreate.get('customerGender');
+  }
+  get customerIdCard() {
+    return this.formCustomerCreate.get('customerIdCard');
+  }
+  get customerPhone() {
+    return this.formCustomerCreate.get('customerPhone');
+  }
+  get customerEmail() {
+    return this.formCustomerCreate.get('customerEmail');
+  }
+  get customerAddress() {
+    return this.formCustomerCreate.get('customerAddress');
+  }
+  get customerTypeId() {
+    return this.formCustomerCreate.get('customerTypeId');
+  }
 
   ngOnInit(): void {
   }
 
   onSubmit() {
-    console.log(this.formCustomerCreate);
-    this.customer = this.formCustomerCreate.value;
-    console.log(this.customer);
-    this.customerService.createCustomer(this.customer);
-    this.route.navigateByUrl('/list-customer');
+    if (this.formCustomerCreate.valid){
+      this.route.navigateByUrl('/create-customer');
+    }else {
+      console.log(this.formCustomerCreate);
+      this.customer = this.formCustomerCreate.value;
+      console.log(this.customer);
+      this.customerService.createCustomer(this.customer);
+      this.route.navigateByUrl('/list-customer');
+    }
   }
 }

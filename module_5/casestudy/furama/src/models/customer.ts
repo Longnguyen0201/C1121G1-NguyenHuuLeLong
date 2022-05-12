@@ -1,3 +1,5 @@
+import {CustomerType} from './customer-type';
+
 export class Customer {
   customerId: number;
   customerCode: string;
