@@ -11,4 +11,10 @@ export class ContractService {
     return contractList;
   }
 
+  createContract(contract: Contract) {
+    contract.contractId = this.getContractList().length + 1;
+    this.getContractList().push(contract);
+    // @ts-ignore
+    console.log(this.getContractList());
+  }
 }

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th>Id </th>
+            <th>Word</th>
+            <th>Mean</th>
+            <th>Detail</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let word of dictionays">
+            <td>{{word.id}}</td>
+            <td>{{word.word}}</td>
+            <td>{{word.mean}}</td>
+            <td><a [routerLink]="['/dictionaryDetail', word.id]" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a></td>
+          </tr>
+          <app-dictionary-detail></app-dictionary-detail>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

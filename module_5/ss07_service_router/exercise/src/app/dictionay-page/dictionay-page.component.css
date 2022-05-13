@@ -1,0 +1,8 @@
+body{margin-top:20px;}
+
+.toggleDisplay {
+  display: none;
+}
+.toggleDisplay.in {
+  display: table-cell;
+}

@@ -24,8 +24,8 @@
               <div class="col-sm-7">
                 <div class="form-group">
                   <label>Tên khách hàng <span class="const">*</span>: </label>
-                  <input type="text" name="customerName" class="form-control" placeholder="ex: Nguyễn Văn A"
-                         formControlName="customerName" required/>
+                  <input type="text" class="form-control" placeholder="ex: Nguyễn Văn A"
+                         name="customerName" formControlName="customerName" required/>
                   <div *ngIf="customerName.invalid&&(customerName.touched||customerName.dirty)">
                     <p [hidden]="!customerName.errors.required">
                       <span style="color: red">Tên khách hàng không được bỏ trống</span>

@@ -14,7 +14,7 @@
             </select>
             <div *ngIf="serviceType.invalid&&(serviceType.touched||serviceType.dirty)">
               <p [hidden]="!serviceType.errors.required">
-                <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                <span style="color: red">Không được bỏ trống</span>
               </p>
             </div>
           </div>
@@ -25,7 +25,7 @@
                 <input type="text"  class="form-control" name="serviceCode" formControlName="serviceCode" required/>
                 <div *ngIf="serviceCode.invalid&&(serviceCode.touched||serviceCode.dirty)">
                   <p [hidden]="!serviceCode.errors.required">
-                    <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                    <span style="color: red">Không được bỏ trống</span>
                   </p>
                 </div>
               </div>
@@ -51,7 +51,7 @@
                        required/>
                 <div *ngIf="serviceArea.invalid&&(serviceArea.touched||serviceArea.dirty)">
                   <p [hidden]="!serviceArea.errors.required">
-                    <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                    <span style="color: red">Không được bỏ trống</span>
                   </p>
                 </div>
               </div>
@@ -63,7 +63,7 @@
                        required/>
                 <div *ngIf="servicePrice.invalid&&(servicePrice.touched||servicePrice.dirty)">
                   <p [hidden]="!servicePrice.errors.required">
-                    <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                    <span style="color: red">Không được bỏ trống</span>
                   </p>
                 </div>
               </div>
@@ -75,7 +75,7 @@
                        required/>
                 <div *ngIf="serviceMaxPeople.invalid&&(serviceMaxPeople.touched||serviceMaxPeople.dirty)">
                   <p [hidden]="!serviceMaxPeople.errors.required">
-                    <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                    <span style="color: red">Không được bỏ trống</span>
                   </p>
                 </div>
               </div>
@@ -87,7 +87,7 @@
                    required/>
             <div *ngIf="serviceStandRoom.invalid&&(serviceStandRoom.touched||serviceStandRoom.dirty)">
               <p [hidden]="!serviceStandRoom.errors.required">
-                <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                <span style="color: red">Không được bỏ trống</span>
               </p>
             </div>
 
@@ -98,7 +98,7 @@
                       required></textarea>
             <div *ngIf="serviceDescribe.invalid&&(serviceDescribe.touched||serviceDescribe.dirty)">
               <p [hidden]="!serviceDescribe.errors.required">
-                <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                <span style="color: red">Không được bỏ trống</span>
               </p>
             </div>
           </div>
