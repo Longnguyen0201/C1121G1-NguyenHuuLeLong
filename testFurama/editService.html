@@ -2,9 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+
+    <style>
+        body {
+            color: #000;
+            background: lightskyblue;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .contact-form {
+            padding: 50px;
+            margin: 30px auto;
+        }
+
+        .contact-form h1 {
+            font-size: 42px;
+            font-family: 'Pacifico', sans-serif;
+            margin: 0 0 50px;
+            text-align: center;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form .form-control, .contact-form .btn {
+            min-height: 40px;
+            border-radius: 2px;
+        }
+
+        .contact-form .form-control {
+            border-color: #e2c705;
+        }
+
+        .contact-form .form-control:focus {
+            border-color: #d8b012;
+            box-shadow: 0 0 8px #dcae10;
+        }
+
+        .contact-form .btn-primary, .contact-form .btn-primary:active {
+            min-width: 250px;
+            color: #fcda2e;
+            background: #000 !important;
+            margin-top: 20px;
+            border: none;
+        }
+
+        .contact-form .btn-primary:hover {
+            color: #fff;
+        }
+
+        .contact-form .btn-primary i {
+            margin-right: 5px;
+        }
+
+        .contact-form label {
+            opacity: 0.9;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="container-lg">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="contact-form">
+                <h1>Update Service</h1>
+                <form action="#"  method="post" novalidate="novalidate">
+                    <!--                    <input type="hidden" th:value="${serviceTypeIdNow}" id="idNow" name="idNow">-->
+                    <div class="form-group">
+                        <label>Loại dịch vụ </label>
+                        <select class="form-control" id="id-serviceType">
+                            <option value="1">Villa</option>
+                            <option value="2">House</option>
+                            <option value="3">Room</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Mã dịch vụ </label>
+                                <input type="text" name="author" class="form-control" value="DV-0012" required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label>Tên dịch vụ  </label>
+                                <input type="text" name="author" class="form-control"  value="Phòng Superior hướng hồ"
+                                       required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Diện tích sử dụng</label>
+                                <input type="text" name="content" class="form-control" value="40,1 m"
+                                       required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Giá dịch vụ </label>
+                                <input type="text" name="content" class="form-control"  value="120$"
+                                       required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Số người sử dụng tối đa: </label>
+                                <input type="text" name="content" class="form-control" value = "4"
+                                       required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tiêu chuẩn phòng </label>
+                        <input type="text" name="content" class="form-control" value="Vip" required/>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả khách </label>
+                        <textarea  name="content" class="form-control"  maxlength="100" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label> Kiểu thuê </label>
+                        <select class="form-control">
+                            <option value="1">Year</option>
+                            <option value="2">Month</option>
+                            <option value="3">Day</option>
+                            <option value="4">Hour</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group" id="poolArea">
+                                <label>Pool Area</label>
+                                <input type="text" name="content" class="form-control"
+                                       required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group" id="numberOfFloors">
+                                <label>Number of Floors </label>
+                                <input type="text" name="content" class="form-control"
+                                       required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="/services" class="btn btn-primary"> Close
+                        </a>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
