@@ -1,7 +1,7 @@
 <main>
   <!--Navbar-->
   <nav class=" navbar  navbar-dark mdb-color  mt-3 mb-5">
-    <div class="nav-div" >
+    <div class="nav-div">
       <a [routerLink]="['/create-service']" class="text-success nav-div-a">Create Service</a>
     </div>
     <!-- Collapsible content -->
@@ -23,9 +23,6 @@
             <img
               src="{{facility.serviceImg}}"
               class="card-img-top" alt="">
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
           </div>
           <!--Card image-->
 
@@ -45,7 +42,9 @@
               <strong>{{facility.servicePrice}}$</strong>
             </h4>
             <h3 class="table-remove">
-                 <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a>
+              <a [routerLink]="['/edit-service', facility.serviceId]" type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</a>
+              <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a>
+              <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Delete</a>
             </h3>
           </div>
           <!--Card content-->

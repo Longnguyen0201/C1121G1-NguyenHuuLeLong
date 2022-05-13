@@ -29,7 +29,7 @@ export class CreateCustomerComponent implements OnInit {
   });
 
   constructor(private router: ActivatedRoute,
-              private  route: Router,
+              private route: Router,
               private customerService: CustomerService,
               private customerTypeService: CustomerTypeService) {
     this.customerTypeList = this.customerTypeService.getCustomerTypeList();

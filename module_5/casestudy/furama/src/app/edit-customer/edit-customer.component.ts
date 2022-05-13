@@ -4,7 +4,7 @@ import {Customer} from '../../models/customer';
 import {CustomerService} from '../../services/customer-service';
 import {CustomerType} from '../../models/customer-type';
 import {CustomerTypeService} from '../../services/customer-type-service';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 
 
@@ -14,7 +14,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./edit-customer.component.css']
 })
 export class EditCustomerComponent implements OnInit {
-    id: any;
+    id: number;
    customers: Customer[];
    customer: Customer;
   customerTypeList: CustomerType[];

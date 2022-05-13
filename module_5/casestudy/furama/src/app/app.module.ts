@@ -20,6 +20,7 @@ import {FacilityService} from '../services/facility-service';
 import {ContractService} from '../services/contract-service';
 import {ReactiveFormsModule} from '@angular/forms';
 import {CustomerTypeService} from '../services/customer-type-service';
+import {RentTypeService} from '../services/rent-type-service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import {CustomerTypeService} from '../services/customer-type-service';
     RouterModule,
     ReactiveFormsModule
   ],
-  providers: [CustomerService, FacilityService, ContractService, CustomerTypeService],
+  providers: [CustomerService, FacilityService, ContractService, CustomerTypeService, RentTypeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

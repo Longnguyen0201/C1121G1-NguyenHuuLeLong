@@ -10,7 +10,7 @@ export class Facility {
   serviceDescribe: string;
   serviceRentType: number;
   serviceAreaPool: number;
-  serviceFloor: number;
+      serviceFloor: number;
   serviceImg: string;
 
 

@@ -12,7 +12,7 @@
                   <input id="customerCode" type="text" name="customerCode" class="form-control" placeholder="ex:KH-xxxx"
                          formControlName="customerCode" required/>
                   <div  *ngIf="customerCode.invalid&&(customerCode.touched||customerCode.dirty)">
-                    <p class="error-valid" [hidden]="!customerCode.errors.required">
+                    <p style="color: red" [hidden]="!customerCode.errors.required">
                       Mã khách hàng không được bỏ trống
                     </p>
                     <p [hidden]="!customerCode.errors.pattern">

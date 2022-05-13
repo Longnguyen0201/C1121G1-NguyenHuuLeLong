@@ -3,28 +3,43 @@
     <div class="col-md-8 mx-auto">
       <div class="contact-form">
         <h1>Create Service</h1>
-        <form action="#" method="post" novalidate="novalidate">
+        <form [formGroup]="formServiceCreate" (ngSubmit)="onSubmit()" novalidate="novalidate">
           <!--                    <input type="hidden" th:value="${serviceTypeIdNow}" id="idNow" name="idNow">-->
           <div class="form-group">
             <label>Loại dịch vụ <span class="const">*</span> </label>
-            <select class="form-control" id="id-serviceType">
+            <select class="form-control" id="id-serviceType" name="serviceType" formControlName="serviceType">
               <option value="1">Create new Villa</option>
               <option value="2">Create new House</option>
               <option value="3">Create new Room</option>
             </select>
+            <div *ngIf="serviceType.invalid&&(serviceType.touched||serviceType.dirty)">
+              <p [hidden]="!serviceType.errors.required">
+                <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+              </p>
+            </div>
           </div>
           <div class="row">
             <div class="col-sm-4">
               <div class="form-group">
                 <label>Mã dịch vụ <span class="const">*</span></label>
-                <input type="text" name="author" class="form-control" required/>
+                <input type="text"  class="form-control" name="serviceCode" formControlName="serviceCode" required/>
+                <div *ngIf="serviceCode.invalid&&(serviceCode.touched||serviceCode.dirty)">
+                  <p [hidden]="!serviceCode.errors.required">
+                    <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-sm-8">
               <div class="form-group">
                 <label>Tên dịch vụ <span class="const">*</span> </label>
-                <input type="text" name="author" class="form-control"
+                <input type="text"  class="form-control" name="serviceName" formControlName="serviceName"
                        required/>
+                <div *ngIf="serviceName.invalid&&(serviceName.touched||serviceName.dirty)">
+                  <p [hidden]="!serviceName.errors.required">
+                    <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -32,52 +47,92 @@
             <div class="col-sm-4">
               <div class="form-group">
                 <label>Diện tích sử dụng (m<sup>2</sup>) <span class="const">*</span></label>
-                <input type="text" name="content" class="form-control"
+                <input type="text"  class="form-control" name="serviceArea" formControlName="serviceArea"
                        required/>
+                <div *ngIf="serviceArea.invalid&&(serviceArea.touched||serviceArea.dirty)">
+                  <p [hidden]="!serviceArea.errors.required">
+                    <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="form-group">
                 <label>Giá dịch vụ <span class="const">*</span> </label>
-                <input type="text" name="content" class="form-control"
+                <input type="text"  class="form-control" name="servicePrice" formControlName="servicePrice"
                        required/>
+                <div *ngIf="servicePrice.invalid&&(servicePrice.touched||servicePrice.dirty)">
+                  <p [hidden]="!servicePrice.errors.required">
+                    <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="form-group">
                 <label>Số người sử dụng tối đa: </label>
-                <input type="text" name="content" class="form-control"
+                <input type="text"  class="form-control" name="serviceMaxPeople" formControlName="serviceMaxPeople"
                        required/>
+                <div *ngIf="serviceMaxPeople.invalid&&(serviceMaxPeople.touched||serviceMaxPeople.dirty)">
+                  <p [hidden]="!serviceMaxPeople.errors.required">
+                    <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="form-group">
             <label>Tiêu chuẩn phòng <span class="const">*</span> </label>
-            <input type="text" name="content" class="form-control" required/>
+            <input type="text"  class="form-control" name="serviceStandRoom" formControlName="serviceStandRoom"
+                   required/>
+            <div *ngIf="serviceStandRoom.invalid&&(serviceStandRoom.touched||serviceStandRoom.dirty)">
+              <p [hidden]="!serviceStandRoom.errors.required">
+                <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+              </p>
+            </div>
 
           </div>
           <div class="form-group">
             <label>Mô tả </label>
-            <textarea name="content" class="form-control" maxlength="255"  required></textarea>
+            <textarea class="form-control" maxlength="255" name="serviceDescribe" formControlName="serviceDescribe"
+                      required></textarea>
+            <div *ngIf="serviceDescribe.invalid&&(serviceDescribe.touched||serviceDescribe.dirty)">
+              <p [hidden]="!serviceDescribe.errors.required">
+                <span style="color: red">Loại dịch vụ không được bỏ trống</span>
+              </p>
+            </div>
           </div>
           <div class="form-group">
             <label> Kiểu thuê <span class="const">*</span> </label>
-            <select class="form-control">
-              <option value="1">Year</option>
-              <option value="2">Month</option>
-              <option value="3">Day</option>
-              <option value="4">Hour</option>
+            <select class="form-control" name="serviceRentType" formControlName="serviceRentType">
+              <option *ngFor="let serviceRentType of RentTypeList"
+                      [ngValue]="serviceRentType.rentTypeId">{{serviceRentType.rentTypeName}}</option>
             </select>
+            <div *ngIf="serviceRentType.invalid&&(serviceRentType.touched||serviceRentType.dirty)">
+              <p [hidden]="!serviceRentType.errors.required">
+                <span style="color: red">Kiểu thuê  dịch vụ không được bỏ trống</span>
+              </p>
+            </div>
           </div>
           <div class="form-group" id="poolArea">
             <label>Diện tích hồ bơi (m<sup>2</sup>)</label>
-            <input type="text" name="content" class="form-control"
+            <input type="text"  class="form-control" name="serviceAreaPool" formControlName="serviceAreaPool"
                    required/>
+            <div *ngIf="serviceAreaPool.invalid&&(serviceAreaPool.touched||serviceAreaPool.dirty)">
+              <p [hidden]="!serviceAreaPool.errors.required">
+                <span style="color: red">Diện tích hồ bơi không được bỏ trống</span>
+              </p>
+            </div>
           </div>
           <div class="form-group" id="numberOfFloors">
             <label>Số tầng </label>
-            <input type="text" name="content" class="form-control"
+            <input type="text"  class="form-control" name="serviceFloor" formControlName="serviceFloor"
                    required/>
+            <div *ngIf="serviceFloor.invalid&&(serviceFloor.touched||serviceFloor.dirty)">
+              <p [hidden]="!serviceFloor.errors.required">
+                <span style="color: red">Số tầng dịch vụ không được bỏ trống</span>
+              </p>
+            </div>
           </div>
           <div class="text-center">
             <a style="margin-right: 15px" href="/services" class="btn btn-primary"> Hủy
