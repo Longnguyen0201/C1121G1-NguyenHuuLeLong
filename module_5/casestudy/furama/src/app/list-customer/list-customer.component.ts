@@ -48,7 +48,7 @@ export class ListCustomerComponent implements OnInit {
     });
   }
 
-  modalDelete(id) {
+  modalDelete(id: number) {
     console.log('hihi');
     this.customerService.deleteCustomer(id).subscribe(() => {
       this.route.navigateByUrl('/list-customer');

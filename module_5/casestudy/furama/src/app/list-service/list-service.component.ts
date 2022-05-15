@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Facility} from '../../models/facility';
-import {FacilityService} from '../../services/facility-service';
+import {FacilityServiceService} from '../service/facility-service.service';
+
 
 @Component({
   selector: 'app-list-service',
@@ -9,11 +10,15 @@ import {FacilityService} from '../../services/facility-service';
 })
 export class ListServiceComponent implements OnInit {
   facilitys: Facility[];
-  constructor(private facilityService: FacilityService) {
-    this.facilitys = this.facilityService.getFacilityList();
+  constructor(private facilityService: FacilityServiceService) {
+
   }
 
   ngOnInit(): void {
+    this.getAll();
   }
 
+  private getAll() {
+    this.facilityService.getAllFacility().subscribe(facility => {this.facilitys = facility;});
+  }
 }
