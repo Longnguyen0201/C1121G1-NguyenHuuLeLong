@@ -14,6 +14,10 @@ const routes: Routes = [
   {path: 'productList', component: ProductListComponent},
   {path: 'productCreate', component: ProductCreateComponent},
   {path: 'productEdit/:id', component: ProductEditComponent}
+  // {
+  //   path: 'category',
+  //   loadChildren: () => import('./category/category.module').then(module => module.CategoryModule)
+  // }
 ];
 
 @NgModule({

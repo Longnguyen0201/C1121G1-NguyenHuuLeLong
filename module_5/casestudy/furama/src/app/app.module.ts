@@ -21,6 +21,13 @@ import {ContractService} from '../services/contract-service';
 import {ReactiveFormsModule} from '@angular/forms';
 import {CustomerTypeService} from '../services/customer-type-service';
 import {RentTypeService} from '../services/rent-type-service';
+import {HttpClientModule} from '@angular/common/http';
+import { ModalComponent } from './modal/modal.component';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -36,12 +43,19 @@ import {RentTypeService} from '../services/rent-type-service';
     CreateCustomerComponent,
     CreateContractComponent,
     ListContractComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatSliderModule,
+    MatIconModule,
+    MatTableModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [CustomerService, FacilityService, ContractService, CustomerTypeService, RentTypeService],
   bootstrap: [AppComponent]

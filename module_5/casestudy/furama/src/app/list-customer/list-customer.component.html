@@ -32,17 +32,20 @@
           <td class="pt-3-half" >{{customer.customerCode}}</td>
           <td class="pt-3-half">{{customer.customerName}}</td>
           <td class="pt-3-half">{{customer.customerBirthday}}</td>
-          <td class="pt-3-half">{{customer.customerGender}}</td>
-          <td class="pt-3-half">{{customer.customerIdCard}}</td>
+          <td class="pt-3-half">
+            <p *ngIf="customer.customerGender == 1"> Nam</p>
+            <p *ngIf="customer.customerGender == 0"> Nữ</p>
+          </td>
+          <td class="pt-3-half">{{customer.customerIDCard}}</td>
           <td class="pt-3-half">{{customer.customerPhone}}</td>
           <td class="pt-3-half">{{customer.customerEmail}}</td>
           <td class="pt-3-half">{{customer.customerAddress}}</td>
           <td class="pt-3-half">
-            <p *ngIf="customer.customerTypeId==1">Diamond</p>
-            <p *ngIf="customer.customerTypeId==2">Platinium</p>
-            <p *ngIf="customer.customerTypeId==3">Gold</p>
-            <p *ngIf="customer.customerTypeId==4">silver</p>
-            <p *ngIf="customer.customerTypeId==5">Member</p>
+            <p *ngIf="customer.customerType.customerTypeId==1">Diamond</p>
+            <p *ngIf="customer.customerType.customerTypeId==2">Platinium</p>
+            <p *ngIf="customer.customerType.customerTypeId==3">Gold</p>
+            <p *ngIf="customer.customerType.customerTypeId==4">silver</p>
+            <p *ngIf="customer.customerType.customerTypeId==5">Member</p>
           </td>
           <td>
             <span class="table-remove">
@@ -51,82 +54,33 @@
             </span>
           </td>
           <td>
-            <span class="table-remove">
-              <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
-            </span>
+<!--              <button mat-raised-button color="warn" (click)="deleteCustomer(customer)"><mat-icon>delete</mat-icon></button>-->
+            <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal"
+                    (click)="getIdAndName(customer.customerId,customer.customerName)" >
+              Delete
+            </button>
           </td>
         </tr>
-        <!-- This is our clonable table line -->
-<!--        <tr>-->
-<!--          <td class="pt-3-half">2</td>-->
-<!--          <td class="pt-3-half">KH-0002</td>-->
-<!--          <td class="pt-3-half">Huỳnh Văn Bánh</td>-->
-<!--          <td class="pt-3-half">04-12-1990</td>-->
-<!--          <td class="pt-3-half">Nam</td>-->
-<!--          <td class="pt-3-half">2039675128</td>-->
-<!--          <td class="pt-3-half">0909787739</td>-->
-<!--          <td class="pt-3-half">banhxe@gmail.com</td>-->
-<!--          <td class="pt-3-half">342,Lê Lợi, Hà Nội</td>-->
-<!--          <td class="pt-3-half">Platinium</td>-->
-<!--          <td>-->
-<!--                        <span class="table-remove">-->
-<!--                            <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>-->
-<!--                         </span>-->
-<!--          </td>-->
-<!--          <td>-->
-<!--                        <span class="table-remove">-->
-<!--                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>-->
-<!--                        </span>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        &lt;!&ndash; This is our clonable table line &ndash;&gt;-->
-<!--        <tr>-->
-<!--          <td class="pt-3-half">3</td>-->
-<!--          <td class="pt-3-half">KH-0003</td>-->
-<!--          <td class="pt-3-half">Dương Minh Tuyền</td>-->
-<!--          <td class="pt-3-half">12-05-1989</td>-->
-<!--          <td class="pt-3-half">Nam</td>-->
-<!--          <td class="pt-3-half">3199675199</td>-->
-<!--          <td class="pt-3-half">0909786666</td>-->
-<!--          <td class="pt-3-half">tuyen.mom@gmail.com</td>-->
-<!--          <td class="pt-3-half">342,Hai Bà Trưng, Hà Nội</td>-->
-<!--          <td class="pt-3-half">Diamond</td>-->
-<!--          <td>-->
-<!--                        <span class="table-remove">-->
-<!--                            <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>-->
-<!--                         </span>-->
-<!--          </td>-->
-<!--          <td>-->
-<!--                      <span class="table-remove">-->
-<!--                          <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>-->
-<!--                      </span>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        &lt;!&ndash; This is our clonable table line &ndash;&gt;-->
-<!--        <tr class="hide">-->
-<!--          <td class="pt-3-half">4</td>-->
-<!--          <td class="pt-3-half">KH-0004</td>-->
-<!--          <td class="pt-3-half">Trương Văn Cam</td>-->
-<!--          <td class="pt-3-half">12-05-1974</td>-->
-<!--          <td class="pt-3-half">Nam</td>-->
-<!--          <td class="pt-3-half">3199679999</td>-->
-<!--          <td class="pt-3-half">09096049171</td>-->
-<!--          <td class="pt-3-half">Cam.giam.gia@gmail.com</td>-->
-<!--          <td class="pt-3-half">342,Phố Hàng Đậu, Hà Nội</td>-->
-<!--          <td class="pt-3-half">Diamond</td>-->
-<!--          <td>-->
-<!--            <span class="table-remove">-->
-<!--              <button type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>-->
-<!--            </span>-->
-<!--          </td>-->
-<!--          <td>-->
-<!--            <span class="table-remove">-->
-<!--              <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>-->
-<!--            </span>-->
-<!--          </td>-->
-<!--        </tr>-->
         </tbody>
       </table>
+    </div>
+  </div>
+</div>
+<!--Modal delete-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Xóa khách hàng</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn có muốn xóa {{nameDelete}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Hủy</button>
+        <button type="button" class="btn btn-primary" (click)="modalDelete(idDelete)">Xóa</button>
+      </div>
     </div>
   </div>
 </div>

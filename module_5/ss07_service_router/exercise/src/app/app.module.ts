@@ -12,6 +12,7 @@ import { ProductCreateComponent } from './product-create/product-create.componen
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatTableModule} from '@angular/material/table';
     MatSliderModule,
     ReactiveFormsModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

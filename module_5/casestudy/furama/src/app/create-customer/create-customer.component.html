@@ -62,10 +62,10 @@
               <div class="col-sm-7">
                 <div class="form-group">
                   <label>CMND/CCCD <span class="const">*</span>: </label>
-                  <input type="text" class="form-control" name="customerIdCard" formControlName="customerIdCard"
+                  <input type="text" class="form-control" name="customerIDCard" formControlName="customerIDCard"
                          required/>
-                  <div *ngIf="customerIdCard.invalid&&(customerIdCard.touched||customerIdCard.dirty)">
-                    <p [hidden]="!customerIdCard.errors.required">
+                  <div *ngIf="customerIDCard.invalid&&(customerIDCard.touched||customerIDCard.dirty)">
+                    <p [hidden]="!customerIDCard.errors.required">
                       <span style="color: red">CMND/CCCD không được bỏ trống</span>
                     </p>
                   </div>
@@ -103,16 +103,16 @@
             </div>
             <div class="form-group">
               <label>Loại khách hàng <span class="const">*</span>: </label>
-              <select class="form-control" name="customerTypeId" formControlName="customerTypeId">
+              <select class="form-control" name="customerType" formControlName="customerType">
                 <option *ngFor="let customerType of customerTypeList"
-                        [ngValue]="customerType.customerTypeId">{{customerType.customerTypeName}}</option>
+                        [ngValue]="customerType">{{customerType.customerTypeName}}</option>
                 <!--                <option value="2">Silver</option>-->
                 <!--                <option value="3">Gold</option>-->
                 <!--                <option value="4">Platinium</option>-->
                 <!--                <option value="5">Diamond</option>-->
               </select>
-              <div *ngIf="customerTypeId.invalid&&(customerTypeId.touched||customerTypeId.dirty)">
-                <p [hidden]="!customerTypeId.errors.required">
+              <div *ngIf="customerType.invalid&&(customerType.touched||customerType.dirty)">
+                <p [hidden]="!customerType.errors.required">
                   <span style="color: red">Loại khách hàng không được bỏ trống</span>
                 </p>
               </div>

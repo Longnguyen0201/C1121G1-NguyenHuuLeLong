@@ -7,6 +7,8 @@ import {Facility} from '../../models/facility';
 import {Contract} from '../../models/contract';
 import {ContractService} from '../../services/contract-service';
 import {Route, Router} from '@angular/router';
+import {CustomerServiceService} from '../service/customer-service.service';
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-create-contract',
@@ -14,7 +16,7 @@ import {Route, Router} from '@angular/router';
   styleUrls: ['./create-contract.component.css']
 })
 export class CreateContractComponent implements OnInit {
-  customerList: Customer[];
+  customerList: Observable<Customer[]>;
   serviceList: Facility[];
   contract: Contract;
   formContractCreate: FormGroup = new FormGroup({
@@ -52,11 +54,11 @@ export class CreateContractComponent implements OnInit {
     return this.formContractCreate.get('contractTotalMoney');
   }
 
-  constructor(private customerService: CustomerService,
+  constructor(private customerService: CustomerServiceService,
               private facilityService: FacilityService,
               private contractService: ContractService,
               private route: Router) {
-    this.customerList = this.customerService.getCustomerList();
+    this.customerList = this.customerService.getAll();
     this.serviceList = this.facilityService.getFacilityList();
   }
 

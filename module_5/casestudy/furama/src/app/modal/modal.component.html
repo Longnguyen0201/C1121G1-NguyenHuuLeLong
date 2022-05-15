@@ -1,0 +1,9 @@
+<h1 mat-dialog-title> Xóa nhân viên </h1>
+<div mat-dialog-content>
+  <p>Bạn muốn xóa nhân viên</p>
+  <p>{{data.customerName}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="deleteCustomer()" cdkFocusInitial>Ok</button>
+</div>

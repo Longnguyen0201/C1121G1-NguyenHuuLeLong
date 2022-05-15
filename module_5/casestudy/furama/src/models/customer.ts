@@ -5,25 +5,27 @@ export class Customer {
   customerCode: string;
   customerName: string;
   customerBirthday: string;
-  customerGender: string;
-  customerIdCard: string;
+  customerGender: number;
+  customerIDCard: string;
   customerPhone: string;
   customerEmail: string;
   customerAddress: string;
-  customerTypeId: number;
+  customerType: CustomerType;
 
 
   // tslint:disable-next-line:max-line-length
-  constructor(customerId: number, customerCode: string, customerName: string, customerBirthday: string, customerGender: string, customerIdCard: string, customerPhone: string, customerEmail: string, customerAddress: string, customerTypeId: number) {
+  constructor(customerId: number, customerCode: string, customerName: string, customerBirthday: string,
+              customerGender: number, customerIDCard: string, customerPhone: string, customerEmail: string,
+              customerAddress: string, customerType: CustomerType) {
     this.customerId = customerId;
     this.customerCode = customerCode;
     this.customerName = customerName;
     this.customerBirthday = customerBirthday;
     this.customerGender = customerGender;
-    this.customerIdCard = customerIdCard;
+    this.customerIDCard = customerIDCard;
     this.customerPhone = customerPhone;
     this.customerEmail = customerEmail;
     this.customerAddress = customerAddress;
-    this.customerTypeId = customerTypeId;
+    this.customerType = customerType;
   }
 }

@@ -27,7 +27,7 @@ export class ProductListComponent implements OnInit {
 
   onDelete(productId: number) {
     console.log(productId);
-    if(confirm('Are you sure to delete this record ?')){
+    if ( confirm('Are you sure to delete this record ?')){
       this.productService.deleteProduct(productId);
       this.getAll();
 
