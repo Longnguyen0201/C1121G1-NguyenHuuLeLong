@@ -1,5 +1,5 @@
 <h1>Cập nhật thông tin sản phẩm</h1>
-<form [formGroup]="productForm" (ngSubmit)="updateProduct(id)">
+<form [formGroup]="productForm" (ngSubmit)="updateProduct()">
   <table>
     <tr>
       <td>Mã sản phẩm:</td>
@@ -14,8 +14,12 @@
       <td><input type="number" formControlName="price"></td>
     </tr>
     <tr>
-      <td>Mô tả về sản phẩm</td>
-      <td><input type="text" formControlName="description"></td>
+      <td>Category</td>
+      <td>
+        <select formControlName="category" [compareWith]="compareFn">
+          <option *ngFor="let category of categorys" [ngValue]="category">{{category.name}}</option>
+        </select>
+      </td>
     </tr>
     <tr>
       <td></td>

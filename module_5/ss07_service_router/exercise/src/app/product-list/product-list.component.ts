@@ -22,15 +22,23 @@ export class ProductListComponent implements OnInit {
   }
 
   getAll() {
-    this.products = this.productService.getAll();
+    this.productService.getAll().subscribe(data => {
+      this.products = data;
+    }, err => {
+      console.log(err);
+    });
   }
 
   onDelete(productId: number) {
     console.log(productId);
     if ( confirm('Are you sure to delete this record ?')){
       this.productService.deleteProduct(productId);
-      this.getAll();
-
+      this.productService.deleteProduct(productId).subscribe(() => {
+        this.getAll();
+        alert('DELETE SUCCESS !');
+      }, err => {
+        console.log(err);
+      });
     }
   }
 

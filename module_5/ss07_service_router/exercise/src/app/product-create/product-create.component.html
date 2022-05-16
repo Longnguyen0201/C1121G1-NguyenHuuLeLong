@@ -14,8 +14,12 @@
       <td><input type="number" formControlName="price"></td>
     </tr>
     <tr>
-      <td>Mô tả về sản phẩm</td>
-      <td><input type="text" formControlName="description"></td>
+      <td>Category</td>
+      <td>
+        <select formControlName="category" >
+          <option *ngFor="let category of categorys" [ngValue]="category">{{category.name}}</option>
+        </select>
+      </td>
     </tr>
     <tr>
       <td></td>
