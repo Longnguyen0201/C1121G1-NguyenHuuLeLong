@@ -103,7 +103,7 @@
           </div>
           <div class="form-group">
             <label>Loại khách hàng <span class="const">*</span>: </label>
-            <select class="form-control" name="customerType" formControlName="customerType">
+            <select class="form-control" name="customerType" formControlName="customerType" [compareWith]=" compareFn">
               <option *ngFor="let customerType of customerTypeList"
                       [ngValue]="customerType">{{customerType.customerTypeName}}</option>
               <!--                <option value="2">Silver</option>-->

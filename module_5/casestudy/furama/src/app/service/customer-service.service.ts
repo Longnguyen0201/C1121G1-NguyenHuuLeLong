@@ -15,8 +15,8 @@ export class CustomerServiceService {
   constructor(public http: HttpClient) {
   }
 
-  getAll(): Observable<Customer[]> {
-    return this.http.get<Customer[]>(API_URL + '/customers/list');
+  getAll(page: number): Observable<any> {
+    return this.http.get<any>(API_URL + `/customers/list?pageNumber=${page}`);
   }
 
   saveCustomer(customer): Observable<Customer[]> {
@@ -32,7 +32,7 @@ export class CustomerServiceService {
   }
 
   deleteCustomer(id: number): Observable<Customer> {
-    return this.http.delete<Customer>(`${API_URL}/customer/delete/${id}`);
+    return this.http.delete<Customer>(`${API_URL}/customers/delete/${id}`);
   }
 
 }

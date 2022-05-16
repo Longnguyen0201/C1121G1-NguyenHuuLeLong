@@ -58,7 +58,7 @@ export class CreateContractComponent implements OnInit {
               private facilityService: FacilityService,
               private contractService: ContractService,
               private route: Router) {
-    this.customerList = this.customerService.getAll();
+    // this.customerList = this.customerService.getAll();
     this.serviceList = this.facilityService.getFacilityList();
   }
 

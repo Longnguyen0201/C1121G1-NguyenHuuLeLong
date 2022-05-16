@@ -27,8 +27,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let customer of customers">
-          <td class="pt-3-half" >{{customer.customerId}}</td>
+        <tr *ngFor="let customer of customers; index as i">
+          <td class="pt-3-half" >{{i+1}}</td>
           <td class="pt-3-half" >{{customer.customerCode}}</td>
           <td class="pt-3-half">{{customer.customerName}}</td>
           <td class="pt-3-half">{{customer.customerBirthday}}</td>
@@ -63,6 +63,38 @@
         </tr>
         </tbody>
       </table>
+<!--      Pagination-->
+      <nav class="d-flex justify-content-center wow fadeIn">
+        <ul class="pagination pg-blue">
+
+          <!--Arrow left-->
+          <li class="page-item">
+            <a type="button" class="page-link" aria-label="Previous" (click)="previous()">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+
+          <li class="page-item active">
+            <a class="page-link">{{number + 1}}
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <a>/</a>
+          <li class="page-item">
+            <a class="page-link" >{{totalPages}}</a>
+          </li>
+
+
+          <li class="page-item">
+            <a type="button" class="page-link" aria-label="Next" (click)="next()">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+<!--      Pagination-->
     </div>
   </div>
 </div>
@@ -78,8 +110,8 @@
         <p>Bạn có muốn xóa {{nameDelete}}</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Hủy</button>
-        <button type="button" class="btn btn-primary" (click)="modalDelete(idDelete)">Xóa</button>
+        <button #closeModal type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Hủy</button>
+        <button type="button" class="btn btn-primary" (click)="modalDelete(closeModal)">Xóa</button>
       </div>
     </div>
   </div>

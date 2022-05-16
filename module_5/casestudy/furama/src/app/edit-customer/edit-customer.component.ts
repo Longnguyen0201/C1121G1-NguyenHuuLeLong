@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, ParamMap} from '@angular/router';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {Customer} from '../../models/customer';
 import {CustomerService} from '../../services/customer-service';
 import {CustomerType} from '../../models/customer-type';
@@ -60,7 +60,8 @@ export class EditCustomerComponent implements OnInit {
   }
   constructor(private activatedRoute: ActivatedRoute,
               private customerService: CustomerServiceService,
-              private customerTypeService: CustomerTypeService) {
+              private customerTypeService: CustomerTypeService,
+              private route: Router) {
     this.customerTypeList = this.customerTypeService.getCustomerTypeList();
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = +paramMap.get('id');
@@ -102,14 +103,18 @@ export class EditCustomerComponent implements OnInit {
   }
 
   updateCustomer(id: number){
-    // this.getCustomer(id);
     const customer = this.formCustomerEdit.value;
     console.log(customer);
     // @ts-ignore
     this.customerService.updateCustomer(id, customer).subscribe(() => {
-      console.log('Cập nhập thành công');
+      alert('Cập nhập thành công');
+      this.route.navigateByUrl('/list-customer');
     }, error => {
       console.log(error);
     });
+  }
+
+  compareFn(t1: CustomerType, t2: CustomerType): boolean{
+    return t1 && t2 ? t1.customerTypeId === t2.customerTypeId : t1 === t2;
   }
 }

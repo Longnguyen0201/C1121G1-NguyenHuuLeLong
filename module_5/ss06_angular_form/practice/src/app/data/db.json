@@ -1,0 +1,19 @@
+{
+  "todo": [
+    {
+      "id": 1,
+      "content": "Ngủ",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "content": "Ăn",
+      "complete": false
+    },
+    {
+      "content": "học",
+      "complete": false,
+      "id": 4
+    }
+  ]
+}

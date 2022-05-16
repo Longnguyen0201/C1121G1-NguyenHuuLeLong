@@ -45,10 +45,10 @@ public class CustomerController {
 
 
     @GetMapping(value = { "/list"})
-    public ResponseEntity<List<Customer>> showListCustomer(@PageableDefault(value = 10) Pageable pageable) {
+    public ResponseEntity<Page<Customer>> showListCustomer(@PageableDefault(value = 2) Pageable pageable) {
         Page<Customer> customerPage = iCustomerService.findAllPaing(pageable);
-        List<Customer> customerList = customerPage.toList();
-        return new ResponseEntity<>(customerList, HttpStatus.OK);
+//        List<Customer> customerList = customerPage.toList();
+        return new ResponseEntity<>(customerPage, HttpStatus.OK);
     }
 
 //    @GetMapping(value = "/create")

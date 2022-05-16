@@ -1,9 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {CustomerService} from '../../services/customer-service';
+import {Component, OnInit} from '@angular/core';
 import {Customer} from '../../models/customer';
 import {CustomerServiceService} from '../service/customer-service.service';
 import {MatDialog} from '@angular/material/dialog';
-import {ModalComponent} from '../modal/modal.component';
 import {Router} from '@angular/router';
 
 @Component({
@@ -14,45 +12,76 @@ import {Router} from '@angular/router';
 })
 export class ListCustomerComponent implements OnInit {
   customers: Customer[] = [];
-   idDelete = 0;
+  idDelete = 0;
   nameDelete = '';
+  number = 0;
+  totalPages = 0;
+
   constructor(private customerService: CustomerServiceService,
               private route: Router,
               private dialog: MatDialog) {
     // this.customers = this.customerService.getCustomerList();
-  }
-
-  ngOnInit(): void {
     this.getAll();
   }
 
+  ngOnInit(): void {
+  }
+
   private getAll() {
-    console.log(this.customers);
-    this.customerService.getAll().subscribe(customers => {this.customers = customers;
-                                                          console.log(customers);
-    });
-    console.log(this.customers);
-  }
-
-  deleteCustomer(customer: any) {
-    // console.log( 'hihi');
-    const dialogRef = this.dialog.open(ModalComponent, {
-      width: '50%' ,
-      data: customer
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('dialog was closed');
-      if (result === 'close'){
-        this.getAll();
-      }
+    this.customerService.getAll(this.number).subscribe(customers => {
+      this.customers = customers.content;
+      this.number = customers.number;
+      this.totalPages = customers.totalPages;
+    }, error => {
+      console.log('lỗi rồi bạn ei');
     });
   }
 
-  modalDelete(id: number) {
-    console.log('hihi');
-    this.customerService.deleteCustomer(id).subscribe(() => {
-      this.route.navigateByUrl('/list-customer');
+  previous() {
+    if (this.number > 0) {
+      console.log('kích e đi');
+      this.customerService.getAll(this.number - 1).subscribe(customers => {
+        this.customers = customers.content;
+        console.log(customers);
+        this.number = customers.number;
+      });
+    }
+  }
+
+  next() {
+    if (this.number < this.totalPages - 1) {
+      console.log('kích e đi');
+      this.customerService.getAll(this.number + 1).subscribe(customers => {
+        console.log(customers);
+        this.customers = customers.content;
+        this.number = customers.number;
+      }, error => {
+        console.log('lỗi rồi bạn ei');
+      });
+    }
+  }
+
+
+  // deleteCustomer(customer: any) {
+  //   // console.log( 'hihi');
+  //   const dialogRef = this.dialog.open(ModalComponent, {
+  //     width: '50%' ,
+  //     data: customer
+  //   });
+  //   dialogRef.afterClosed().subscribe(result => {
+  //     console.log('dialog was closed');
+  //     if (result === 'close'){
+  //       this.getAll();
+  //     }
+  //   });
+  // }
+
+  modalDelete(closeModal: HTMLButtonElement) {
+    this.customerService.deleteCustomer(this.idDelete).subscribe(() => {
+      closeModal.click();
       alert('xóa thành công');
+      // this.route.navigateByUrl('/list-customer');
+      this.getAll();
     }, error => {
       console.log(error);
     });
@@ -63,3 +92,5 @@ export class ListCustomerComponent implements OnInit {
     this.nameDelete = customerName;
   }
 }
+
+
