@@ -2,9 +2,9 @@ import {Component, OnInit} from '@angular/core';
 
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {FormControl, FormGroup} from '@angular/forms';
-import {ProductService} from '../service/product.service';
-import {CategoryService} from '../service/category.service';
-import {Category} from '../model/category';
+import {ProductService} from '../../service/product.service';
+import {CategoryService} from '../../service/category.service';
+import {Category} from '../../model/category';
 
 @Component({
   selector: 'app-product-edit',

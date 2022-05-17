@@ -1,6 +1,9 @@
+import {RentType} from './rent-type';
+import {ServiceType} from './service-type';
+
 export class Facility {
-  serviceId: number;
-  serviceType: number;
+  id: number;
+  serviceType: ServiceType;
   serviceCode: string;
   serviceName: string;
   serviceArea: number;
@@ -8,15 +11,14 @@ export class Facility {
   serviceMaxPeople: number;
   serviceStandRoom: string;
   serviceDescribe: string;
-  serviceRentType: number;
+  serviceRentType: RentType;
   serviceAreaPool: number;
-      serviceFloor: number;
+  serviceFloor: number;
   serviceImg: string;
 
 
-  // tslint:disable-next-line:max-line-length
-  constructor(serviceId: number, serviceType: number, serviceCode: string, serviceName: string, serviceArea: number, servicePrice: number, serviceMaxPeople: number, serviceStandRoom: string, serviceDescribe: string, serviceRentType: number, serviceAreaPool: number, serviceFloor: number, serviceImg: string) {
-    this.serviceId = serviceId;
+  constructor(id: number, serviceType: ServiceType, serviceCode: string, serviceName: string, serviceArea: number, servicePrice: number, serviceMaxPeople: number, serviceStandRoom: string, serviceDescribe: string, serviceRentType: RentType, serviceAreaPool: number, serviceFloor: number, serviceImg: string) {
+    this.id = id;
     this.serviceType = serviceType;
     this.serviceCode = serviceCode;
     this.serviceName = serviceName;

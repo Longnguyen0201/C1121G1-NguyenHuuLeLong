@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {RentType} from '../../models/rent-type';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {RentTypeService} from '../../services/rent-type-service';
 import {Facility} from '../../models/facility';
-import {FacilityService} from '../../services/facility-service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import {FacilityServiceService} from '../service/facility-service.service';
+import {ServiceType} from '../../models/service-type';
 
 @Component({
   selector: 'app-edit-service',
@@ -12,11 +12,12 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./edit-service.component.css']
 })
 export class EditServiceComponent implements OnInit {
+  rentTypeList: RentType;
+  serviceTypes: ServiceType;
   id: number;
-  RentTypeList: RentType[];
-  serviceList: Facility[];
   serviceObj: Facility;
   formServiceEdit: FormGroup = new FormGroup({
+    id: new FormControl(''),
     serviceType: new FormControl('', [Validators.required]),
     serviceCode: new FormControl('', [Validators.required]),
     serviceName: new FormControl('', [Validators.required]),
@@ -79,22 +80,64 @@ export class EditServiceComponent implements OnInit {
     return this.formServiceEdit.get('serviceImg');
   }
 
-  constructor(private rentTypeService: RentTypeService,
-              private facilityService: FacilityService,
-              private activatedRoute: ActivatedRoute) {
-    this.RentTypeList = this.rentTypeService.getRentTypeList();
+  constructor(private facilityService: FacilityServiceService,
+              private activatedRoute: ActivatedRoute,
+              private route: Router) {
+    this.facilityService.getAllServiceType().subscribe(serviceType => {
+      this.serviceTypes = serviceType;
+      this.formServiceEdit.get('serviceType').setValue(this.serviceTypes[0]);
+    }, error => {
+      console.log(error);
+    });
+    this.facilityService.getAllRentType().subscribe(rentType => {
+      this.rentTypeList = rentType;
+      this.formServiceEdit.get('serviceRentType').setValue(this.rentTypeList[0]);
+    }, error => {
+      console.log(error);
+    });
+    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+      this.id = +paramMap.get('id');
+      this.facilityService.findById(this.id).subscribe(data => {
+        console.log(data);
+        this.formServiceEdit.get('id').setValue(data.id);
+        this.formServiceEdit.get('serviceType').setValue(data.serviceType);
+        this.formServiceEdit.get('serviceCode').setValue(data.serviceCode);
+        this.formServiceEdit.get('serviceName').setValue(data.serviceName);
+        this.formServiceEdit.get('serviceArea').setValue(data.serviceArea);
+        this.formServiceEdit.get('servicePrice').setValue(data.servicePrice);
+        this.formServiceEdit.get('serviceMaxPeople').setValue(data.serviceMaxPeople);
+        this.formServiceEdit.get('serviceStandRoom').setValue(data.serviceStandRoom);
+        this.formServiceEdit.get('serviceDescribe').setValue(data.serviceDescribe);
+        this.formServiceEdit.get('serviceRentType').setValue(data.serviceRentType);
+        this.formServiceEdit.get('serviceAreaPool').setValue(data.serviceAreaPool);
+        this.formServiceEdit.get('serviceFloor').setValue(data.serviceFloor);
+        this.formServiceEdit.get('serviceImg').setValue(data.serviceImg);
+      }, error => {
+        console.log(error);
+      });
+    }, error => {
+      console.log(error);
+    });
+
   }
 
   ngOnInit(): void {
-    this.serviceList = this.facilityService.getFacilityList();
-    this.id = this.activatedRoute.snapshot.params.id;
-    console.log(this.id);
-    // tslint:disable-next-line:triple-equals
-    this.serviceObj = this.serviceList.filter( (e) => e.serviceId == this.id)[0];
-    this.formServiceEdit.patchValue(this.serviceObj);
+    // this.serviceList = this.facilityService.getFacilityList();
+    // this.id = this.activatedRoute.snapshot.params.id;
+    // console.log(this.id);
+    // // tslint:disable-next-line:triple-equals
+    // this.serviceObj = this.serviceList.filter( (e) => e.serviceId == this.id)[0];
+    // this.formServiceEdit.patchValue(this.serviceObj);
   }
 
   onSubmit() {
-    console.log(this.formServiceEdit);
+    const facility = this.formServiceEdit.value;
+    console.log(facility);
+    this.facilityService.updateFacility(facility).subscribe(() => {
+      this.route.navigateByUrl('list-service');
+      alert('Update success');
+    }, error => {
+      console.log(error);
+    });
   }
 }

@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
-import {ProductService} from '../service/product.service';
-import {CategoryService} from '../service/category.service';
-import {Category} from '../model/category';
-import {Product} from '../model/product';
+import {ProductService} from '../../service/product.service';
+import {CategoryService} from '../../service/category.service';
+import {Category} from '../../model/category';
+import {Product} from '../../model/product';
 import {Router} from '@angular/router';
 
 

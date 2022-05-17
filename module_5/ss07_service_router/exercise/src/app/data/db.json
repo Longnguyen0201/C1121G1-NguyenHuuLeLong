@@ -17,6 +17,24 @@
         "id": 1,
         "name": "iPhone"
       }
+    },
+    {
+      "id": 76,
+      "name": "qưeqweqe",
+      "price": 1231,
+      "category": {
+        "id": 1,
+        "name": "iPhone"
+      }
+    },
+    {
+      "id": 123,
+      "name": "dfsfgsg",
+      "price": 5432,
+      "category": {
+        "id": 2,
+        "name": "Samsung"
+      }
     }
   ],
   "category": [

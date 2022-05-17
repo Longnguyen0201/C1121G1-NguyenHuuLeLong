@@ -18,8 +18,7 @@ export class ListCustomerComponent implements OnInit {
   totalPages = 0;
 
   constructor(private customerService: CustomerServiceService,
-              private route: Router,
-              private dialog: MatDialog) {
+              private route: Router) {
     // this.customers = this.customerService.getCustomerList();
     this.getAll();
   }
@@ -32,6 +31,7 @@ export class ListCustomerComponent implements OnInit {
       this.customers = customers.content;
       this.number = customers.number;
       this.totalPages = customers.totalPages;
+      console.log(this.number);
     }, error => {
       console.log('lỗi rồi bạn ei');
     });
@@ -50,8 +50,10 @@ export class ListCustomerComponent implements OnInit {
 
   next() {
     if (this.number < this.totalPages - 1) {
+      console.log(this.number);
       console.log('kích e đi');
       this.customerService.getAll(this.number + 1).subscribe(customers => {
+        console.log(customers.number);
         console.log(customers);
         this.customers = customers.content;
         this.number = customers.number;

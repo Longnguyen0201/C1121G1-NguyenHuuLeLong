@@ -9,9 +9,7 @@
             <div class="form-group">
               <label>Loại dịch vụ <span class="const">*</span> </label>
               <select class="form-control" id="id-serviceType" name="serviceType" formControlName="serviceType">
-                <option value="1">Create new Villa</option>
-                <option value="2">Create new House</option>
-                <option value="3">Create new Room</option>
+                <option *ngFor="let type of serviceTypes" [ngValue]="type">{{type.name}}</option>
               </select>
               <div *ngIf="serviceType.invalid&&(serviceType.touched||serviceType.dirty)">
                 <p [hidden]="!serviceType.errors.required">
@@ -106,8 +104,8 @@
             <div class="form-group">
               <label> Kiểu thuê <span class="const">*</span> </label>
               <select class="form-control" name="serviceRentType" formControlName="serviceRentType">
-                <option *ngFor="let serviceRentType of RentTypeList"
-                        [ngValue]="serviceRentType.rentTypeId">{{serviceRentType.rentTypeName}}</option>
+                <option *ngFor="let serviceRentType of rentTypeList"
+                        [ngValue]="serviceRentType">{{serviceRentType.name}}</option>
               </select>
               <div *ngIf="serviceRentType.invalid&&(serviceRentType.touched||serviceRentType.dirty)">
                 <p [hidden]="!serviceRentType.errors.required">

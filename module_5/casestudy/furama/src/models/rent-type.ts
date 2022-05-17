@@ -1,10 +1,10 @@
 export class RentType {
-  rentTypeId: number;
-  rentTypeName: string;
+  id: number;
+  name: string;
 
 
   constructor(rentTypeId: number, rentTypeName: string) {
-    this.rentTypeId = rentTypeId;
-    this.rentTypeName = rentTypeName;
+    this.id = rentTypeId;
+    this.name = rentTypeName;
   }
 }

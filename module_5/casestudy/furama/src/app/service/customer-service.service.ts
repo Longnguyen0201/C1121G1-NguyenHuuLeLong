@@ -16,7 +16,7 @@ export class CustomerServiceService {
   }
 
   getAll(page: number): Observable<any> {
-    return this.http.get<any>(API_URL + `/customers/list?pageNumber=${page}`);
+    return this.http.get<any>(API_URL + `/customers/list?page=${page}`);
   }
 
   saveCustomer(customer): Observable<Customer[]> {
