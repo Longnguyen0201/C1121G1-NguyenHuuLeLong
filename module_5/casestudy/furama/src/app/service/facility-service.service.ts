@@ -2,8 +2,8 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Facility} from '../../models/facility';
-import {ServiceType} from "../../models/service-type";
-import {RentType} from "../../models/rent-type";
+import {ServiceType} from '../../models/service-type';
+import {RentType} from '../../models/rent-type';
 
 
 @Injectable({
@@ -15,7 +15,7 @@ export class FacilityServiceService {
   }
 
   getAllFacility(): Observable<Facility[]> {
-    return this.http.get<Facility[]>('http://localhost:3000/service');
+    return this.http.get<Facility[]>('http://localhost:3000/service/?_limit=6&_sort=id&_order=desc');
   }
 
   saveFacility(facility: Facility): Observable<Facility> {
@@ -28,7 +28,7 @@ export class FacilityServiceService {
   }
 
   updateFacility(facility: Facility ): Observable<Facility> {
-    return this.http.put<Facility>(`http://localhost:3000/service/${facility.serviceId}`, facility);
+    return this.http.put<Facility>(`http://localhost:3000/service/${facility.id}`, facility);
   }
 
   deleteProduct(id: number): Observable<Facility> {

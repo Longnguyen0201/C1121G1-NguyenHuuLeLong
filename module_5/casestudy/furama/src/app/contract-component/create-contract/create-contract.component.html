@@ -1,0 +1,103 @@
+<div class="container-lg">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="contact-form">
+        <h1>Add new Contract</h1>
+        <form [formGroup]="formContractCreate" (ngSubmit)="onSubmit()" novalidate="novalidate">
+          <div class="form-group">
+            <label>Mã hợp đồng<span class="const">*</span>: </label>
+            <input type="text" class="form-control" name="contractCode" formControlName="contractCode" required/>
+            <div  *ngIf="contractCode.invalid&&(contractCode.touched||contractCode.dirty)">
+              <p style="color: red" [hidden]="!contractCode.errors.required">
+                Mã hợp đồng không được bỏ trống
+              </p>
+              <p [hidden]="!contractCode.errors.pattern">
+                <span style="color: red">Mã hợp đồng sai định dạng (ex: HD-xxxx)</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Họ tên khách hàng<span class="const">*</span></label>
+            <select class="form-control" name="customerName" formControlName="customerName">
+              <option *ngFor="let customer of customerList"
+                      [ngValue]="customer.id">{{customer.id}}</option>
+            </select>
+            <div *ngIf="customerName.invalid&&(customerName.touched||customerName.dirty)">
+              <p [hidden]="!customerName.errors.required">
+                <span style="color: red">Tên khách hàng không được bỏ trống</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Tên nhân viên tạo hợp đồng<span class="const">*</span></label>
+            <select class="form-control" name="employeeName" formControlName="employeeName">
+              <option value="1">Nguyễn Văn Bê</option>
+              <option value="2">Phạm Băng Băng</option>
+              <option value="3">Ngô Phước Thịnh</option>
+              <option value="4">Lâm Tâm Như</option>
+            </select>
+            <div *ngIf="employeeName.invalid&&(employeeName.touched||employeeName.dirty)">
+              <p [hidden]="!employeeName.errors.required">
+                <span style="color: red"> Không được bỏ trống</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Tên dịch vu<span class="const">*</span>: </label>
+            <select class="form-control" name="facilityName" formControlName="facilityName">
+              <option *ngFor="let service of serviceList"
+                      [ngValue]="service.serviceId">{{service.serviceName}}</option>
+            </select>
+            <div *ngIf="facilityName.invalid&&(facilityName.touched||facilityName.dirty)">
+              <p [hidden]="!facilityName.errors.required">
+                <span style="color: red">Không được bỏ trống</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Ngày bắt đầu<span class="const">*</span>: </label>
+            <input type="date" name="contractStartDate" formControlName="contractStartDate" class="form-control" required/>
+            <div *ngIf="contractStartDate.invalid&&(contractStartDate.touched||contractStartDate.dirty)">
+              <p [hidden]="!contractStartDate.errors.required">
+                <span style="color: red">Tên khách hàng không được bỏ trống</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Ngày kết thúc<span class="const">*</span>: </label>
+            <input type="date" name="contractEndDate" formControlName="contractEndDate" class="form-control" required/>
+            <div *ngIf="contractEndDate.invalid&&(contractEndDate.touched||contractEndDate.dirty)">
+              <p [hidden]="!contractEndDate.errors.required">
+                <span style="color: red">Tên khách hàng không được bỏ trống</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Đặt cọc: </label>
+            <input type="text" name="contractDeposit" formControlName="contractDeposit" class="form-control" required/>
+            <div *ngIf="contractDeposit.invalid&&(contractDeposit.touched||contractDeposit.dirty)">
+              <p [hidden]="!contractDeposit.errors.required">
+                <span style="color: red">Tên khách hàng không được bỏ trống</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Tổng số tiền:  </label>
+            <input type="text" name="contractTotalMoney" formControlName="contractTotalMoney" class="form-control"
+                   required/>
+            <div *ngIf="contractTotalMoney.invalid&&(contractTotalMoney.touched||contractTotalMoney.dirty)">
+              <p [hidden]="!contractTotalMoney.errors.required">
+                <span style="color: red">Tên khách hàng không được bỏ trống</span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center">
+            <a style="margin-right: 15px" href="/contracts" class="btn btn-primary"> Hủy
+            </a>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Xác nhận</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

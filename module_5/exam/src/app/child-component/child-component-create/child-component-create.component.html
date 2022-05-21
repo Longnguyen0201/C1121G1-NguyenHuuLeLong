@@ -1,0 +1,128 @@
+<div class="body-edit">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="contact-form">
+          <h1>Thêm Mới </h1>
+          <form novalidate="novalidate"
+                [formGroup]="formCreate" (ngSubmit)="create()">
+            <div class="form-group">
+              <label>Danh mục: </label>
+              <select class="form-control" name="danhMuc" formControlName="danhMuc">
+                <option value="Nhà Đất" selected>Nhà đất</option>
+                <option value="Nhà trọ">Nhà trọ</option>
+                <option value="Văn Phòng">Văn Phòng</option>
+                <option value="Villa/Căn hộ">Villa/Căn hộ</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Vùng miền: : </label>
+              <select class="form-control" name="vungMien" formControlName="vungMien">
+                <option value="Hà Nội" selected>Hà Nội</option>
+                <option value="Hồ chí Minh">Hồ chí Minh</option>
+                <option value="Đà Nẵng">Đà Nẵng</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Bạn là: </label>
+              <select class="form-control" name="loai" formControlName="loai">
+                <option value="Cá nhân" selected>Cá nhân</option>
+                <option value="Công ty">Công tỵ</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Bạn đăng tin: </label>
+              <select class="form-control" name="dangTin" formControlName="dangTin">
+                <option value="Cần bán">Cần bán</option>
+                <option value="Cần mua">Cần mua</option>
+                <option value="Cho thuê">Cho thuê</option>
+                <option value="Cần thuê">Cần thuê</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tình trạng: </label>
+              <select class="form-control" name="tinhTrang" formControlName="tinhTrang">
+                <option value="Mới" selected>Mới</option>
+                <option value="Đã sử dụng">Đã sử dụng</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Địa chỉ <span class="const">*</span>: </label>
+              <input type="text" name="diaChi" class="form-control" formControlName="diaChi"
+                     required/>
+              <div *ngIf="diaChi.invalid&&(diaChi.touched||diaChi.dirty)">
+                <p [hidden]="!diaChi.errors.required">
+                  <span style="color: red">Không được bỏ trống</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Diện tích<span class="const">*</span>: </label>
+              <input type="number" name="dienTich" class="form-control" formControlName="dienTich" [min]="dienTich"
+                     required/>
+              <div *ngIf="dienTich.invalid&&(dienTich.touched||dienTich.dirty)">
+                <p [hidden]="!dienTich.errors.required">
+                  <span style="color: red">Không được bỏ trống.</span>
+                </p>
+                <p [hidden]="!dienTich.errors.pattern">
+                  <span style="color: red">Phải là số thực</span>
+                </p>
+                <p [hidden]="!dienTich.errors.min">
+                  <span style="color: red">Phải lớn hơn 20 m<sup>2</sup></span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Hướng: </label>
+              <select class="form-control" name="huong" formControlName="huong">
+                <option value="Đông">Đông</option>
+                <option value="Tây">Tây</option>
+                <option value="Nam">Nam</option>
+                <option value="Bắc">Bắc</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tựa đề <span class="const">*</span>: </label>
+              <input type="text" name="tuaDe" class="form-control" formControlName="tuaDe"
+                     required/>
+              <div *ngIf="tuaDe.invalid&&(tuaDe.touched||tuaDe.dirty)">
+                <p [hidden]="!tuaDe.errors.required">
+                  <span style="color: red">Không được bỏ trống.</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Nội dung <span class="const">*</span>: </label>
+              <textarea type="text" name="noiDung" class="form-control" formControlName="noiDung"
+                        maxlength="200" required></textarea>
+              <div *ngIf="noiDung.invalid&&(noiDung.touched||noiDung.dirty)">
+                <p [hidden]="!noiDung.errors.required">
+                  <span style="color: red">Không được bỏ trống.</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Giá<span class="const">*</span>: </label>
+              <input type="text" name="gia" class="form-control" formControlName="gia"
+                     required/>
+              <div *ngIf="gia.invalid&&(gia.touched||gia.dirty)">
+                <p [hidden]="!gia.errors.required">
+                  <span style="color: red">Không được bỏ trống.</span>
+                </p>
+                <p [hidden]="!gia.errors.pattern">
+                  <span style="color: red">Phải là số thực</span>
+                </p>
+              </div>
+            </div>
+            <div class="text-center">
+              <a style="margin-right: 15px" href="/list" class="btn btn-primary"> Hủy
+              </a>
+              <button type="submit" class="btn btn-primary" [disabled]="formCreate.invalid"><i class="fa fa-paper-plane"></i>Xác nhận
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+{
+  "benhNhan": [
+    {
+      "id": 1,
+      "maBenhNhan": "BN-345",
+      "tenBenhNhan": "Nguyễn Văn A"
+    },
+    {
+      "id": 2,
+      "maBenhNhan": "BN-123",
+      "tenBenhNhan": "Nguyễn Văn B"
+    },
+    {
+      "id": 3,
+      "maBenhNhan": "BN-324",
+      "tenBenhNhan": "Nguyễn Văn C"
+    },
+    {
+      "id": 4,
+      "maBenhNhan": "BN-432",
+      "tenBenhNhan": "Nguyễn Văn D"
+    },
+    {
+      "id": 5,
+      "maBenhNhan": "BN-321",
+      "tenBenhNhan": "Nguyễn Văn E"
+    }
+  ],
+  "benhAn": [
+    {
+      "id": 1,
+      "maBenhAn": "BA-0012",
+      "maBenhNhan": "BN-3454",
+      "tenBenhNhan": "Nguyễn Văn Q",
+      "ngayNhapVien": "2022-05-20",
+      "ngayRaVien": "2022-05-14",
+      "lyDo": "ung thư vú",
+      "phuongPhapDieuTri": "dấdf",
+      "bacSi": "ádfasfasdf"
+    },
+    {
+      "id": 2,
+      "maBenhAn": "BA-0013",
+      "maBenhNhan": "BN-3423",
+      "tenBenhNhan": "Nguyễn Văn D ",
+      "ngayNhapVien": "2022-05-20",
+      "ngayRaVien": "2022-05-22",
+      "lyDo": "ưewerwe",
+      "phuongPhapDieuTri": "tỷtyrdf",
+      "bacSi": ""
+    },
+    {
+      "id": 3,
+      "maBenhAn": "BA-0014",
+      "maBenhNhan": "BN-3233",
+      "tenBenhNhan": "Nguyễn Văn DD",
+      "ngayNhapVien": "2022-05-21",
+      "ngayRaVien": "2022-05-22",
+      "lyDo": "ung thư vú",
+      "phuongPhapDieuTri": "sdfwee",
+      "bacSi": "Lê Thị D"
+    },
+    {
+      "id": 6,
+      "maBenhAn": "BA-0012",
+      "maBenhNhan": "BN-3454",
+      "tenBenhNhan": "Nguyễn Văn DD",
+      "ngayNhapVien": "2022-05-22",
+      "ngayRaVien": "2022-05-21",
+      "lyDo": "ung thư vú",
+      "phuongPhapDieuTri": "dsadfasf",
+      "bacSi": "ádfasfasdf",
+      "tien": 123
+    },
+    {
+      "id": 7,
+      "maBenhAn": "BA-0014",
+      "maBenhNhan": "BN-3454",
+      "tenBenhNhan": "Nguyễn Văn Q",
+      "ngayNhapVien": "2022-05-21",
+      "ngayRaVien": "2022-05-21",
+      "lyDo": "ung thư vú",
+      "phuongPhapDieuTri": "sdfasdf",
+      "bacSi": "ádfsadfasf",
+      "tien": 456
+    },
+    {
+      "id": 8,
+      "maBenhAn": "BA-0333",
+      "maBenhNhan": "BN-4320",
+      "tenBenhNhan": "Nguyễn Văn Ư",
+      "ngayNhapVien": "2022-05-19",
+      "ngayRaVien": "2022-05-21",
+      "lyDo": "ung thư vú",
+      "phuongPhapDieuTri": "ểtrtwet",
+      "bacSi": "ewrtwertwert",
+      "tien": 789
+    },
+    {
+      "id": 9,
+      "maBenhAn": "BA-0333",
+      "maBenhNhan": "BN-4322",
+      "tenBenhNhan": "Nguyễn Văn ",
+      "ngayNhapVien": "2022-05-29",
+      "ngayRaVien": "2022-05-15",
+      "lyDo": "ung thư",
+      "phuongPhapDieuTri": "123123",
+      "bacSi": "234234",
+      "tien": 930
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-serversss",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

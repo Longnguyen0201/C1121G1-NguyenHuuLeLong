@@ -1,0 +1,90 @@
+<div class="card body-card" >
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
+    Danh Sách Tin bất động sản
+  </h3>
+  <div class="card-body">
+    <div id="table" class="table-editable">
+      <form class="input-group "
+            [formGroup]="formSearch" (ngSubmit)="onSearch()">
+        <div style="margin-right: 10px">
+          <input style="background-color: ghostwhite" type="search"  class="form-control"
+                 placeholder="Diện Tích" aria-label="Search" formControlName="dienTich" />
+        </div>
+        <div style="margin-right: 10px" >
+          <input style="background-color: ghostwhite" type="search"  class="form-control"
+                 placeholder="Hướng" aria-label="Search" formControlName="huong"/>
+        </div >
+        <div style="margin-right: 10px">
+          <input style="background-color: ghostwhite"  type="text" class="form-control"
+                 placeholder="Nhập giá" aria-label="Search" formControlName="gia"/>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <div style="display: flex; justify-content: flex-end">
+            <span class="table-add float-right mb-3 mr-2">
+                <a [routerLink]="['create']" class="text-success"><i class="fas fa-plus fa-2x"
+                                                                     aria-hidden="true"></i></a>
+            </span>
+      </div>
+
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+        <tr>
+          <th class="text-center">STT</th>
+          <th class="text-center">Tiêu đề</th>
+          <th class="text-center">Loại bài viết</th>
+          <th class="text-center">Diện tích</th>
+          <th class="text-center">Hướng</th>
+          <th class="text-center">Giá</th>
+          <th class="text-center">Edit</th>
+          <th class="text-center">Remove</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let bds of tinBds; index as i">
+          <td class="pt-3-half">{{i + 1}}</td>
+          <td class="pt-3-half">{{bds.tuaDe}}</td>
+          <td class="pt-3-half">{{bds.dangTin}}</td>
+          <td class="pt-3-half">{{bds.dienTich}}</td>
+          <td class="pt-3-half">{{bds.huong}}</td>
+          <td class="pt-3-half">{{bds.gia}}</td>
+          <td>
+            <span class="table-remove">
+              <button routerLink="/edit/{{bds.id}}"
+                      type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>
+            </span>
+          </td>
+          <td>
+            <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal" >
+<!--                    (click)="getIdAndName(benhAn.id,benhAn.maBenhAn)">-->
+              Delete
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--Modal delete-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Xóa khách hàng</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<!--        <p>Bạn có muốn xóa bệnh án {{maBenhAn}}</p>-->
+      </div>
+      <div class="modal-footer">
+        <button #closeModal type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Hủy</button>
+        <button type="button" class="btn btn-primary" >
+<!--                (click)="modalDelete(closeModal)"-->
+        Xóa</button>
+      </div>
+    </div>
+  </div>
+</div>

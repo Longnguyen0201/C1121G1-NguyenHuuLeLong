@@ -1,0 +1,69 @@
+<main>
+  <!--Navbar-->
+  <nav class=" navbar  navbar-dark mdb-color  mt-3 mb-5">
+    <div class="nav-div">
+      <a [routerLink]="['/create-service']" class="text-success nav-div-a">Create Service</a>
+    </div>
+    <div class="container">
+      <input type ="text" name="serviceName" placeholder="search by name" [(ngModel)]="keyName" (ngModelChange)="search()">
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--Section: Products v.3-->
+  <section class="text-center mb-4 container">
+
+    <!--Grid row-->
+    <div class="row wow fadeIn">
+
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let facility of facilitys ">
+      <!--| paginate: {itemsPerPage:3,currentPage: page, id: 'idPage'}">-->
+        <!--Card 1-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img
+              src="{{facility.serviceImg}}"
+              class="card-img-top" alt="">
+          </div>
+          <!--Card image-->
+
+          <!--Card content-->
+          <div class="card-body text-center">
+            <!--Category & Title-->
+            <a href="" class="grey-text">
+              <h5>{{facility.serviceName}}</h5>
+            </a>
+            <h5>
+              <strong>
+                <small>Diện tích phòng: {{facility.serviceArea}} m<sup>2</sup></small>
+              </strong>
+            </h5>
+
+            <h4 class="font-weight-bold blue-text">
+              <strong>{{facility.servicePrice}}$</strong>
+            </h4>
+            <h3 class="table-remove">
+              <a [routerLink]="['/edit-service', facility.id]" type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</a>
+<!--              <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Detail</a>-->
+              <a href="#" type="button" class="btn btn-info btn-rounded btn-sm my-0">Delete</a>
+            </h3>
+          </div>
+          <!--Card content-->
+
+        </div>
+        <!--Card 1-->
+      </div>
+      <!--Grid column-->
+    </div>
+
+  </section>
+  <!--Section: Products v.3-->
+
+  <!--Pagination-->
+<!--&lt;!&ndash;  <div style="display: flex; justify-content: center">&ndash;&gt;-->
+<!--&lt;!&ndash;  <pagination-controls id="idPage" (pageChange)="page=$event"></pagination-controls>&ndash;&gt;-->
+<!--  </div>-->
+<!--  &lt;!&ndash;Pagination&ndash;&gt;-->
+</main>

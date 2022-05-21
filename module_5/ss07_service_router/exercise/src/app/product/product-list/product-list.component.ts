@@ -1,8 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 
 import {Router} from '@angular/router';
 import {Product} from '../../model/product';
 import {ProductService} from '../../service/product.service';
+import {MatTableDataSource} from '@angular/material/table';
+import {MatSort} from '@angular/material/sort';
+import {MatPaginator} from '@angular/material/paginator';
 
 @Component({
   selector: 'app-product-list',
@@ -11,6 +14,10 @@ import {ProductService} from '../../service/product.service';
 })
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
+  listData: MatTableDataSource<any>;
+  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  displayedColumns: string[] = ['id', 'name', 'price', 'category', 'actions'];
 
   constructor(private productService: ProductService,
               private router: Router) {
@@ -24,6 +31,7 @@ export class ProductListComponent implements OnInit {
   getAll() {
     this.productService.getAll().subscribe(data => {
       this.products = data;
+      this.listData = data;
     }, err => {
       console.log(err);
     });

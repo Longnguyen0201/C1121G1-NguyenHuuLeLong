@@ -1,0 +1,100 @@
+<div class="body-edit">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="contact-form">
+          <h1>Cập nhập bệnh án</h1>
+          <form [formGroup]="formEdit" (ngSubmit)="update()" novalidate="novalidate">
+            <div class="form-group">
+              <label>Mã Bệnh Án <span class="const">*</span>: </label>
+              <input type="text" name="maBenhAn" class="form-control"
+                     formControlName="maBenhAn" readonly/>
+              <!--              <div *ngIf="maBenhAn.invalid&&(maBenhAn.touched||maBenhAn.dirty)">-->
+              <!--                <p class="error-valid" [hidden]="!maBenhAn.errors.required">-->
+              <!--                  Mã khách hàng không được bỏ trống-->
+              <!--                </p>-->
+              <!--                <p [hidden]="!maBenhAn.errors.pattern">-->
+              <!--                  <span style="color: red">Mã bệnh án sai định dạng (ex: BA-xxxx)</span>-->
+              <!--                </p>-->
+              <!--              </div>-->
+            </div>
+            <div class="form-group">
+              <label>Mã Bệnh Nhân <span class="const">*</span>: </label>
+              <input type="text" name="maBenhNhan" class="form-control"
+                     formControlName="maBenhNhan" readonly/>
+            </div>
+            <div class="form-group">
+              <label>Tên Bệnh Nhân <span class="const">*</span>: </label>
+              <input type="text" name="tenBenhNhan" class="form-control" placeholder="ex: Nguyễn Văn A"
+                     formControlName="tenBenhNhan" required/>
+              <div *ngIf="tenBenhNhan.invalid&&(tenBenhNhan.touched||tenBenhNhan.dirty)">
+                <p [hidden]="!tenBenhNhan.errors.required">
+                  <span style="color: red">Tên khách hàng không được bỏ trống</span>
+                </p>
+                <p [hidden]="!tenBenhNhan.errors.pattern">
+                  <span style="color: red">tên bệnh nhân không được chứa số.</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Ngày Nhập viện: </label>
+              <input type="date" name="ngayNhapVien" class="form-control" formControlName="ngayNhapVien"
+                     required/>
+              <div *ngIf="ngayNhapVien.invalid&&(ngayNhapVien.touched||ngayNhapVien.dirty)">
+                <p [hidden]="!ngayNhapVien.errors.required">
+                  <span style="color: red">Ngày không được bỏ trống</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Ngày Nhập viện: </label>
+              <input type="date" name="ngayRaVien" class="form-control" formControlName="ngayRaVien"
+                     required/>
+              <div *ngIf="ngayRaVien.invalid&&(ngayNhapVien.touched||ngayRaVien.dirty)">
+                <p [hidden]="!ngayRaVien.errors.required">
+                  <span style="color: red">Ngày không được bỏ trống.</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Lý Do Nhập Viện: </label>
+              <input type="text" name="lyDo" class="form-control" formControlName="lyDo"
+                     required/>
+              <div *ngIf="lyDo.invalid&&(lyDo.touched||lyDo.dirty)">
+                <p [hidden]="!lyDo.errors.required">
+                  <span style="color: red">Ngày không được bỏ trống.</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Phương Pháp Điều Trị: </label>
+              <textarea type="text" name="phuongPhapDieuTri" class="form-control" formControlName="phuongPhapDieuTri"
+                        required maxlength="100"></textarea>
+              <div *ngIf="phuongPhapDieuTri.invalid&&(lyDo.touched||phuongPhapDieuTri.dirty)">
+                <p [hidden]="!phuongPhapDieuTri.errors.required">
+                  <span style="color: red">không được bỏ trống.</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Bác sĩ trị liệu: </label>
+              <input type="text" name="bacSi" class="form-control" formControlName="bacSi"
+                     required/>
+              <div *ngIf="bacSi.invalid&&(bacSi.touched||bacSi.dirty)">
+                <p [hidden]="!bacSi.errors.required">
+                  <span style="color: red">Ngày không được bỏ trống.</span>
+                </p>
+              </div>
+            </div>
+            <div class="text-center">
+              <a style="margin-right: 15px" href="/list" class="btn btn-primary"> Hủy
+              </a>
+              <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Xác nhận
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

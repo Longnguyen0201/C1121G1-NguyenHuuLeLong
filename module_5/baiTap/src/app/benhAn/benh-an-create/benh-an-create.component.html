@@ -1,0 +1,133 @@
+<div class="body-edit">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="contact-form">
+          <h1>Thêm mới bệnh án</h1>
+          <form [formGroup]="formCreate" (ngSubmit)="create(successCreate)" novalidate="novalidate">
+            <div class="form-group">
+              <label>Mã Bệnh Án <span class="const">*</span>: </label>
+              <input type="text" name="maBenhAn" class="form-control"
+                     formControlName="maBenhAn" required/>
+              <div *ngIf="maBenhAn.invalid&&(maBenhAn.touched||maBenhAn.dirty)">
+                <p style="color: red" [hidden]="!maBenhAn.errors.required">
+                  Mã khách hàng không được bỏ trống
+                </p>
+                <p [hidden]="!maBenhAn.errors.pattern">
+                  <span style="color: red">Mã bệnh án sai định dạng (ex: BA-xxxx).</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Mã Bệnh Nhân <span class="const">*</span>: </label>
+              <input type="text" name="maBenhNhan" class="form-control"
+                     formControlName="maBenhNhan" required/>
+              <div *ngIf="maBenhNhan.invalid&&(maBenhNhan.touched||maBenhNhan.dirty)">
+                <p style="color: red" [hidden]="!maBenhNhan.errors.required">
+                  Mã khách hàng không được bỏ trống
+                </p>
+                <p [hidden]="!maBenhNhan.errors.pattern">
+                  <span style="color: red">Mã bệnh án sai định dạng (ex: BN-xxxx).</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Tên Bệnh Nhân <span class="const">*</span>: </label>
+              <input type="text" name="tenBenhNhan" class="form-control" placeholder="ex: Nguyễn Văn A"
+                     formControlName="tenBenhNhan" required/>
+              <div *ngIf="tenBenhNhan.invalid&&(tenBenhNhan.touched||tenBenhNhan.dirty)">
+                <p [hidden]="!tenBenhNhan.errors.required">
+                  <span style="color: red"> Không được bỏ trống.</span>
+                </p>
+                <p [hidden]="!tenBenhNhan.errors.pattern">
+                  <span style="color: red">Tên bệnh nhân không được chứa số.</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Ngày Nhập viện: </label>
+              <input type="date" name="ngayNhapVien" class="form-control" formControlName="ngayNhapVien"
+                     (change)="validateStartDateBefore()" required/>
+              <div *ngIf="ngayNhapVien.invalid&&(ngayNhapVien.touched||ngayNhapVien.dirty)">
+                <p [hidden]="!ngayNhapVien.errors.required">
+                  <span style="color: red">Không được bỏ trống</span>
+                </p>
+                <p [hidden]="!ngayNhapVien.errors.startDateBefore">
+                  <span style="color: red">Ngày phải sau ngày hiện tại</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Ngày Nhập viện: </label>
+              <input type="date" name="ngayRaVien" class="form-control" formControlName="ngayRaVien"
+                     (change)="validateEndDateBefore()" required/>
+              <div *ngIf="ngayRaVien.invalid&&(ngayRaVien.touched||ngayRaVien.dirty)">
+                <p [hidden]="!ngayRaVien.errors.required">
+                  <span style="color: red">Không được bỏ trống.</span>
+                </p>
+                <p [hidden]="!ngayRaVien.errors.endDateBefore">
+                  <span style="color: red">Ngày phải sau ngày nhập viện</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Lý Do Nhập Viện: </label>
+              <input type="text" name="lyDo" class="form-control" formControlName="lyDo"
+                     required/>
+              <div *ngIf="lyDo.invalid&&(lyDo.touched||lyDo.dirty)">
+                <p [hidden]="!lyDo.errors.required">
+                  <span style="color: red">Ngày không được bỏ trống.</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Phương Pháp Điều Trị: </label>
+              <textarea type="text" name="phuongPhapDieuTri" class="form-control" formControlName="phuongPhapDieuTri"
+                        required maxlength="100"></textarea>
+              <div *ngIf="phuongPhapDieuTri.invalid&&(phuongPhapDieuTri.touched||phuongPhapDieuTri.dirty)">
+                <p [hidden]="!phuongPhapDieuTri.errors.required">
+                  <span style="color: red">không được bỏ trống.</span>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Bác sĩ trị liệu: </label>
+              <input type="text" name="bacSi" class="form-control" formControlName="bacSi"
+                     required/>
+              <div *ngIf="bacSi.invalid&&(bacSi.touched||bacSi.dirty)">
+                <p [hidden]="!bacSi.errors.required">
+                  <span style="color: red">Ngày không được bỏ trống.</span>
+                </p>
+              </div>
+            </div>
+            <div class="text-center">
+              <a style="margin-right: 15px" href="/list" class="btn btn-primary"> Hủy
+              </a>
+              <button type="submit" class="btn btn-primary" [disabled]="formCreate.invalid"><i class="fa fa-paper-plane" ></i>Xác nhận
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button [hidden]="true" #successCreate data-mdb-toggle="modal" data-mdb-target="#modal-success"></button>
+
+<!--Success Modal Templates-->
+<div id="modal-success" class="modal modal-message modal-success fade" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="glyphicon glyphicon-check"></i>
+      </div>
+      <div class="modal-title">Success</div>
+      <div class="modal-body">You have done great!</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-mdb-dismiss="modal" (click)="onSubmit()">OK</button>
+      </div>
+    </div> <!-- / .modal-content -->
+  </div> <!-- / .modal-dialog -->
+</div>
+<!--End Success Modal Templates-->
+

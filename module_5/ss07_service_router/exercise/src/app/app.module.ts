@@ -5,12 +5,11 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {DictionayPageComponent} from './dictionay-page/dictionay-page.component';
 import {DictionaryDetailComponent} from './dictionay-page/dictionary-detail/dictionary-detail.component';
-import {MatSliderModule} from '@angular/material/slider';
 import {ReactiveFormsModule} from '@angular/forms';
-import {MatIconModule} from '@angular/material/icon';
-import {MatTableModule} from '@angular/material/table';
 import {HttpClientModule} from '@angular/common/http';
 import {SharedModule} from './shared/shared.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MaterialModule} from './product/material/material.module';
 
 
 @NgModule({
@@ -22,12 +21,11 @@ import {SharedModule} from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSliderModule,
     ReactiveFormsModule,
-    MatIconModule,
-    MatTableModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

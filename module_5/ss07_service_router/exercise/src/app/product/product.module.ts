@@ -8,6 +8,10 @@ import {ProductListComponent} from './product-list/product-list.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MaterialModule} from './material/material.module';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 @NgModule({
@@ -20,8 +24,11 @@ import {MatSliderModule} from '@angular/material/slider';
     CommonModule,
     ProductRoutingModule,
     ReactiveFormsModule,
+    MaterialModule,
     MatIconModule,
-    MatSliderModule
+    MatSliderModule,
+    MatFormFieldModule,
+    MatTableModule
   ]
 })
 export class ProductModule { }

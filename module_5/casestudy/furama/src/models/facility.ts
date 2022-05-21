@@ -16,7 +16,6 @@ export class Facility {
   serviceFloor: number;
   serviceImg: string;
 
-
   constructor(id: number, serviceType: ServiceType, serviceCode: string, serviceName: string, serviceArea: number, servicePrice: number, serviceMaxPeople: number, serviceStandRoom: string, serviceDescribe: string, serviceRentType: RentType, serviceAreaPool: number, serviceFloor: number, serviceImg: string) {
     this.id = id;
     this.serviceType = serviceType;

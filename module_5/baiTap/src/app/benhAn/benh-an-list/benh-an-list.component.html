@@ -1,0 +1,171 @@
+<div class="card body-card" >
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
+    Danh Sách Bệnh Án
+  </h3>
+  <div class="card-body">
+    <div id="table" class="table-editable">
+        <form class="input-group " [formGroup]="formSearch" (ngSubmit)="onSearch(danger)">
+          <div style="margin-right: 10px">
+            <input style="background-color: ghostwhite" type="search"  class="form-control"
+                   placeholder="Mã bệnh án" aria-label="Search" formControlName="maBenhAn" />
+          </div>
+          <div style="margin-right: 10px" >
+            <input style="background-color: ghostwhite" type="search"  class="form-control"
+                   placeholder="Tên bệnh Nhân" aria-label="Search" formControlName="tenBenhNhan"/>
+          </div >
+          <div style="margin-right: 10px" >
+            <input style="background-color: ghostwhite" type="search"  class="form-control"
+                   placeholder="Tiền" aria-label="Search" formControlName="tien"/>
+          </div >
+          <div style="margin-right: 10px">
+            <input style="background-color: ghostwhite"  type="date" class="form-control"
+                   placeholder="Ngày nhập viện" aria-label="Search" formControlName="ngayNhapVien"/>
+          </div>
+          <h3 style="margin-right: 10px">-</h3>
+          <div style="margin-right: 10px">
+            <input style="background-color: ghostwhite"  type="date" class="form-control"
+                   placeholder="Ngày ra viện" aria-label="Search" formControlName="ngayRaVien"/>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div style="display: flex; justify-content: flex-end">
+            <span class="table-add float-right mb-3 mr-2">
+                <a [routerLink]="['create']" class="text-success"><i class="fas fa-plus fa-2x"
+                                                                     aria-hidden="true"></i></a>
+            </span>
+        </div>
+
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+        <tr>
+          <th class="text-center">STT</th>
+          <th class="text-center">Mã Bệnh Án</th>
+          <th class="text-center">Mã Bệnh Nhân</th>
+          <th class="text-center">Tên Bệnh Nhân</th>
+          <th class="text-center">NGày Nhập Viên</th>
+          <th class="text-center">Ngày Ra Viện</th>
+          <th class="text-center">Lý Do</th>
+          <th class="text-center">Phương pháp điều trị</th>
+          <th class="text-center">Bác sĩ điều trị</th>
+          <th class="text-center">Edit</th>
+          <th class="text-center">Remove</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let benhAn of benhAns; index as i">
+          <td class="pt-3-half">{{i + 1}}</td>
+          <td class="pt-3-half">{{benhAn.maBenhAn}}</td>
+          <td class="pt-3-half">{{benhAn.maBenhNhan}}</td>
+          <td class="pt-3-half">{{benhAn.tenBenhNhan}}</td>
+          <td class="pt-3-half">{{benhAn.ngayNhapVien}}</td>
+          <td class="pt-3-half">{{benhAn.ngayRaVien}}</td>
+          <td class="pt-3-half">{{benhAn.lyDo}}</td>
+          <td class="pt-3-half">{{benhAn.phuongPhapDieuTri}}</td>
+          <td class="pt-3-half">{{benhAn.bacSi}}</td>
+          <td class="pt-3-half">{{benhAn.tien}}</td>
+          <td>
+            <span class="table-remove">
+              <button routerLink="/edit/{{benhAn.id}}"
+                      type="button" class="btn btn-info btn-rounded btn-sm my-0">Edit</button>
+            </span>
+          </td>
+          <td>
+            <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal"
+                    (click)="getIdAndName(benhAn.id,benhAn.maBenhAn)">
+              Delete
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <!--      &lt;!&ndash;      Pagination&ndash;&gt;-->
+      <!--      <nav class="d-flex justify-content-center wow fadeIn">-->
+      <!--        <ul class="pagination pg-blue">-->
+
+      <!--          &lt;!&ndash;Arrow left&ndash;&gt;-->
+      <!--          <li class="page-item">-->
+      <!--            <a type="button" class="page-link" aria-label="Previous" (click)="previous()">-->
+      <!--              <span aria-hidden="true">&laquo;</span>-->
+      <!--              <span class="sr-only">Previous</span>-->
+      <!--            </a>-->
+      <!--          </li>-->
+
+      <!--          <li class="page-item active">-->
+      <!--            <a class="page-link">{{number + 1}}-->
+      <!--              <span class="sr-only">(current)</span>-->
+      <!--            </a>-->
+      <!--          </li>-->
+      <!--          <a>/</a>-->
+      <!--          <li class="page-item">-->
+      <!--            <a class="page-link" >{{totalPages}}</a>-->
+      <!--          </li>-->
+
+
+      <!--          <li class="page-item">-->
+      <!--            <a type="button" class="page-link" aria-label="Next" (click)="next()">-->
+      <!--              <span aria-hidden="true">&raquo;</span>-->
+      <!--              <span class="sr-only">Next</span>-->
+      <!--            </a>-->
+      <!--          </li>-->
+      <!--        </ul>-->
+      <!--      </nav>-->
+      <!--      Pagination-->
+    </div>
+  </div>
+</div>
+<!--Modal delete-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Xóa khách hàng</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn có muốn xóa bệnh án {{maBenhAn}}</p>
+      </div>
+      <div class="modal-footer">
+        <button #closeModal type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Hủy</button>
+        <button type="button" class="btn btn-primary"  (click)="modalDelete(closeModal,success)">Xóa</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button [hidden]="true" #success data-mdb-toggle="modal" data-mdb-target="#modal-success"  ></button>
+<!--Success Modal Templates-->
+<div id="modal-success" class="modal modal-message modal-success fade" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="glyphicon glyphicon-check"></i>
+      </div>
+      <div class="modal-title">Success</div>
+      <div class="modal-body">You have done great!</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-mdb-dismiss="modal">OK</button>
+      </div>
+    </div> <!-- / .modal-content -->
+  </div> <!-- / .modal-dialog -->
+</div>
+<!--End Success Modal Templates-->
+<button [hidden]="true" #danger data-mdb-toggle="modal" data-mdb-target="#modal-warning">Warning</button>
+<!--Danger Modal Templates-->
+<div id="modal-warning" class="modal modal-message modal-warning fade" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="fa fa-warning"></i>
+      </div>
+      <div class="modal-title">Warning</div>
+
+      <div class="modal-body">Is something wrong?</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal" >OK</button>
+      </div>
+    </div> <!-- / .modal-content -->
+  </div> <!-- / .modal-dialog -->
+</div>
+<!--End Danger Modal Templates-->
