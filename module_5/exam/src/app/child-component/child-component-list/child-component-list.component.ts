@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {TinBdsService} from "../../service/tin-bds.service";
-import {TinBds} from "../../model/tinBds";
+import {DangTin} from "../../model/dangTin";
 import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
@@ -9,7 +9,7 @@ import {FormControl, FormGroup} from "@angular/forms";
   styleUrls: ['./child-component-list.component.scss']
 })
 export class ChildComponentListComponent implements OnInit {
-  tinBds: TinBds[];
+  tinBds: DangTin[];
   formSearch: FormGroup = new FormGroup({
     dienTich: new FormControl(''),
     huong: new FormControl(''),

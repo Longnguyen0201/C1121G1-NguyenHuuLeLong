@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {TinBdsService} from "../../service/tin-bds.service";
 import {Router} from "@angular/router";
-import {TinBds} from "../../model/tinBds";
+import {DangTin} from "../../model/dangTin";
 
 @Component({
   selector: 'app-child-component-create',
@@ -10,7 +10,7 @@ import {TinBds} from "../../model/tinBds";
   styleUrls: ['./child-component-create.component.scss']
 })
 export class ChildComponentCreateComponent implements OnInit {
-  tinBds: TinBds;
+  tinBds: DangTin;
 
 
   // @ts-ignore
