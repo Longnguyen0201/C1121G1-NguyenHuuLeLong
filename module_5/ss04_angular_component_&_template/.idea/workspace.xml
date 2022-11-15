@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd9e9bdf-efea-4759-9768-da2307739a4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../testFurama/tem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testFurama/editService.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../testFurama/editService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testFurama/tesst.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../testFurama/tesst.html" afterDir="false" />
-    </list>
+    <list default="true" id="cd9e9bdf-efea-4759-9768-da2307739a4c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +20,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hackernews" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ts.external.directory.path" value="D:\CodeGym\Module\module_5\ss04_angular_component_&amp;_template\hackernews\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -37,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651940529028</updated>
       <workItem from="1651940531775" duration="60000" />
+      <workItem from="1654191680860" duration="26000" />
     </task>
     <servers />
   </component>
